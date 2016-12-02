@@ -3,9 +3,8 @@
 
 // Overrides go here for convenience
 //
-$font-family-sans-serif:  'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-//$headings-font-family:    'Noto Sans', sans-serif !default;
-$code-bg:                  #f3f6fa !default;
+$font-family-sans-serif:  'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$code-bg:                  #eef !default;
 
 
 // Import our base styles
@@ -40,23 +39,21 @@ form.contact {
 }
 
 ol, ul {
-  margin-left: 1.25rem;
-  padding: 0;
+  padding-left: 2rem;
 }
 
 
 /*--------------------------------------------------------------
 # Navigation menu
 --------------------------------------------------------------*/
-//.navbar {
-//  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-//  font-family: 'Noto Sans', arial, sans-serif;
-//  font-weight: 400;
-//}
+.navbar {
+  font-family: 'Noto Sans', arial, sans-serif;
+  font-weight: 400;
+}
 
 .navbar-bg {
-  background-color: #428bca;
-//  background-color: #4078c0;
+//  background-color: #428bca;
+  background-color: #4078c0;
 //  background-image: -webkit-linear-gradient(315deg, #4078c0, #428bca);
 //  background-image: linear-gradient(135deg, #4078c0, #428bca);
 }
@@ -64,16 +61,6 @@ ol, ul {
 .navbar-brand {
   letter-spacing: 0.025rem;
 }
-
-//.navbar-light .navbar-brand {
-//  color: rgba(0, 0, 0, 0.6);
-//}
-
-//@media (max-width: 34em) {
-//  .navbar-light .navbar-nav {
-//    border-top: 1px solid transparent;
-//  }
-//}
 
 .nav-link {
   font-size: 0.875rem;
@@ -214,70 +201,26 @@ h6 {
 }
 
 .welcome {
-  position: relative;
-  padding: 64px 15px;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-bottom: 2rem;
-  background-color: $brand-green;
+  margin: 3rem auto 1.5rem;
+  max-width: 560px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif;
   text-align: center;
-
-  @media (min-width: 544px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
 
   h2 {
-    margin-bottom: 1.5rem;
-    color: #fff;
-    font-family: 'Roboto Slab', palatino, serif;
-    font-size: 1.375rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 32px;
     font-weight: 300;
-    line-height: 1.272727;
-    letter-spacing: -.1px;
-
-    @media (min-width: 768px) {
-      font-size: 2.125rem;
-      line-height: 1.411764;
-    }
+    letter-spacing: -1px;
+    line-height: 1.25;
   }
 
   p {
-    margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.95);
-    font-family: 'Open Sans', arial, sans-serif;
-    font-size: 0.9375rem;
-    font-weight: 300;
-    line-height: 1.6;
-  }
-}
-
-
-.blankslate {
-  position: relative;
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  background-color: #f7f7f7;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-
-  h3 {
-    margin-bottom: 1.25rem;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 1rem;
-    font-weight: bold;
+    color: #444;
   }
 
-  p {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 0.9375rem;
-    line-height: 1.6;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
+  .octicon-tools {
+    margin: 3rem;
+    color: rgba(0, 0, 0, 0.5);
   }
 }
 
