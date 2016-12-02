@@ -1,0 +1,80 @@
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  text-rendering: optimizeLegibility;
+}
+
+h1 { font-size: 2.5rem; }  // 40px
+h2 { font-size: 2rem; }    // 32px
+h3 { font-size: 1.75rem; } // 28px
+h4 { font-size: 1.5rem; }  // 24px
+h5 { font-size: 1.25rem; } // 20px
+h6 { font-size: 1rem; }    // 16px
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+//
+// Emphasis
+//
+
+small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+mark {
+  padding: 0.2em;
+  color: #333;
+  background-color: #fff9c0;
+}
+
+
+// Blockquotes
+blockquote {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  color: $blockquote-color;
+  font-size: 1.125em;
+  border-left: 0.25rem solid $gray-lighter;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  footer {
+    display: block;
+    font-size: 80%; // back to default font-size
+    line-height: $line-height-base;
+    color: $gray-light;
+
+    &::before {
+      content: '\2014 \00A0'; // em dash, nbsp
+    }
+  }
+}

@@ -1,0 +1,42 @@
+---
+layout:
+title: "404 Page Not Found"
+permalink: 404.html
+sitemap: false
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+    <style>
+      .container .fnf{margin: 3rem auto 1.5rem;max-width:560px;font-family:'Helvetica Neue',Helvetica,Arial,'Liberation Sans',sans-serif;text-align:center;}
+      a {color:#4183c4;}a:hover,a:focus {color:#4183c4;}
+      h1 {margin:0 0 50px 0;font-size:60px;font-weight:300;letter-spacing:-1px;line-height:60px;}
+      .fnf p {margin:20px 0;line-height:1.6;}
+      a{color:#448aff;}a:hover,a:focus{color:#448aff;}
+      .logo {display:inline-block;margin-top:35px;}
+      a.logo {color:#2196f3}a.logo:hover,a.logo:focus{box-shadow: none;}
+    </style>
+  </head>
+  <body>
+    <header class="navbar navbar-dark navbar-bg" role="banner">
+      <div class="container"><a class="navbar-brand" href="/">Jeff's Blog</a></div>
+    </header>
+    <div class="container">
+      <div class="fnf">
+        <h1>404</h1>
+        <p style="color:rgba(0,0,0,.5);"><strong>File not found</strong></p>
+        <p>Sorry, we've misplaced that URL or it's pointing to a file that doesn't exist. Please head back <a href="{{ '/' | prepend:site.baseurl }}">home</a> and try finding it again.</p>
+      </div>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container text-center"><p class="footer-text">&copy; 2016. Built with <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a>.</p></div>
+    </footer>
+  </body>
+</html>

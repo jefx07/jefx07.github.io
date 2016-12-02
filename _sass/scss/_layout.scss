@@ -1,0 +1,84 @@
+// Container widths
+//
+// Set the container width.
+.container {
+  @include make-container();
+
+  @media (min-width: $screen-xs-min) {
+    width: $container-xs;
+  }
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+.row {
+  @include make-row();
+}
+
+// Grid system
+
+// Base class for every column (requires a column width from below)
+.column {
+//  float: left;
+  min-height: 1px;
+  padding-right: ($grid-gutter-width / 2);
+  padding-left: ($grid-gutter-width / 2);
+}
+
+// Column widths
+@media (min-width:34em) {
+  .one-third, .two-thirds, .one-fourth, .one-half, .three-fourths, .one-fifth, .four-fifths {
+    float: left
+  }
+
+  .one-third {
+    width: 33.333333%;
+  }
+
+  .two-thirds {
+    width: 66.666667%;
+  }
+
+  .one-fourth {
+    width: 25%;
+  }
+
+  .one-half {
+    width: 50%;
+  }
+
+  .three-fourths {
+    width: 75%;
+  }
+
+  .one-fifth {
+    width: 20%;
+  }
+
+  .four-fifths {
+    width: 80%;
+  }
+}
+
+
+// Single column hack
+.single-column {
+  padding-right: ($grid-gutter-width / 2);
+  padding-left:  ($grid-gutter-width / 2);
+  max-width: 36em;
+
+  @media (min-width: $screen-md-min) {
+    max-width: 38em;
+  }
+}

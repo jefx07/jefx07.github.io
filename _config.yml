@@ -1,0 +1,47 @@
+# General configuration settings
+title: "Jeff’s Blog"
+description: "Just another blog, or is it... "
+tagline: "An experiment in the blogisphere"
+
+url: https://jefx07.github.io
+baseurl: ""
+
+# About/contact (for atom news feed)
+author:
+  name:  # Required (leave blank to use website title)
+  email: # (optional)
+
+# Enter your Google Analytics tracking ID (e.g. UA-000000-01) to activate the tracking code
+google_analytics_id: UA-87931263-1
+
+# Menu bar links...
+navbar_links:
+  - name: "Home"
+    url: "/"
+
+  - name: "Archives"
+    url: "/blog/archive/"
+
+  - name: "About"
+    url: "/about/"
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap
+
+# Permalinks
+permalink: /:year/:title/
+
+# Exclude from site build
+exclude:
+  - "README.md"
+  - "CNAME"
+
+# Processor options
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  sass_dir: _sass
+  style: compressed

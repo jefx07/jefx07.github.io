@@ -1,0 +1,106 @@
+// Clear floats
+.clearfix {
+  @include clearfix;
+}
+
+// Floats
+.right { float: right; }
+
+.left { float: left; }
+
+
+// Layout
+
+// Centers content horizontally. Can be used inside or outside the grid.
+.centered {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//
+// Screenreaders
+//
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+//
+// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+//
+// Credit: HTML5 Boilerplate
+.sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+// Usage as a mixin
+.skip-navigation {
+  @include sr-only;
+  @include sr-only-focusable;
+}
+
+
+//
+// Text
+//
+
+// Alignment
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+
+// Contextual colors
+
+.text-muted {
+  color: $text-muted;
+}
+
+
+//
+// Images
+//
+
+// Alignment
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin: 0.375rem 1rem 1rem 0;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin: 0.375rem 0 1rem 1rem;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+// Misc
+.hidden {
+  display: none;
+}

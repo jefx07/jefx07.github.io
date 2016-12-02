@@ -1,0 +1,29 @@
+//
+// Basic table with borders
+//
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid $gray-lighter;
+
+  th,
+  td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: 1px solid $gray-lighter;
+  }
+
+  thead th {
+    vertical-align: bottom;
+  }
+
+  tbody + tbody {
+    border-top: 2px solid $gray-lighter;
+  }
+
+  table {
+    background-color: $body-bg;
+  }
+}

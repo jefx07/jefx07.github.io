@@ -1,0 +1,60 @@
+//
+// Textual form controls
+//
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  color: $gray;
+  background-color: #fff;
+  // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214.
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+
+//  @include box-shadow($input-box-shadow);
+//  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  @include form-control-focus();
+
+  // Placeholder
+  &::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+  }
+    &::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+  }
+    &:-ms-input-placeholder {
+    color: #999;
+    opacity: 1;
+  }
+  &::placeholder {
+    color: #999;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+}
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms.
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-text {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+label {
+  font-size: 0.875rem;
+}

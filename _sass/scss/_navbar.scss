@@ -1,0 +1,148 @@
+// Base class
+//
+
+// Provide a static navbar from which we expand to create other navbar variations.
+
+.navbar {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  @include clearfix;
+
+  @media (min-width:34em) {
+    text-align: left;
+  }
+}
+
+
+//
+// Brand/project name
+//
+
+.navbar-brand {
+  display: inline-block;
+  font-size: 1.25rem;
+
+  &:hover,
+  &:focus {
+    //text-decoration: none;
+    box-shadow: none;
+  }
+
+  > img {
+    display: block;
+  }
+
+  @media (min-width: 34em) {
+    float: left;
+  }
+}
+
+
+//
+// Navigation
+//
+
+.navbar-nav {
+  margin-top: 1rem;
+  padding-top: 1rem;
+
+  @media (min-width: 34em) {
+    margin-top: 0.25rem;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 34em) {
+  .navbar-nav.right {
+    float: none;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    //text-decoration: none;
+    box-shadow: none;
+  }
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+
+// Dark links against a light background
+.navbar-light {
+  .navbar-brand {
+    color: $navbar-light-active-color;
+
+    &:focus,
+    &:hover {
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-nav {
+    @media (max-width: 34em) {
+      border-top: 1px solid $navbar-light-border-color;
+    }
+  }
+
+  .nav-link {
+    color: $navbar-light-color;
+
+    &:focus,
+    &:hover {
+      color: $navbar-light-hover-color;
+    }
+  }
+
+  .nav-link.active {
+    &,
+    &:focus,
+    &:hover {
+      color: $navbar-light-active-color;
+    }
+  }
+}
+
+// White links against a dark background
+.navbar-dark {
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    &:focus,
+    &:hover {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-nav {
+    @media (max-width: 34em) {
+      border-top: 1px solid $navbar-dark-border-color;
+    }
+  }
+
+  .nav-link {
+    color: $navbar-dark-color;
+
+    &:focus,
+    &:hover {
+      color: $navbar-dark-hover-color;
+    }
+  }
+
+  .nav-link.active {
+    &,
+    &:focus,
+    &:hover {
+      color: $navbar-dark-active-color;
+    }
+  }
+}
