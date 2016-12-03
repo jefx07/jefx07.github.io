@@ -1,14 +1,14 @@
 .highlight {
   padding: 1rem;
   margin: 0 -15px 1.5rem;
-  background-color: $code-bg;
+  background-color: $pre-bg;
 
   @media (min-width: 544px) {
     padding: 1.5rem;
     margin-right: 0;
     margin-left: 0;
-    border: solid 1px #e8e8e8;
-    border-radius: 0.25rem;
+    border: solid 1px $pre-border-color;
+    border-radius: 0.125rem;
   }
 }
 

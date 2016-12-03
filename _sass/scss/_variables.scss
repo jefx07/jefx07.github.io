@@ -111,7 +111,7 @@ $kbd-bg:                    #333 !default;
 
 $pre-bg:                    $gray-lightest !default;
 $pre-color:                 $gray-dark !default;
-$pre-border-color:          #ccc !default;
+$pre-border-color:          darken($pre-bg, 5%) !default;
 
 
 // Navbar

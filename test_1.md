@@ -21,7 +21,7 @@ the many embedded elements within paragraphs.
 
 ###### h6. Heading 6
 
----
+<hr style="margin: 2.5rem 1rem">
 
 Lorem ipsum dolor sit amet, [test link](# "test link") adipiscing elit. **This
 is strong.** Nullam dignissim convallis est. Quisque aliquam. *This is
@@ -41,7 +41,7 @@ diam eget metus. To copy a file type <code>COPY <var>filename</var></code>.
 
 This <span style="text-decoration:line-through;">text</span> has been struck.
 
----
+<hr style="margin: 2.5rem 1rem">
 
 ## Definition List
 
@@ -70,7 +70,7 @@ something: <em>our definition of what constitutes poetry.</em></dd>
     - Nested list item B
 - List Item 3
 
----
+<hr style="margin: 2.5rem 1rem">
 
 ## Table
 
@@ -106,7 +106,18 @@ within a `<pre>` block.
 }
 ```
 
----
+or
+
+``` html
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+```
+
+
+<hr style="margin: 2.5rem 1rem">
 
 ## Blockquotes
 
@@ -118,3 +129,15 @@ instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
 hear it I can sing it for you. <cite>— [HAL 9000](http://en.wikipedia.org/wiki/HAL_9000)</cite>
 
 And here’s a bit of trailing text.
+
+<hr style="margin: 2.5rem 1rem">
+
+## Buttons
+
+Here are some standard buttons if you need them:
+
+<a class="button" href="#" role="button">Link</a>
+<button class="button" type="submit">Button</button>
+
+<p>&nbsp;</p><p>&nbsp;</p>
+

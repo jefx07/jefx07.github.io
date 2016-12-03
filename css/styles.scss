@@ -3,8 +3,7 @@
 
 // Overrides go here for convenience
 //
-$font-family-sans-serif:  'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$code-bg:                  #eef !default;
+$font-family-sans-serif:    'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
 
 // Import our base styles
@@ -52,10 +51,7 @@ ol, ul {
 }
 
 .navbar-bg {
-//  background-color: #428bca;
-  background-color: #4078c0;
-//  background-image: -webkit-linear-gradient(315deg, #4078c0, #428bca);
-//  background-image: linear-gradient(135deg, #4078c0, #428bca);
+  background-color: #428bca;
 }
 
 .navbar-brand {
