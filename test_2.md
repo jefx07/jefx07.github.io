@@ -5,7 +5,7 @@ permalink: "test_2/index.html"
 sitemap: false
 ---
 
-<div style="font-family:'Source Sans Pro', sans-serif;">
+<div style="font-family:'PT Sans', sans-serif;">
 
 <p>Below is just about every <abbr title="HyperText Markup Language">HTML</abbr>
 element you might want to use in your blog posts. Check the source code to see
