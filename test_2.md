@@ -5,7 +5,7 @@ permalink: "test_2/index.html"
 sitemap: false
 ---
 
-<div style="font-family:'PT Sans', sans-serif;">
+<div style="font-family:'Roboto', sans-serif;">
 
 <p>Below is just about every <abbr title="HyperText Markup Language">HTML</abbr>
 element you might want to use in your blog posts. Check the source code to see
@@ -158,10 +158,10 @@ hear it I can sing it for you. <cite>— <a href="http://en.wikipedia.org/wiki/H
 <hr style="margin: 2.5rem 1rem">
 
 <h2>Buttons</h2>
-<p>Here are some standard buttons if you need them:</p>
+<p>We also have some buttons, if you need them.</p>
 
-<a class="button" href="#" role="button">Link</a>
-<button class="button" type="submit">Button</button>
+<button class="button" type="button">Button 1</button> &nbsp; <button class="button button-green" type="button">Button 2</button>
 
 <p>&nbsp;</p><p>&nbsp;</p>
+
 </div>

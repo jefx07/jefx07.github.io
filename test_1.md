@@ -80,6 +80,7 @@ something: <em>our definition of what constitutes poetry.</em></dd>
 | Division 1     | Division 2     | Division 3     |
 | Division 1     | Division 2     | Division 3     |
 
+<p>&nbsp;</p>
 
 ## Preformatted Text
 
@@ -92,6 +93,7 @@ that may not have anything to do with code. For example:
 Beware the Jubjub bird, and shun
     The frumious Bandersnatch!”
 </pre>
+<p>&nbsp;</p>
 
 ### Code
 
@@ -116,7 +118,6 @@ or
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
-
 <hr style="margin: 2.5rem 1rem">
 
 ## Blockquotes
@@ -134,10 +135,8 @@ And here’s a bit of trailing text.
 
 ## Buttons
 
-Here are some standard buttons if you need them:
+We also have some buttons, if you need them.
 
-<a class="button" href="#" role="button">Link</a>
-<button class="button" type="submit">Button</button>
+<button class="button" type="button">Button 1</button> &nbsp; <button class="button button-green" type="button">Button 2</button>
 
 <p>&nbsp;</p><p>&nbsp;</p>
-

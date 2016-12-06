@@ -4,6 +4,7 @@
 // Overrides go here for convenience
 //
 $font-family-sans-serif:    'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+//$headings-font-family:    'Noto Sans', sans-serif !default;
 
 
 // Import our base styles
@@ -170,7 +171,7 @@ h6 {
   margin-bottom: 2rem;
 }
 
-.container {
+#content:focus {
   outline: none;
 }
 
@@ -220,6 +221,47 @@ h6 {
     color: rgba(0, 0, 0, 0.5);
   }
 }
+
+/*---------------
+.welcome {
+  position: relative;
+  padding: 64px 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 2rem;
+  background-color: $brand-green;
+  text-align: center;
+
+  @media (min-width: 544px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-family: 'Roboto Slab', palatino, serif;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.272727;
+    letter-spacing: -.1px;
+
+    @media (min-width: 768px) {
+      font-size: 2.125rem;
+      line-height: 1.411764;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+}
+------------*/
 
 
 /*--------------------------------------------------------------

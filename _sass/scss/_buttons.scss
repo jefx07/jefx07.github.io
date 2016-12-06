@@ -55,30 +55,60 @@
 
 .button {
   color: #fff;
-  background-color: #2199e8;
+  background-color: #0275d8;  // #2199e8;
 
   &:hover,
   &:focus {
     color: #fff;
-    background-color: #1583cc;
+    background-color: darken(#0275d8, 10%);
   }
 
   &:active {
     color: #fff;
-    background-color: #1583cc;
+    background-color: darken(#0275d8, 10%);
     background-image: none;
 
     &:hover,
     &:focus {
       color: #fff;
-      background-color: darken(#2199e8, 17%);
+      background-color: darken(#0275d8, 17%);
     }
   }
 
   &:disabled {
     &:hover,
     &:focus {
-      background-color: #2199e8;
+      background-color: #0275d8;
+    }
+  }
+}
+
+.button-green {
+  color: #fff;
+  background-color: #5cb85c;  // #2199e8;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: darken(#5cb85c, 10%);
+  }
+
+  &:active {
+    color: #fff;
+    background-color: darken(#5cb85c, 10%);
+    background-image: none;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: darken(#5cb85c, 17%);
+    }
+  }
+
+  &:disabled {
+    &:hover,
+    &:focus {
+      background-color: #5cb85c;
     }
   }
 }

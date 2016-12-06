@@ -13,6 +13,12 @@ $gray-lightest:             #f7f7f9 !default;
 $gray-01:                   rgba(0, 0, 0, 0.1) !default;
 $gray-02:                   rgba(0, 0, 0, 0.2) !default;
 
+$brand-primary:             #0275d8 !default; // blue
+$brand-success:             #5cb85c !default; // green
+$brand-info:                #5bc0de !default; // lt blue
+$brand-warning:             #f0ad4e !default; // orange
+$brand-danger:              #d9534f !default; // red
+
 // Brand colors = 500
 $brand-red:                 #f44336 !default;
 $brand-indigo:              #3f51b5 !default;
@@ -111,7 +117,7 @@ $kbd-bg:                    #333 !default;
 
 $pre-bg:                    $gray-lightest !default;
 $pre-color:                 $gray-dark !default;
-$pre-border-color:          darken($pre-bg, 5%) !default;
+$pre-border-color:          darken($pre-bg, 4%) !default;
 
 
 // Navbar
