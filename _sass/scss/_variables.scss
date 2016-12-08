@@ -15,7 +15,7 @@ $gray-02:                   rgba(0, 0, 0, 0.2) !default;
 
 $brand-primary:             #0275d8 !default; // blue
 $brand-success:             #5cb85c !default; // green
-$brand-info:                #5bc0de !default; // lt blue
+$brand-info:                #5bc0de !default; // light blue
 $brand-warning:             #f0ad4e !default; // orange
 $brand-danger:              #d9534f !default; // red
 
@@ -53,7 +53,7 @@ $link-decoration:           none !default;
 
 $font-family-sans-serif:    'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif !default;
 $font-family-serif:         Georgia, 'Times New Roman', Times, serif !default;
-$font-family-monospace:     Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
+$font-family-monospace:     Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 $font-family-base:          $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
@@ -117,7 +117,7 @@ $kbd-bg:                    #333 !default;
 
 $pre-bg:                    $gray-lightest !default;
 $pre-color:                 $gray-dark !default;
-$pre-border-color:          darken($pre-bg, 4%) !default;
+$pre-border-color:          darken($pre-bg, 5%) !default;
 
 
 // Navbar

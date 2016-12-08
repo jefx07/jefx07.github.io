@@ -76,9 +76,9 @@
 .single-column {
   padding-right: ($grid-gutter-width / 2);
   padding-left:  ($grid-gutter-width / 2);
-  max-width: 36em;
+  max-width: 38em;
 
-  @media (min-width: $screen-md-min) {
-    max-width: 38em;
-  }
+//  @media (min-width: $screen-md-min) {
+//    max-width: 38em;
+//  }
 }

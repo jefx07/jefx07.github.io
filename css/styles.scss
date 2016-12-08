@@ -3,9 +3,8 @@
 
 // Overrides go here for convenience
 //
-$font-family-sans-serif:    'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-//$headings-font-family:    'Noto Sans', sans-serif !default;
-
+$font-family-sans-serif:    'Open Sans', 'Helvetica Neue', Arial, sans-serif !default;
+$font-family-monospace:     Menlo, Monaco, Consolas, 'Source Code Pro', monospace !default;
 
 // Import our base styles
 @import 'scss/framework';
@@ -42,6 +41,54 @@ ol, ul {
   padding-left: 2rem;
 }
 
+/*----
+blockquote {
+  padding: 20px 25px;
+//  border-left: 5px solid #ccc;
+  margin-bottom: 24px;
+  background: #eee;
+  color: inherit;
+  font-size: 1.125rem;
+  position: relative;
+}
+
+blockquote:after,
+blockquote:before {
+  color: #ccc;
+  font-size: 40px;
+  position: absolute;
+}
+
+blockquote:before {
+  top: 0;
+  left: 10px;
+  content: '\201C';
+}
+
+blockquote:after {
+  bottom: 0;
+  right: 10px;
+  content: '\201D';
+}
+
+blockquote footer::before {
+    content: '';
+}
+----*/
+
+// Quick spacing
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb2 {
+  margin-bottom: 1.5rem;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation menu
@@ -73,15 +120,20 @@ ol, ul {
 .page-title {
   margin-bottom: 1.75rem;
   font-size: 2rem;              // 32px
+  font-weight: 300;
   line-height: 1.25;
   letter-spacing: -0.025rem;
+  letter-spacing: -0.0625rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   @media (min-width: 768px) {
     font-size: 2.25rem;         // 36px
+    font-size: 2.5rem;          // 40px
   }
 
   @media (min-width: 992px) {
     font-size: 2.5rem;          // 40px
+    font-size: 3rem;            // 48px
   }
 }
 
@@ -115,8 +167,10 @@ h1 {
 
 h2 {
   font-size: 1.5rem;            // 24px
+  font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.025rem;
+  letter-spacing: -0.03125rem;
 
   @media (min-width: 768px) {
   font-size: 1.75rem;           // 28px
@@ -169,10 +223,6 @@ h6 {
   padding-top: 2rem;
   padding-bottom: 2.5rem;
   margin-bottom: 2rem;
-}
-
-#content:focus {
-  outline: none;
 }
 
 .post-content {

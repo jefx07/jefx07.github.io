@@ -1,7 +1,7 @@
 .highlight {
   padding: 1rem;
   margin-bottom: 1.5rem;
-  background-color: $pre-bg;
+  background-color: #f5f6f8;    // $pre-bg;
   border: solid 1px $pre-border-color;
   border-radius: 0.125rem;
 }
@@ -13,7 +13,7 @@
   .o { color: #555 } /* Operator */
   .cm { color: #999; font-style: italic; } /* Comment.Multiline */
   .cp { color: #009999 } /* Comment.Preproc */
-  .c1 { color: #999 } /* Comment.Single */
+  .c1 { color: #999; font-style: italic } /* Comment.Single */
   .cs { color: #999 } /* Comment.Special */
   .gd { background-color: #ffcccc; border: 1px solid #cc0000 } /* Generic.Deleted */
   .ge { font-style: italic } /* Generic.Emph */

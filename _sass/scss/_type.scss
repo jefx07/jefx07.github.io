@@ -45,19 +45,18 @@ small {
 }
 
 mark {
-  padding: 0.2em;
+//  padding: 0.2em;
   color: #333;
-  background-color: #fff9c0;
+  background-color: #ffff80;
 }
 
 
 // Blockquotes
 blockquote {
   padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  color: $blockquote-color;
+  margin-bottom: 1.5rem;
   font-size: 1.125em;
-  border-left: 0.25rem solid $gray-lighter;
+  border-left: 0.3125rem solid $gray-lighter;
 
   p,
   ul,
