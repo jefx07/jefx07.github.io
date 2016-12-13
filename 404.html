@@ -12,8 +12,8 @@ sitemap: false
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>404 Page Not Found</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans%7COpen+Sans">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <style>
       .container .fnf{margin:3rem auto 1.5rem;max-width:560px;font-family:'Helvetica Neue',Helvetica,Arial,'Liberation Sans',sans-serif;text-align:center;}
       a {color:#4183c4;}a:hover,a:focus {color:#4183c4;}
@@ -35,8 +35,17 @@ sitemap: false
       </div>
     </div>
 
-    <footer class="site-footer" role="contentinfo">
-      <div class="container text-center"><p class="footer-text">&copy; 2016. Built with <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a>.</p></div>
+    <footer id="colophon" class="site-footer text-muted">
+      <div class="container">
+        <ul class="footer-links">
+          <li>
+            <a class="rss" href="/feed.xml" title="Subscribe to my RSS feed for updates">
+              <svg  class="octicon octicon-rss" viewBox="0 0 10 16" version="1.1" width="12" height="20" aria-label="RSS Feed" role="img"><path fill-rule="evenodd" d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z"/></svg>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; 2016. Built with <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a>.</p>
+      </div>
     </footer>
   </body>
 </html>
