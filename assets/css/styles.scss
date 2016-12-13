@@ -4,7 +4,7 @@
 // Overrides go here for convenience
 //
 $font-family-sans-serif:    'Open Sans', 'Helvetica Neue', Arial, sans-serif !default;
-$font-family-monospace:     Menlo, Monaco, Consolas, 'Source Code Pro', monospace !default;
+$font-family-monospace:     'Source Code Pro', Menlo, Monaco, Consolas, monospace !default;
 
 // Import our base styles
 @import 'scss/framework';
@@ -43,38 +43,53 @@ ol, ul {
 
 /*----
 blockquote {
-  padding: 20px 25px;
-//  border-left: 5px solid #ccc;
-  margin-bottom: 24px;
-  background: #eee;
-  color: inherit;
-  font-size: 1.125rem;
   position: relative;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  //background-color: #eee;
+  color: inherit;
+  //color: #212121;
+  font-size: 1rem;
+  //border: 1px solid #eee;
+  //border-left: 0.25rem solid $brand-info;
+  //border-radius: 0.25rem;
 }
 
 blockquote:after,
 blockquote:before {
-  color: #ccc;
-  font-size: 40px;
   position: absolute;
+  color: $brand-cyan;
+  font-size: 2.5rem;
 }
 
 blockquote:before {
   top: 0;
-  left: 10px;
+  left: 0.625rem;
   content: '\201C';
 }
 
 blockquote:after {
   bottom: 0;
-  right: 10px;
+  right: 0.625rem;
   content: '\201D';
 }
 
-blockquote footer::before {
-    content: '';
+blockquote footer {
+  font-size: 0.875rem;
 }
 ----*/
+
+//blockquote {
+//  border-radius: 0.25rem;
+//  border: 1px solid rgba(0,0,0,.125);
+//  border-left: 0.3125rem solid #eceeef;
+//}
+
+blockquote {
+  margin: 1.25rem 0;
+  font-size: 1.125rem;
+}
+
 
 // Quick spacing
 .mb0 {
@@ -96,7 +111,6 @@ blockquote footer::before {
 .navbar {
   font-family: 'Noto Sans', arial, sans-serif;
   font-weight: 400;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .navbar-bg {
@@ -122,17 +136,13 @@ blockquote footer::before {
   font-size: 2rem;              // 32px
   font-weight: 300;
   line-height: 1.25;
-  letter-spacing: -0.025rem;
   letter-spacing: -0.0625rem;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   @media (min-width: 768px) {
-    font-size: 2.25rem;         // 36px
     font-size: 2.5rem;          // 40px
   }
 
   @media (min-width: 992px) {
-    font-size: 2.5rem;          // 40px
     font-size: 3rem;            // 48px
   }
 }
@@ -146,8 +156,7 @@ blockquote footer::before {
 .entry-title a:focus,
 .post-title a:hover,
 .post-title a:focus {
-  //color: $link-color;
-  color: $gray-medium;
+  color: $link-color;
   box-shadow: none;
 }
 
@@ -169,7 +178,6 @@ h2 {
   font-size: 1.5rem;            // 24px
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.025rem;
   letter-spacing: -0.03125rem;
 
   @media (min-width: 768px) {
@@ -221,18 +229,20 @@ h6 {
 --------------------------------------------------------------*/
 #content {
   padding-top: 2rem;
-  padding-bottom: 2.5rem;
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+}
+
+.home {
+  margin-bottom: 2.5rem;
 }
 
 .post-content {
   padding-bottom: 2rem;
-}
 
-.page-content img,
-.post-content img {
-  border-radius: 3px;
-  box-shadow: 0 1px 4px $gray-02;
+  img {
+    border-radius: 3px;
+    box-shadow: 0 1px 4px $gray-02;
+  }
 }
 
 .more-link {
@@ -240,12 +250,8 @@ h6 {
   font-size: 0.9375rem;
 }
 
-.home {
-  margin-bottom: 2rem;
-
-  @media (min-width: 768px) {
-    margin-bottom: 3rem;
-  }
+.next {
+  color: $link-color;
 }
 
 .welcome {
@@ -271,47 +277,6 @@ h6 {
     color: rgba(0, 0, 0, 0.5);
   }
 }
-
-/*---------------
-.welcome {
-  position: relative;
-  padding: 64px 15px;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-bottom: 2rem;
-  background-color: $brand-green;
-  text-align: center;
-
-  @media (min-width: 544px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  h2 {
-    margin-bottom: 1.5rem;
-    color: #fff;
-    font-family: 'Roboto Slab', palatino, serif;
-    font-size: 1.375rem;
-    font-weight: 300;
-    line-height: 1.272727;
-    letter-spacing: -.1px;
-
-    @media (min-width: 768px) {
-      font-size: 2.125rem;
-      line-height: 1.411764;
-    }
-  }
-
-  p {
-    margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.95);
-    font-family: 'Open Sans', arial, sans-serif;
-    font-size: 0.9375rem;
-    font-weight: 300;
-    line-height: 1.6;
-  }
-}
-------------*/
 
 
 /*--------------------------------------------------------------
@@ -390,8 +355,7 @@ h6 {
 }
 
 .octicon-calendar,
-.octicon-tag,
-.octicon-rss {
+.octicon-tag {
   position: relative;
   margin-right: 2px;
 }
@@ -404,8 +368,29 @@ h6 {
   top: 2px;
 }
 
-.octicon.octicon-rss {
-  top: -1px;
+.octicon-rss {
+  margin-top: 5px;
+  margin-left: 2px;
+  fill: #fff;
+}
+
+a.rss:hover,
+a.rss:focus {
+  box-shadow: none;
+}
+
+.rss {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #ffa726;    // #ffa500;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.rss:hover,
+.rss:focus {
+  background-color: #ff9800;
 }
 
 
@@ -431,26 +416,34 @@ h6 {
 # Site Footer
 --------------------------------------------------------------*/
 .site-footer {
-  background-color: $gray-lighter;
-  color: $gray-dark;
-}
-
-.footer-text {
-  margin: 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  //margin-top: 4rem;
   font-size: 0.8125rem;
-  line-height: 1.6;
+  text-align: center;
+  background-color: $gray-lightest;
 }
 
-.footer-text a {
-  color: $gray-light;
+.site-footer p {
+  margin-bottom: 0;
 }
 
-.footer-text a:hover,
-.footer-text a:focus {
-  color: $body-color;
-  box-shadow: 0 1px 0 0 currentColor;
+.site-footer ul {
+  padding: 0;
+  margin-bottom: 0.625rem;
 }
+
+.site-footer li {
+  display: inline-block;
+}
+
+.site-footer a {
+  color: $gray;
+}
+
+.site-footer a:hover {
+  color: $link-color;
+}
+
 
 /* Make the footer sticky
 -------------------------*/
@@ -461,7 +454,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 52px;
+  margin-bottom: 109px;
 }
 
 .site-footer {
@@ -469,5 +462,5 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 52px;
+  height: 109px;
 }

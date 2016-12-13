@@ -4,7 +4,6 @@
 
 .button {
   display: inline-block;
-  white-space: nowrap;
   vertical-align: middle;
   margin: 0 0 0.5rem 0;
   padding: 0.5rem 1rem;
@@ -16,11 +15,11 @@
   border: 1px solid transparent;
   border-radius: 0.125rem;
   cursor: pointer;
+  white-space: nowrap;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
   user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &,
   &:active {
@@ -30,8 +29,8 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     text-decoration: none;
   }
 
@@ -55,60 +54,72 @@
 
 .button {
   color: #fff;
-  background-color: #0275d8;  // #2199e8;
+  background-color: $brand-primary;
 
-  &:hover,
+  &:hover {
+    color: #fff;
+    background-color: darken($brand-primary, 10%);
+  }
+
   &:focus {
     color: #fff;
-    background-color: darken(#0275d8, 10%);
+    background-color: darken($brand-primary, 10%);
   }
 
   &:active {
     color: #fff;
-    background-color: darken(#0275d8, 10%);
+    background-color: darken($brand-primary, 10%);
     background-image: none;
 
     &:hover,
     &:focus {
       color: #fff;
-      background-color: darken(#0275d8, 17%);
+      background-color: darken($brand-primary, 17%);
     }
   }
 
   &:disabled {
-    &:hover,
     &:focus {
-      background-color: #0275d8;
+      background-color: $brand-primary;
+    }
+    &:hover {
+      background-color: $brand-primary;
     }
   }
 }
 
 .button-green {
   color: #fff;
-  background-color: #5cb85c;  // #2199e8;
+  background-color: $brand-success;
 
-  &:hover,
+  &:hover {
+    color: #fff;
+    background-color: darken($brand-success, 10%);
+  }
+
   &:focus {
     color: #fff;
-    background-color: darken(#5cb85c, 10%);
+    background-color: darken($brand-success, 10%);
   }
 
   &:active {
     color: #fff;
-    background-color: darken(#5cb85c, 10%);
+    background-color: darken($brand-success, 10%);
     background-image: none;
 
     &:hover,
     &:focus {
       color: #fff;
-      background-color: darken(#5cb85c, 17%);
+      background-color: darken($brand-success, 17%);
     }
   }
 
   &:disabled {
-    &:hover,
     &:focus {
-      background-color: #5cb85c;
+      background-color: $brand-success;
+    }
+    &:hover {
+      background-color: $brand-success;
     }
   }
 }

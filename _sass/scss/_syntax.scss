@@ -1,7 +1,7 @@
 .highlight {
   padding: 1rem;
-  margin-bottom: 1.5rem;
-  background-color: #f5f6f8;    // $pre-bg;
+  margin: 1.25rem 0;
+  background-color: $pre-bg;
   border: solid 1px $pre-border-color;
   border-radius: 0.125rem;
 }

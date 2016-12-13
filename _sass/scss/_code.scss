@@ -9,7 +9,7 @@ samp {
 // Inline code
 code {
   padding: 0.2rem 0.4rem;
-  font-size: 90%;
+  font-size: $code-font-size;
   color: $code-color;
   background-color: $code-bg;
   border-radius: 0.25rem;
@@ -37,7 +37,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-size: 1em;
+  font-size: $pre-font-size;
   line-height: $line-height-base;
   color: $pre-color;
 

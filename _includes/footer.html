@@ -1,7 +1,14 @@
 
-    <footer id="colophon" class="site-footer">
-      <div class="container text-center">
-        <p class="footer-text">&copy; {{ site.time | date:"%Y" }}. Built with <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a>.</p>
+    <footer id="colophon" class="site-footer text-muted">
+      <div class="container">
+        <ul class="footer-links">
+          <li>
+            <a class="rss" href="{{ site.baseurl }}/feed.xml" title="Subscribe to my RSS feed for updates">
+              <svg  class="octicon octicon-rss" viewBox="0 0 10 16" version="1.1" width="12" height="20" aria-label="RSS Feed" role="img"><path fill-rule="evenodd" d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z"/></svg>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; {{ site.time | date:'%Y' }}. Built with <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a>.</p>
       </div>
     </footer>
     {% include analytics.html %}

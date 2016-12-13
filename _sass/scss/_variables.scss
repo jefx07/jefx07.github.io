@@ -111,13 +111,15 @@ $container-lg:              (1110px + $grid-gutter-width) !default;
 
 $code-color:                #bd4147 !default;
 $code-bg:                   $gray-lightest !default;
+$code-font-size:            90% !default;
 
 $kbd-color:                 #fff !default;
 $kbd-bg:                    #333 !default;
 
-$pre-bg:                    $gray-lightest !default;
 $pre-color:                 $gray-dark !default;
-$pre-border-color:          darken($pre-bg, 5%) !default;
+$pre-bg:                    #f5f6f8 !default;
+$pre-font-size:             0.9375rem !default;
+$pre-border-color:          darken($pre-bg, 4%) !default;
 
 
 // Navbar

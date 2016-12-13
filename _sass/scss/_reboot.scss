@@ -49,7 +49,7 @@ html {
   // So we add this style to force IE11 & Edge to use a "normal", non-overlapping, non-auto-hiding scrollbar.
   -ms-overflow-style: scrollbar;
   // Changes the default tap highlight to be completely transparent in iOS.
-  //-webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -90,6 +90,8 @@ p {
 
 // Abbreviations and acronyms
 abbr[title] {
+  text-decoration: none;
+  border-bottom: 1px dotted #777;
   cursor: help;
 }
 

@@ -28,7 +28,7 @@ is strong.** Nullam dignissim convallis est. Quisque aliquam. *This is
 emphasized.* Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125.
 Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at,
 tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a
-citation). Underline. Maecenas ornare tortor. Donec sed tellus eget sapien
+citation). <ins>Underline</ins>. Maecenas ornare tortor. Donec sed tellus eget sapien
 fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo
 vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <abbr
 title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style
@@ -74,7 +74,7 @@ something: <em>our definition of what constitutes poetry.</em></dd>
 
 ## Table
 
-| Table Header 1 | Table Header 2 | Table Header 3 |
+| Header 1       | Header 2       | Header 3       |
 | -------------- | -------------- | -------------- |
 | Division 1     | Division 2     | Division 3     |
 | Division 1     | Division 2     | Division 3     |
@@ -108,26 +108,19 @@ within a `<pre>` block.
 }
 ```
 
-or
-
-``` html
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-```
-
 <hr style="margin: 2.5rem 1rem">
 
 ## Blockquotes
 
 Let's keep it simple.
 
-> Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at
-the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My
-instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
-hear it I can sing it for you. <cite>— [HAL 9000](http://en.wikipedia.org/wiki/HAL_9000)</cite>
+<blockquote>
+<p class="mb1">Good afternoon, gentlemen. I am a HAL 9000 computer. I became
+operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992.
+My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
+hear it I can sing it for you.</p>
+<footer><cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></footer>
+</blockquote>
 
 And here’s a bit of trailing text.
 

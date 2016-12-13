@@ -5,7 +5,7 @@ permalink: "test_2/index.html"
 sitemap: false
 ---
 
-<div style="font-family:'Roboto', sans-serif;">
+<div style="font-family: 'Libre Baskerville', serif;">
 
 <p>Below is just about every <abbr title="HyperText Markup Language">HTML</abbr>
 element you might want to use in your blog posts. Check the source code to see
@@ -25,7 +25,7 @@ adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis
 est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis
 suscipit dui. 5<sup>3</sup> = 125.  Water is H<sub>2</sub>O. Nam sit amet sem.
 Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-<cite>The New York Times</cite> (That’s a citation). Underline. Maecenas ornare
+<cite>The New York Times</cite> (That’s a citation). <u>Underline</u>. Maecenas ornare
 tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
 Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi
 imperdiet augue quis tellus. <abbr title="HyperText Markup Language">HTML</abbr>
@@ -131,26 +131,17 @@ class="highlighter-rouge">&lt;pre&gt;</code> block.</p>
 </code></pre>
 </div>
 
-<p>or</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-ua-compatible"</span> <span class="na">content=</span><span class="s">"ie=edge"</span><span class="nt">&gt;</span>
-</code></pre>
-</div>
-
 <hr style="margin: 2.5rem 1rem">
 
 <h2>Blockquotes</h2>
 <p>Let's keep it simple.</p>
 
 <blockquote>
-<p>Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at
-the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My
-instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
-hear it I can sing it for you. <cite>— <a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></p>
+<p class="mb1">Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at
+the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor
+was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can
+sing it for you.</p>
+<footer><cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></footer>
 </blockquote>
 
 <p>And here’s a bit of trailing text.</p>
