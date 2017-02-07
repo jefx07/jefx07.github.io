@@ -6,15 +6,22 @@
 
   @media (min-width: $screen-xs-min) {
     width: $container-xs;
+    max-width: 100%;
   }
+
   @media (min-width: $screen-sm-min) {
     width: $container-sm;
+    max-width: 100%;
   }
+
   @media (min-width: $screen-md-min) {
     width: $container-md;
+    max-width: 100%;
   }
+
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
+    max-width: 100%;
   }
 }
 
@@ -30,43 +37,46 @@
 
 // Base class for every column (requires a column width from below)
 .column {
-//  float: left;
-  min-height: 1px;
+  position: relative;
+  min-height: 1px;  // Prevent collapsing
   padding-right: ($grid-gutter-width / 2);
   padding-left: ($grid-gutter-width / 2);
 }
 
 // Column widths
-@media (min-width:34em) {
-  .one-third, .two-thirds, .one-fourth, .one-half, .three-fourths, .one-fifth, .four-fifths {
-    float: left
-  }
-
+@media (min-width: 768px) {
   .one-third {
+    float: left;
     width: 33.333333%;
   }
 
   .two-thirds {
+    float: left;
     width: 66.666667%;
   }
 
   .one-fourth {
+    float: left;
     width: 25%;
   }
 
   .one-half {
+    float: left;
     width: 50%;
   }
 
   .three-fourths {
+    float: left;
     width: 75%;
   }
 
   .one-fifth {
+    float: left;
     width: 20%;
   }
 
   .four-fifths {
+    float: left;
     width: 80%;
   }
 }
@@ -75,10 +85,5 @@
 // Single column hack
 .single-column {
   padding-right: ($grid-gutter-width / 2);
-  padding-left:  ($grid-gutter-width / 2);
-  max-width: 38em;
-
-//  @media (min-width: $screen-md-min) {
-//    max-width: 38em;
-//  }
+  padding-left: ($grid-gutter-width / 2);
 }

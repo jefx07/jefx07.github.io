@@ -1,11 +1,12 @@
 # General configuration settings
-title: "Jeff’s Blog"
-description: "Welcome to my new (and first ever) blog! It's currently under
-  construction but please check back again soon for updates. Thanks"
-tagline: "An experiment in the blogisphere"
-
-url: https://jefx07.github.io
+title: Jeff’s Blog
+tagline: An experiment in the blogisphere
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: ""
+url: https://jefx07.github.io
 
 # About/contact (for atom news feed)
 author:
@@ -13,30 +14,20 @@ author:
   email: # (optional)
 
 # Enter your Google Analytics tracking ID (e.g. UA-000000-01) to activate the tracking code
-google_analytics_id: UA-87931263-1
-
-# Menu bar links...
-navbar_links:
-  - name: "Home"
-    url: "/"
-
-  - name: "Archives"
-    url: "/blog/archive/"
-
-  - name: "About"
-    url: "/about/"
+#google_analytics_id: UA-87931263-1
 
 # Use the following plug-ins
 gems:
   - jekyll-sitemap
+  - jekyll-octicons
 
 # Permalinks
 permalink: /:year/:title/
 
 # Exclude from site build
 exclude:
-  - "README.md"
-  - "CNAME"
+  - README.md
+  - CNAME
 
 # Processor options
 kramdown:

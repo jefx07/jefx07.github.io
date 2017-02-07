@@ -1,0 +1,29 @@
+// Base class
+//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s or `<ul>`s.
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: inline-block;
+
+  //@include hover-focus {
+  //  text-decoration: none;
+  //}
+
+  // Disabled state lightens text and removes hover/tab effects
+  &.disabled {
+    color: $nav-disabled-link-color;
+
+    @include plain-hover-focus {
+      color: $nav-disabled-link-hover-color;
+      cursor: $cursor-disabled;
+      background-color: $nav-disabled-link-hover-bg;
+    }
+  }
+}

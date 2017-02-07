@@ -8,27 +8,27 @@ samp {
 
 // Inline code
 code {
-  padding: 0.2rem 0.4rem;
+  padding: $code-padding-y $code-padding-x;
   font-size: $code-font-size;
   color: $code-color;
   background-color: $code-bg;
-  border-radius: 0.25rem;
+  @include border-radius($border-radius);
 }
 
 // User input typically entered via keyboard
 kbd {
-  padding: 0.2rem 0.4rem;
+  padding: $code-padding-y $code-padding-x;
   font-size: 90%;
   color: $kbd-color;
   background-color: $kbd-bg;
-  border-radius: 0.2rem;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  @include border-radius($border-radius-sm);
+  @include box-shadow($kbd-box-shadow);
 
   kbd {
     padding: 0;
     font-size: 100%;
     font-weight: bold;
-    box-shadow: none;
+    @include box-shadow(none);
   }
 }
 
@@ -36,8 +36,8 @@ kbd {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: $pre-font-size;
+  margin-bottom: 1rem;
+  font-size: $code-font-size;
   line-height: $line-height-base;
   color: $pre-color;
 

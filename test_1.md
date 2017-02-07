@@ -28,7 +28,7 @@ is strong.** Nullam dignissim convallis est. Quisque aliquam. *This is
 emphasized.* Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125.
 Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at,
 tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a
-citation). <ins>Underline</ins>. Maecenas ornare tortor. Donec sed tellus eget sapien
+citation). Underline. Maecenas ornare tortor. Donec sed tellus eget sapien
 fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo
 vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <abbr
 title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style
@@ -93,7 +93,7 @@ that may not have anything to do with code. For example:
 Beware the Jubjub bird, and shun
     The frumious Bandersnatch!”
 </pre>
-<p>&nbsp;</p>
+<p class="mb0">&nbsp;</p>
 
 ### Code
 
@@ -130,6 +130,6 @@ And here’s a bit of trailing text.
 
 We also have some buttons, if you need them.
 
-<button class="button" type="button">Button 1</button> &nbsp; <button class="button button-green" type="button">Button 2</button>
+<button class="btn" type="button">Button 1</button> &nbsp; <button class="btn btn-green" type="button">Button 2</button>
 
-<p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p>

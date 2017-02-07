@@ -1,19 +1,12 @@
 /*
- * Basic CSS framework.
- *
- * This stylesheet makes use of the Bootstrap css framework
- * (http://getbootstrap.com) as a starting point, stripped down to the
- * essentials and customized to suit.
- *
- * Licensed under MIT
- *
+ * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
+ * Copyright 2011-2016 The Bootstrap Authors
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-// This is the master file
-//
-// Import all files in their intended order for easy mass-inclusion.
-
 // Core variables and mixins
+@import 'custom';
 @import 'variables';
 @import 'mixins';
 
@@ -32,6 +25,8 @@
 @import 'buttons';
 
 // Components
+@import 'animation';
+@import 'nav';
 @import 'navbar';
 @import 'syntax';
 

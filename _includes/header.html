@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
-    <title>{% if page.title == "Home" %}{{ site.title | escape }} &ndash; {{ site.tagline | escape }}{% else %}{{ page.title | escape }} &ndash; {{ site.title | escape }}{% endif %}</title>
+    <title>{% if page.title == "Home" %}{{ site.title | escape }} – {{ site.tagline | escape }}{% else %}{{ page.title | escape }} – {{ site.title | escape }}{% endif %}</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400%7COpen+Sans:300,400,400i,600,700%7CSource+Code+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700%7CRoboto%7CSource+Code+Pro">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
     <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="{{ site.url }}{{ site.baseurl }}/feed.atom">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png" sizes="16x16">
   </head>
-  <body>
-    <a class="skip-navigation" href="#content">Skip to main content</a>
-    <header id="top" class="navbar navbar-dark navbar-bg">
-      <div class="container">
-        <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title | escape }}</a>
-        <nav class="navbar-nav right">
-          {% include nav.html %}
-        </nav>
-      </div>
-    </header>

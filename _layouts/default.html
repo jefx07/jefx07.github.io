@@ -1,5 +1,14 @@
-{% include header.html %}
-    <main id="content" class="container" tabindex="-1">
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+    <a class="skip-navigation" href="#content">Skip to main content</a>
+    {% include nav.html %}
+
+    <main id="content" class="container site-content" tabindex="-1" role="main">
       {{ content }}
     </main>
-{% include footer.html %}
+
+    {% include footer.html %}
+  </body>
+</html>

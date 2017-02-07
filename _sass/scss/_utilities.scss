@@ -1,22 +1,77 @@
+//
 // Clear floats
+//
+
 .clearfix {
   @include clearfix;
 }
 
+
+//
 // Floats
-.right { float: right; }
+//
 
-.left { float: left; }
+.float-left  { @include float-left; }
+.float-right { @include float-right; }
+.float-none  { @include float-none; }
+
+//@media (min-width: 576px) {
+//  .float-sm-left {
+//    float: left !important;
+//  }
+//
+//  .float-sm-right {
+//    float: right !important;
+//  }
+//
+//  .float-sm-none {
+//    float: none !important;
+//  }
+//}
 
 
+@media (min-width: 768px) {
+  .float-md-left {
+    float: left !important;
+  }
+
+  .float-md-right {
+    float: right !important;
+  }
+
+  .float-md-none {
+    float: none !important;
+  }
+}
+
+
+//
+// Responsive visibility utilities
+//
+
+@media (min-width: 576px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+
+//
 // Layout
+//
 
 // Centers content horizontally. Can be used inside or outside the grid.
 .centered {
   display: block;
   float: none;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -24,35 +79,12 @@
 // Screenreaders
 //
 
-// Only display content to screen readers
-//
-// See: http://a11yproject.com/posts/how-to-hide-content/
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  @include sr-only();
 }
 
-// Use in conjunction with .sr-only to only display content when it's focused.
-//
-// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
-//
-// Credit: HTML5 Boilerplate
 .sr-only-focusable {
-  &:active,
-  &:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-  }
+  @include sr-only-focusable();
 }
 
 // Usage as a mixin
@@ -84,41 +116,23 @@
 
 // Alignment
 
-.alignleft {
+.img-left,
+.figure-left {
   float: left;
-}
-
-img.alignleft,
-figure.alignleft {
   margin: 5px 20px 5px 0;
-
-  @media (min-width: 768px) {
-    margin-left: -60px;
-  }
 }
 
-.alignright {
+.img-right,
+.figure-right {
   float: right;
-  }
-
-img.alignright,
-figure.alignright {
   margin: 5px 0 5px 20px;
-
-  @media (min-width: 768px) {
-    margin-right: -60px;
-  }
 }
 
-.aligncenter {
+.img-center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img.aligncenter {
   margin: 5px auto;
 }
+
 
 // Misc
 .hidden {

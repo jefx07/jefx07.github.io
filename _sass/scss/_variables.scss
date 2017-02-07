@@ -1,92 +1,138 @@
+// scss-lint:disable SpaceAfterComma
+
+// Variables
 //
+// Copy settings from this file into the provided `_custom.scss` to override
+// the Bootstrap defaults without modifying key, versioned files.
+
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+
 // Colors
 //
 // Grayscale and brand colors.
 
+// Start with assigning color names to specific hex values.
+$white:  #fff !default;
+$black:  #000 !default;
+$red:    #d9534f !default;
+$orange: #f0ad4e !default;
+$yellow: #ffd500 !default;
+$green:  #5cb85c !default;
+$blue:   #0275d8 !default;
+$teal:   #5bc0de !default;
+$pink:   #ff5b77 !default;
+$purple: #613d7c !default;
+
+// Create grayscale
 $gray-dark:                 #373a3c !default;
 $gray:                      #55595c !default;
-$gray-medium:               #707070 !default;
 $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$gray-01:                   rgba(0, 0, 0, 0.1) !default;
-$gray-02:                   rgba(0, 0, 0, 0.2) !default;
+// Reassign color vars to semantic color scheme
+$brand-primary:             $blue !default;
+$brand-success:             $green !default;
+$brand-info:                $teal !default;
+$brand-warning:             $orange !default;
+$brand-danger:              $red !default;
+$brand-inverse:             $gray-dark !default;
 
-$brand-primary:             #0275d8 !default; // blue
-$brand-success:             #5cb85c !default; // green
-$brand-info:                #5bc0de !default; // light blue
-$brand-warning:             #f0ad4e !default; // orange
-$brand-danger:              #d9534f !default; // red
 
-// Brand colors = 500
-$brand-red:                 #f44336 !default;
-$brand-indigo:              #3f51b5 !default;
-$brand-blue:                #2196f3 !default;
-$brand-cyan:                #00bcd4 !default;
-$brand-teal:                #009688 !default;
-$brand-green:               #4caf50 !default;
-$brand-yellow:              #ffeb3b !default;
-$brand-orange:              #ff9800 !default;
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+
+$spacer:   1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+$border-width: 1px !default;
 
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #fff !default;
-$body-color:                #333 !default;
+$body-bg:                   $white !default;
+$body-color:                $gray-dark !default;
 
 
 // Links
 //
 // Style anchor elements.
-//
-$link-color:                #448aff !default; //#007acc
-$link-hover-color:          #448aff !default;
+
+$link-color:                $brand-primary !default;
 $link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
 
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:    'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif !default;
-$font-family-serif:         Georgia, 'Times New Roman', Times, serif !default;
-$font-family-monospace:     Menlo, Monaco, Consolas, 'Courier New', monospace !default;
-$font-family-base:          $font-family-sans-serif !default;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
 
-// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:            16px !default;
+$font-size-base: 1rem !default;
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
 
-$font-size-base:            1rem !default;
-$line-height-base:          1.5 !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
 
-$font-size-h1:              2.5rem !default;
-$font-size-h2:              2rem !default;
-$font-size-h3:              1.75rem !default;
-$font-size-h4:              1.5rem !default;
-$font-size-h5:              1.25rem !default;
-$font-size-h6:              1rem !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
 
-$headings-font-family:      inherit !default;
-$headings-font-weight:      500 !default;
-$headings-line-height:      1.1 !default;
-$headings-color:            inherit !default;
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
 
-$text-muted:                $gray-light !default;
+$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-family:   inherit !default;
+$headings-font-weight:   500 !default;
+$headings-line-height:   1.1 !default;
+$headings-color:         inherit !default;
 
-$blockquote-color:          #757575 !default;
+$lead-font-size:   1.25rem !default;
+$lead-font-weight: 300 !default;
+
+$text-muted: $gray-light !default;
+
+$blockquote-small-color:  $gray-light !default;
+$blockquote-font-size:    ($font-size-base * 1.25) !default;
+$blockquote-border-color: $gray-lighter !default;
+$blockquote-border-width: .25rem !default;
+
+$hr-border-color: rgba(0,0,0,.1) !default;
+$hr-border-width: $border-width !default;
+
+$mark-padding:     .2em !default;
+$state-warning-bg: #fcf8e3 !default;
+$mark-bg:          $state-warning-bg !default;
+
+$dt-font-weight: $font-weight-bold !default;
 
 
 //Layout
-
-// Grid columns
 //
+// Grid columns
+
 $grid-gutter-width:         30px !default;
 
 // Grid breakpoints
-//
+
 $screen-xs-min:             576px !default;
 $screen-sm-min:             768px !default;
 $screen-md-min:             992px !default;
@@ -109,27 +155,108 @@ $container-lg:              (1110px + $grid-gutter-width) !default;
 
 // Code
 
-$code-color:                #bd4147 !default;
-$code-bg:                   $gray-lightest !default;
-$code-font-size:            90% !default;
+$code-font-size:      90% !default;
+$code-padding-x:      .4rem !default;
+$code-padding-y:      .2rem !default;
+$code-color:          #bd4147 !default;
+$code-bg:             $gray-lightest !default;
 
-$kbd-color:                 #fff !default;
-$kbd-bg:                    #333 !default;
+$kbd-color:           #fff !default;
+$kbd-bg:              #333 !default;
+$kbd-box-shadow:      inset 0 -.1rem 0 rgba(0,0,0,.25) !default;
 
-$pre-color:                 $gray-dark !default;
-$pre-bg:                    #f5f6f8 !default;
-$pre-font-size:             0.9375rem !default;
-$pre-border-color:          darken($pre-bg, 4%) !default;
+$pre-bg:              $gray-lightest !default;
+$pre-color:           $gray-dark !default;
+$pre-border-color:    #ccc !default;
+
+
+// Components
+
+$border-radius:       .25rem !default;
+$border-radius-lg:    .3rem !default;
+$border-radius-sm:    .2rem !default;
+
+$btn-border-radius:   $border-radius !default;
 
 
 // Navbar
 
-$navbar-dark-color:             rgba(255, 255, 255, 0.5) !default;
-$navbar-dark-hover-color:       rgba(255, 255, 255, 0.75) !default;
-$navbar-dark-active-color:      rgba(255, 255, 255, 1) !default;
-$navbar-dark-border-color:      rgba(255, 255, 255, 0.25) !default;
+$navbar-padding-x: 1rem !default;    // $spacer !default;
+$navbar-padding-y: .5rem !default;  // ($spacer / 2) !default;
 
-$navbar-light-color:            rgba(0, 0, 0, 0.3) !default;
-$navbar-light-hover-color:      rgba(0, 0, 0, 0.6) !default;
-$navbar-light-active-color:     rgba(0, 0, 0, 0.8) !default;
-$navbar-light-border-color:     rgba(0, 0, 0, 0.15) !default;
+$navbar-brand-padding-y:        .25rem !default;
+
+$navbar-toggler-padding-x:      .75rem !default;
+$navbar-toggler-padding-y:      .5rem !default;
+$navbar-toggler-border-radius:  $btn-border-radius !default;
+
+$navbar-dark-color:             rgba(255,255,255,.5) !default;
+$navbar-dark-hover-color:       rgba(255,255,255,.75) !default;
+$navbar-dark-active-color:      rgba(255,255,255,1) !default;
+$navbar-dark-disabled-color:    rgba(255,255,255,.25) !default;
+$navbar-dark-border-color:      rgba(255,255,255,.25) !default;
+$navbar-dark-toggler-border:    rgba(255,255,255,.1) !default;
+
+$navbar-light-color:            rgba(0,0,0,.5) !default;
+$navbar-light-hover-color:      rgba(0,0,0,.7) !default;
+$navbar-light-active-color:     rgba(0,0,0,.9) !default;
+$navbar-light-disabled-color:   rgba(0,0,0,.3) !default;
+$navbar-light-border-color:     rgba(0,0,0,.15) !default;
+$navbar-light-toggler-border:   rgba(0,0,0,.1) !default;
+
+
+// Navs
+
+$nav-disabled-link-color:       $gray-light !default;
+$nav-disabled-link-hover-color: $gray-light !default;
+$nav-disabled-link-hover-bg:    transparent !default;
+
+
+// Buttons
+
+$btn-padding-x:                  1rem !default;
+$btn-padding-y:                  .5rem !default;
+$btn-line-height:                1.25 !default;
+$btn-font-weight:                $font-weight-normal !default;
+
+$btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
+$btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
+$btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
+
+$btn-transition:                 all .2s ease-in-out !default;
+
+$btn-primary-color:              $white !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             $btn-primary-bg !default;
+
+$btn-success-color:              $white !default;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             $btn-success-bg !default;
+
+
+// Forms
+
+$input-padding-x:                .75rem !default;
+$input-padding-y:                .5rem !default;
+$input-line-height:              1.25 !default;
+
+$input-bg:                       #fff !default;
+$input-bg-disabled:              $gray-lighter !default;
+
+$input-border-color:             rgba(0,0,0,.15) !default;
+$input-color:                    $gray !default;
+$input-btn-border-width:         $border-width !default; // For form controls and buttons
+$input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
+
+$input-border-radius:            $border-radius !default;
+
+$input-bg-focus:                 $input-bg !default;
+$input-border-focus:             #66afe9 !default;
+$input-box-shadow-focus:         $input-box-shadow, 0 0 8px rgba($input-border-focus,.6) !default;
+$input-color-focus:              $input-color !default;
+
+$input-color-placeholder:        #999 !default;
+
+$form-group-margin-bottom:       $spacer-y !default;
+
+$cursor-disabled:                not-allowed !default;

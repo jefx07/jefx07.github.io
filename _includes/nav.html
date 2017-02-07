@@ -1,7 +1,24 @@
-{% for navbar_link in site.navbar_links %}
-  {% if navbar_link.name == page.title %}
-  <a class="nav-link active" href="{{ site.baseurl }}{{ navbar_link.url }}">{{ navbar_link.name }}<span class="sr-only">(current)</span></a>
-  {% else %}
-  <a class="nav-link" href="{{ site.baseurl }}{{ navbar_link.url }}">{{ navbar_link.name }}</a>
-  {% endif %}
-{% endfor %}
+<header id="top" class="navbar navbar-full navbar-dark" style="background-color:#28aadc" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggler float-right hidden-md-up collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            {% octicon grabber height:32 %}
+          </button>
+          <a class="navbar-brand" href="{{ site.baseurl }}/">
+            {{ site.title | escape }}
+          </a>
+        </div>
+        <nav id="main-nav" class="collapse navbar-toggleable">
+          <ul class="nav navbar-nav float-md-right">
+            {% if page.title == 'Home' %}<li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/">Home <span class="sr-only">(current)</span></a></li>
+            {% else %}<li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/">Home</a></li>
+            {% endif %}
+            {% if page.title == 'Archives' %}<li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/blog/archive/">Archives <span class="sr-only">(current)</span></a></li>
+            {% else %}<li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/blog/archive/">Archives</a></li>
+            {% endif %}
+            {% if page.title == 'About' %}<li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/about/">About <span class="sr-only">(current)</span></a></li>
+            {% else %}<li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/about/">About</a></li>{% endif %}
+          </ul>
+        </nav>
+      </div>
+    </header>

@@ -1,29 +1,27 @@
 ---
 layout: default
 title: Tags
+description: "The Tags page includes all Tags for each post."
 ---
 
-<div class="row">
-  <div class="single-column centered">
-    <h1 class="page-title">{{ page.title }}:</h1>
-    <div class="post-tags">
-      {% capture tags %}
-      {% for tag in site.tags %}
-      {{ tag[0] }}
-      {% endfor %}
-      {% endcapture %}
-      {% assign sortedtags = tags | split:' ' | sort %}
+<h1 class="page-title">{{ page.title }}:</h1>
 
-      {% for tag in sortedtags %}
-      <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
-      <ul>
-        {% for post in site.tags[tag] %}
-        <li><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-          <span class="post-date">{{ post.date | date_to_long_string }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endfor %}
-    </div>
-  </div>
+<div class="post-tags">
+  {% capture tags %}
+  {% for tag in site.tags %}
+  {{ tag[0] }}
+  {% endfor %}
+  {% endcapture %}
+  {% assign sortedtags = tags | split:' ' | sort %}
+
+  {% for tag in sortedtags %}
+  <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
+  <ul>
+    {% for post in site.tags[tag] %}
+    <li><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+      <span class="post-date">{{ post.date | date_to_long_string }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
 </div>

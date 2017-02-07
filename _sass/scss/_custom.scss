@@ -1,0 +1,69 @@
+// scss-lint:disable SpaceAfterComma
+
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Colors
+//
+$gray-dark:         #373a3c;
+$gray-medium:       #71767a;
+$gray-lightest:     #f7f7f9;
+$gray-01:           rgba(0,0,0,.1);
+$gray-02:           rgba(0,0,0,.2);
+
+
+// Body
+//
+//$body-color:        #424647;
+
+// Links
+//
+$link-color:        #448aff;
+$link-hover-color:  #448aff;
+
+
+// Typography
+//
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-monospace:  'Source Code Pro', monospace;
+
+$font-size-base:            1rem;
+
+$headings-margin-bottom:    .75rem;
+
+$mark-bg:                   #ffff80;
+
+$blockquote-font-size:      ($font-size-base * 1.125);
+$blockquote-border-width:   .3125rem;
+
+
+// Code
+//
+$code-font-size:   .9375rem;
+$code-padding-x:   4px;
+$code-padding-y:   2px;
+//$code-color:       $gray-dark;
+
+$pre-bg:           $gray-lightest;
+$pre-border-color: darken($pre-bg, 7%);
+$pre-font-size:    .9375em;
+
+
+// Border-radius
+//
+$border-radius:       .125rem;
+
+
+// Navbar
+//
+$navbar-padding-y:          .625rem;
+$navbar-brand-padding-y:    .3125rem;
+$navbar-toggler-padding-y:  0;
+
+$navbar-dark-link-border:   rgba(255,255,255,.1);
+
+// Buttons
+//
+$btn-line-height: 18px;

@@ -5,15 +5,17 @@
 
 .navbar {
   position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  padding: $navbar-padding-y $navbar-padding-x;
   @include clearfix;
+}
 
-  @media (min-width:34em) {
-    text-align: left;
-  }
+
+// Navbar alignment options
+//
+
+// A static, full width modifier with no rounded corners.
+.navbar-full {
+  z-index: 1000;
 }
 
 
@@ -22,127 +24,173 @@
 //
 
 .navbar-brand {
-  display: inline-block;
-  font-size: 1.25rem;
+  float: left;
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+  margin-right: 1rem;
+  font-size: $font-size-lg;
+  line-height: inherit;
 
-  &:hover,
-  &:focus {
-    //text-decoration: none;
-    box-shadow: none;
-  }
-
-  > img {
-    display: block;
-  }
-
-  @media (min-width: 34em) {
-    float: left;
-  }
+  //@include hover-focus {
+  //  text-decoration: none;
+  //}
 }
 
 
+// Navbar toggle
 //
+// Custom button for toggling the `.navbar-collapse`, powered by the collapse
+// Bootstrap JavaScript plugin.
+
+.navbar-toggler {
+  width: 2.5em;
+  height: 2em;
+  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  font-size: $font-size-lg;
+  line-height: 1;
+  //background-color: transparent;
+  background: transparent no-repeat center center;
+  background-size: 24px 24px;
+  border: $border-width solid transparent;
+  @include border-radius($navbar-toggler-border-radius);
+
+  //@include hover-focus {
+  //  text-decoration: none;
+  //}
+}
+
+
 // Navigation
 //
+// Custom navbar navigation built on the base `.nav` styles.
 
 .navbar-nav {
-  margin-top: 1rem;
-  padding-top: 1rem;
-
-  @media (min-width: 34em) {
-    margin-top: 0.25rem;
-    padding-top: 0;
+  .nav-item {
+    float: left;
   }
-}
 
-@media (max-width: 34em) {
-  .navbar-nav.right {
-    float: none;
+  .nav-link {
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    + .nav-link {
+      margin-left: 1rem;
+    }
   }
-}
 
-.nav-link {
-  display: inline-block;
-  font-weight: 500;
-
-  &:hover,
-  &:focus {
-    //text-decoration: none;
-    box-shadow: none;
+  .nav-item + .nav-item {
+    margin-left: 1rem;
   }
-}
-
-.nav-link:not(:last-child) {
-  margin-right: 1.25rem;
 }
 
 
 // Dark links against a light background
 .navbar-light {
-  .navbar-brand {
+  .navbar-brand,
+  .navbar-toggler {
     color: $navbar-light-active-color;
 
-    &:focus,
-    &:hover {
+    @include hover-focus {
       color: $navbar-light-active-color;
     }
   }
 
   .navbar-nav {
-    @media (max-width: 34em) {
-      border-top: 1px solid $navbar-light-border-color;
+    .nav-link {
+      color: $navbar-light-color;
+
+      @include hover-focus {
+        color: $navbar-light-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .active > .nav-link,
+    .nav-link.active {
+      @include plain-hover-focus {
+        color: $navbar-light-active-color;
+      }
     }
   }
 
-  .nav-link {
-    color: $navbar-light-color;
-
-    &:focus,
-    &:hover {
-      color: $navbar-light-hover-color;
-    }
-  }
-
-  .nav-link.active {
-    &,
-    &:focus,
-    &:hover {
-      color: $navbar-light-active-color;
-    }
+  .navbar-toggler {
+    //background-image: $navbar-light-toggler-bg;
+    border-color: $navbar-light-toggler-border;
   }
 }
 
+
 // White links against a dark background
 .navbar-dark {
-  .navbar-brand {
+  .navbar-brand,
+  .navbar-toggler {
     color: $navbar-dark-active-color;
 
-    &:focus,
-    &:hover {
+    @include hover-focus {
       color: $navbar-dark-active-color;
     }
   }
 
   .navbar-nav {
-    @media (max-width: 34em) {
-      border-top: 1px solid $navbar-dark-border-color;
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .active > .nav-link,
+    .nav-link.active {
+      @include plain-hover-focus {
+        color: $navbar-dark-active-color;
+      }
     }
   }
 
-  .nav-link {
-    color: $navbar-dark-color;
+  //.navbar-toggler {
+  //  background-image: $navbar-dark-toggler-bg;
+  //  border-color: $navbar-dark-toggler-border;
+  //}
+}
 
-    &:focus,
-    &:hover {
-      color: $navbar-dark-hover-color;
+
+// Navbar toggleable
+//
+// Custom override for collapse plugin in navbar.
+
+// Placed at the end of the file so it can override some CSS properties
+.navbar-toggleable {
+  @include clearfix;
+
+  @media (max-width: 767px) {
+    .navbar-brand {
+      display: block;
+      float: none;
+      margin-top: .5rem;
+      margin-right: 0;
+    }
+
+    .navbar-nav {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+
+      .nav-item {
+        float: none;
+        margin-left: 0;
+      }
     }
   }
 
-  .nav-link.active {
-    &,
-    &:focus,
-    &:hover {
-      color: $navbar-dark-active-color;
-    }
+  @media (min-width: 768px) {
+    display: block !important;
   }
 }
