@@ -14,7 +14,7 @@ author:
   email: # (optional)
 
 # Enter your Google Analytics tracking ID (e.g. UA-000000-01) to activate the tracking code
-#google_analytics_id: UA-87931263-1
+google_analytics_id: UA-87931263-1
 
 # Use the following plug-ins
 gems:
