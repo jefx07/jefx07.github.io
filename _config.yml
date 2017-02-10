@@ -19,7 +19,6 @@ google_analytics_id: UA-87931263-1
 # Use the following plug-ins
 gems:
   - jekyll-sitemap
-  - jekyll-octicons
 
 # Permalinks
 permalink: /:year/:title/
