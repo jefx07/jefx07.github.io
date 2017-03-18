@@ -181,8 +181,8 @@ $btn-border-radius:   $border-radius !default;
 
 // Navbar
 
-$navbar-padding-x: 1rem !default;    // $spacer !default;
-$navbar-padding-y: .5rem !default;  // ($spacer / 2) !default;
+$navbar-padding-x: $spacer !default;
+$navbar-padding-y: ($spacer / 2) !default;
 
 $navbar-brand-padding-y:        .25rem !default;
 

@@ -15,20 +15,6 @@
 .float-right { @include float-right; }
 .float-none  { @include float-none; }
 
-//@media (min-width: 576px) {
-//  .float-sm-left {
-//    float: left !important;
-//  }
-//
-//  .float-sm-right {
-//    float: right !important;
-//  }
-//
-//  .float-sm-none {
-//    float: none !important;
-//  }
-//}
-
 
 @media (min-width: 768px) {
   .float-md-left {
@@ -67,12 +53,12 @@
 //
 
 // Centers content horizontally. Can be used inside or outside the grid.
-.centered {
-  display: block;
-  float: none;
-  margin-right: auto;
-  margin-left: auto;
-}
+//.centered {
+//  display: block;
+//  float: none;
+//  margin-right: auto;
+//  margin-left: auto;
+//}
 
 
 //

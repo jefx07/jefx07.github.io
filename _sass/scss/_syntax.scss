@@ -1,11 +1,16 @@
 // scss-lint:disable PropertySortOrder
 
 .highlight {
-  padding: 1.25rem;
-  margin: 1.25rem 0;
+  padding: 1rem;
+  margin: 1.5rem -15px;
   background-color: $pre-bg;
-  border: solid 1px $pre-border-color;
-  @include border-radius($border-radius);
+
+  @media (min-width: 576px) {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    @include border-radius($border-radius * 2);
+  }
 }
 
 .highlight {
