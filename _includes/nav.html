@@ -4,20 +4,20 @@
           <button class="navbar-toggler float-right hidden-md-up collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="octicon" version="1.1"  width="24" height="24" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
           </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">
+          <a class="navbar-brand" href="{{ '/' | relative_url }}">
             {{ site.title | escape }}
           </a>
         </div>
         <nav id="main-nav" class="collapse navbar-toggleable">
           <ul class="nav navbar-nav float-md-right">
-            {% if page.title == 'Home' %}<li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/">Home <span class="sr-only">(current)</span></a></li>
-            {% else %}<li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/">Home</a></li>
+            {% if page.title == 'Home' %}<li class="nav-item active"><a class="nav-link" href="{{ '/' | relative_url }}">Home <span class="sr-only">(current)</span></a></li>
+            {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url}} ">Home</a></li>
             {% endif %}
-            {% if page.title == 'Archives' %}<li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/blog/archive/">Archives <span class="sr-only">(current)</span></a></li>
-            {% else %}<li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/blog/archive/">Archives</a></li>
+            {% if page.title == 'Archives' %}<li class="nav-item active"><a class="nav-link" href="{{ '/blog/archive/' | relative_url }}">Archives <span class="sr-only">(current)</span></a></li>
+            {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/blog/archive/' | relative_url }}">Archives</a></li>
             {% endif %}
-            {% if page.title == 'About' %}<li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/about/">About <span class="sr-only">(current)</span></a></li>
-            {% else %}<li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/about/">About</a></li>{% endif %}
+            {% if page.title == 'About' %}<li class="nav-item active"><a class="nav-link" href="{{ '/about/' | relative_url }}">About <span class="sr-only">(current)</span></a></li>
+            {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About</a></li>{% endif %}
           </ul>
         </nav>
       </div>
