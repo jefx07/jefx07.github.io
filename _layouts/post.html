@@ -21,7 +21,7 @@ layout: default
   <div class="row">
     {% if page.previous %}
     <div class="nav-previous one-half column">
-      <a href="{{ page.previous.url | prepend:site.baseurl }}" rel="prev">
+      <a href="{{ page.previous.url | relative_url }}" rel="prev">
         <span class="meta-nav" aria-hidden="true">Previous</span>
         <span class="sr-only">Previous post:</span>
         <span class="post-title">{{ page.previous.title | escape }}</span>
@@ -30,7 +30,7 @@ layout: default
     {% endif %}
     {% if page.next %}
     <div class="nav-next one-half column">
-      <a href="{{ page.next.url | prepend:site.baseurl }}" rel="next">
+      <a href="{{ page.next.url | relative_url }}" rel="next">
         <span class="meta-nav" aria-hidden="true">Next</span>
         <span class="sr-only">Next post:</span>
         <span class="post-title">{{ page.next.title | escape }}</span>
