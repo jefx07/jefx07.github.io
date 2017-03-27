@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Archives
-description: "This Achive page lists all posts on the blog, in date order."
+description: "Archive of posts listed in chronological order for my blog."
 ---
 
 <h1 class="page-title">{{ page.title }}</h1>
@@ -15,7 +15,7 @@ description: "This Achive page lists all posts on the blog, in date order."
   <h3>{{ post_month_year }}</h3>
   <ul>
   {% endif %}
-    <li><a href="{{ post.url | prepend:site.baseurl }}" class="post-title-archive">{{ post.title }}</a>
+    <li><a href="{{ post.url | relative_url }}" class="post-title-archive">{{ post.title }}</a>
         <span class="post-date">{{ post.date | date_to_long_string }}</span>
     </li>
   {% endfor %}
