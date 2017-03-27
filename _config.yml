@@ -2,8 +2,8 @@
 title: Jeff’s Blog
 tagline: An experiment in the blogisphere
 description: > # this means to ignore newlines until "baseurl:"
-  Just a blog about things I've discovered that are of interest, plus it also
-  serves as a reminder for future reference.
+  Just a blog about things I've discovered, mostly it serves as a reminder
+  for my own future reference.
 baseurl: ""
 url: https://jefx07.github.io
 
@@ -14,6 +14,7 @@ author:
 
 # Enter your Google Analytics tracking ID (e.g. UA-000000-01) to activate the tracking code
 google_analytics_id: UA-87931263-1
+google_verify: HXOLJ6CE_xR58FLhhX2Jwkh8dRdxVXV3Yqui4WCmLs0
 
 # Use the following plug-ins
 gems:
