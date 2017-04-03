@@ -132,4 +132,9 @@ We also have some buttons, if you need them.
 
 <button class="btn" type="button">Button 1</button> &nbsp; <button class="btn btn-green" type="button">Button 2</button>
 
-<p>&nbsp;</p>
+<div class="float-right">
+  <a class="back-to-top-link" href="#top">
+    Back to Top
+    <svg class="octicon octicon-chevron-up" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"/></svg>
+  </a>
+</div>
