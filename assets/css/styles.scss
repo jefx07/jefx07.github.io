@@ -600,13 +600,15 @@ ul {
 
 // Back to Top
 a.back-to-top-link {
+  border-bottom: 0;
+}
+
+.back-to-top-link {
   position: relative;
   top: 1.5rem;
   display: inline-block;
   color: $navbar-bg-color;
-  border-bottom: 0;
   border-radius: 50%;
-  -webkit-tap-highlight-color: transparent;
 
   @media (min-width: 576px) {
     top: 1rem;
@@ -616,7 +618,7 @@ a.back-to-top-link {
     display: none;
   }
 
-  @include hover-focus {
+  @include focus {
     background: rgba(51,181,229,.2);
     transition: background .2s;
   }
