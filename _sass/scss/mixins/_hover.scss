@@ -1,3 +1,5 @@
+// Hover, focus, active states
+
 @mixin hover {
   &:hover { @content }
 }
