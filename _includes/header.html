@@ -10,6 +10,8 @@
     {% if page.title == "Home" and site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
     <meta name="robots" content="noodp"/>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    {% if page.title == "Home" %}<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/jefx07.github.io\/","name":"Jeff\u2019s Blog","potentialAction":{"@type":"SearchAction","target":"https:\/\/jefx07.github.io\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/jefx07.github.io\/","sameAs":[],"@id":"#person","name":"Jeff Weston"}</script>{% endif %}
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ '/feed.xml' | relative_url }}">
     <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="{{ '/feed.atom' | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700%7CRoboto%7CSource+Code+Pro">
