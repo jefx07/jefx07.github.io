@@ -70,10 +70,12 @@ body {
   background-color: $body-bg; // 2
 }
 
+// Add the correct display in IE 9-.
+//
+
 article, aside, footer, header, main, nav, section {
   display: block;
 }
-
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
 // This prevents an unwanted focus outline from appearing around elements that
@@ -261,6 +263,13 @@ pre {
 figure {
   // Apply a consistent margin strategy (matches our type styles).
   margin: 0 0 1rem;
+}
+
+// Add the correct display in IE 9-.
+//
+
+figcaption, figure {
+  display: block;
 }
 
 
