@@ -12,9 +12,9 @@
 .nav-link {
   display: inline-block;
 
-  //@include hover-focus {
-  //  text-decoration: none;
-  //}
+  @include hover-focus {
+    text-decoration: none;
+  }
 
   // Disabled state lightens text and removes hover/tab effects
   &.disabled {

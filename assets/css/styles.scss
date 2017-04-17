@@ -44,7 +44,7 @@
   color: $body-color;
 
   @include hover-focus {
-    border-bottom: 0;
+    text-decoration: none;
     opacity: .54;
   }
 }
@@ -123,50 +123,32 @@ h6 {
   font-family: 'Roboto', sans-serif;
   //background-color: #28aadc;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-  @media (min-width: 768px) {
+  @media (min-width: $grid-float-breakpoint) {
     padding: .75rem 0;
   }
 }
 
-// for medium (768px) split point
-@media (max-width: 767px) {
+// custom override for small tablets
+@media (max-width: $grid-float-breakpoint-max) {
   .navbar > .container {
     width: 100%;
-  }
-}
-
-.navbar-header {
-  @include clearfix;
-
-  @media (min-width: 768px) {
-    float: left;
   }
 }
 
 .navbar-brand {
   letter-spacing: .4px;
 
-  @include hover-focus {
-    border-bottom: 0;
-  }
-
-  @media (max-width: 767px) {
+  @media (max-width: $grid-float-breakpoint-max) {
     margin-left: .25rem;
   }
 }
 
 .navbar-dark .navbar-brand {
-
   @include hover {
     color: rgba(255,255,255,.7);
   }
-}
-
-.navbar-brand,
-.navbar-nav,
-.navbar-toggler {
-  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar-toggler {
@@ -193,19 +175,15 @@ h6 {
 
 .nav-link {
   letter-spacing: .2px;
-
-  @include hover-focus {
-    border-bottom: 0;
-  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $grid-float-breakpoint-max) {
   .navbar-nav .nav-link {
     padding: .5rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $grid-float-breakpoint-max) {
   .navbar-toggleable .navbar-nav {
     margin-top: .75rem;
   }
@@ -224,8 +202,8 @@ h6 {
   padding: 12px 16px;
   font-size: 14px;
   color: $link-color;
+  text-decoration: none;
   background-color: $gray-lighter;
-  border-bottom: 0;
   border-radius: $border-radius;
   outline: 0;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
@@ -297,7 +275,7 @@ h6 {
   padding: 1rem;
 
   @include hover-focus {
-    border-bottom: 0;
+    text-decoration: none;
   }
 }
 
@@ -369,10 +347,10 @@ h6 {
   text-align: center;
   background-color: #ffb74d;
   border-radius: 50%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   @include hover-focus {
     background-color: #ffa726;
-    border-bottom: 0;
   }
 }
 
@@ -506,11 +484,6 @@ h2.entry-title {
 
 // miscellaneous
 //
-a {
-  @include hover-focus {
-    border-bottom: 1px solid;
-  }
-}
 
 blockquote {
   margin: 1.25rem 0;
@@ -566,10 +539,6 @@ kbd {
   }
 }
 
-.btn {
-  margin: 0 0 .5rem;
-}
-
 
 // Quick spacing
 .mb0 {
@@ -591,10 +560,6 @@ kbd {
 ol,
 ul {
   padding-left: 2rem;
-}
-
-.test-1 {
-  font-family: 'Roboto', sans-serif;
 }
 
 
