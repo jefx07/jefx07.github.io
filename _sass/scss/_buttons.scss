@@ -58,10 +58,10 @@ fieldset[disabled] a.btn {
 // Alternate buttons
 //
 
-.btn {
+.btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
 
-.btn-green {
+.btn-alternate {
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
 }

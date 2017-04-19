@@ -130,7 +130,7 @@ And here’s a bit of trailing text.
 
 We also have some buttons, if you need them.
 
-<button class="btn" type="button">Button 1</button> &nbsp; <button class="btn btn-green" type="button">Button 2</button>
+<button class="btn btn-primary" type="button">Button 1</button> &nbsp; <button class="btn btn-alternate" type="button">Button 2</button>
 
 <div class="float-right">
   <a href="#top" class="back-to-top-link" title="Back to top">
