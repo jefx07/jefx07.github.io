@@ -1,3 +1,5 @@
+// scss-lint:disable SpaceAfterComma
+
 // Base class
 //
 
@@ -6,7 +8,15 @@
 .navbar {
   position: relative;
   padding: $navbar-padding-y $navbar-padding-x;
+  font-family: $navbar-font-family;
+  background-color: $navbar-bg-color;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   @include clearfix;
+
+  @media (min-width: $grid-float-breakpoint) {
+    padding: .75rem 0;
+  }
 }
 
 
@@ -44,6 +54,7 @@
   margin-right: 1rem;
   font-size: $font-size-lg;
   line-height: inherit;
+  letter-spacing: .4px;
 
   @include hover-focus {
     text-decoration: none;
@@ -57,15 +68,22 @@
 // Bootstrap JavaScript plugin.
 
 .navbar-toggler {
-  width: 2.5em;
-  height: 2em;
-  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 2.4em;
+  height: 2.1em;
+  padding: $navbar-toggler-padding-y;
   font-size: $font-size-lg;
   line-height: 1;
   background: transparent no-repeat center center;
   background-size: 24px 24px;
   border: $border-width solid transparent;
   @include border-radius($navbar-toggler-border-radius);
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 
@@ -86,6 +104,7 @@
     display: block;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    letter-spacing: .2px;
 
     + .nav-link {
       margin-left: 1rem;
@@ -101,7 +120,7 @@
     color: $navbar-light-active-color;
 
     @include hover-focus {
-      color: $navbar-light-active-color;
+      color: $navbar-light-hover-color;
     }
   }
 
@@ -127,8 +146,12 @@
   }
 
   .navbar-toggler {
-    //background-image: $navbar-light-toggler-bg;
-    //border-color: $navbar-light-toggler-border;
+    background-image: $navbar-light-toggler-bg;
+    border-color: $navbar-light-toggler-border;
+
+    &.collapsed {
+      background-image: $navbar-light-toggler-bg-collapsed;
+    }
   }
 }
 
@@ -140,7 +163,7 @@
     color: $navbar-dark-active-color;
 
     @include hover-focus {
-      color: $navbar-dark-active-color;
+      color: $navbar-dark-hover-color;
     }
   }
 
@@ -165,10 +188,14 @@
     }
   }
 
-  //.navbar-toggler {
-  //  background-image: $navbar-dark-toggler-bg;
-  //  border-color: $navbar-dark-toggler-border;
-  //}
+  .navbar-toggler {
+    background-image: $navbar-dark-toggler-bg;
+    border-color: $navbar-dark-toggler-border;
+
+    &.collapsed {
+      background-image: $navbar-dark-toggler-bg-collapsed;
+    }
+  }
 }
 
 

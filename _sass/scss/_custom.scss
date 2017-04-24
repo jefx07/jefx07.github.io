@@ -14,10 +14,6 @@ $gray-01:           rgba(0,0,0,.1);
 $gray-02:           rgba(0,0,0,.2);
 
 
-// Body
-//
-//$body-color:        #424647;
-
 // Links
 //
 $link-color:        #448aff;
@@ -36,6 +32,7 @@ $headings-margin-bottom:    .75rem;
 $mark-bg:                   #ffff80;
 
 $blockquote-font-size:      ($font-size-base * 1.125);
+$blockquote-footer-font-size: .9375rem;
 $blockquote-border-width:   .3125rem;
 
 
@@ -44,7 +41,6 @@ $blockquote-border-width:   .3125rem;
 $code-font-size:   .9375rem;
 $code-padding-x:   4px;
 $code-padding-y:   2px;
-//$code-color:       $gray-dark;
 
 $pre-bg:           $gray-lightest;
 $pre-border-color: darken($pre-bg, 7%);
@@ -58,11 +54,14 @@ $border-radius:       .125rem;
 
 // Navbar
 //
-$navbar-padding-y:          .625rem;
+$navbar-padding-y:          .5rem;
+$navbar-padding-x:          0;
 $navbar-brand-padding-y:    .3125rem;
 $navbar-toggler-padding-y:  0;
 
+$navbar-font-family:        'Roboto', sans-serif;
 $navbar-bg-color:           #28aadc;
+
 
 // Buttons
 //

@@ -17,3 +17,12 @@
   font-style: italic;
   color: $gray-light;
 }
+
+
+//
+// Make images responsive
+//
+
+img {
+  @include img-fluid();
+}

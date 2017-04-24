@@ -141,6 +141,11 @@ dl {
   margin-bottom: 1rem;
 }
 
+ol,
+ul {
+  padding-left: 2rem; // Opinionated
+}
+
 ol ol,
 ul ul,
 ol ul,

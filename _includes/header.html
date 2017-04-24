@@ -1,9 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>{% if page.title == "Home" %}{{ site.title | escape }} – {{ site.tagline | escape }}{% else %}{{ page.title | escape }} – {{ site.title | escape }}{% endif %}</title>
-
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
     {% if page.title == "Home" and site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
