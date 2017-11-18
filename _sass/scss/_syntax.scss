@@ -1,6 +1,7 @@
 // scss-lint:disable PropertySortOrder
 
-.highlight {
+pre.highlight,
+.highlighter-rouge pre.highlight {
   padding: 1rem;
   margin: 1.5rem -15px;
   background-color: $pre-bg;
