@@ -14,9 +14,9 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   @include clearfix;
 
-  @media (min-width: $grid-float-breakpoint) {
-    padding: .75rem 0;
-  }
+  //@media (min-width: $grid-float-breakpoint) {
+  //  padding: .75rem 0;
+  //}
 }
 
 
