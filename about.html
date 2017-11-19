@@ -12,15 +12,21 @@ in one place and will show up in your site navigation.</p>
 visitors. As a new user, you should delete this page and create new pages for your
 content. Have fun!</p>
 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.</p>
+
 <p>&nbsp;</p>
 
 <h3 id="contact">Contact</h3>
 
+{% comment %}
 <p>&nbsp;</p>
 <p class="entry-footer">[ contact form to go here...]</p>
 <div style="width:auto; height:180px"></div>
+{% endcomment %}
 
-{% comment %}
 <p>If you wish to contact me about something on this site you can send me an
 email from the contact form below.</p>
 
@@ -39,7 +45,7 @@ straight away please be patient. Thanks!</p>
     <textarea class="form-control" id="inputMessage" name="message" placeholder="Your message..." rows="5"></textarea>
   </div>
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
-  <!-- <input type="hidden" name="_next" value="//site.io/thanks.html"> -->
+  <!-- <input type="hidden" name="_next" value="{{ '/thanks/' | absolute_url }}"> -->
   <button class="button" type="submit">Send</button>
 </form>
-{% endcomment %}
+
