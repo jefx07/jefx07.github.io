@@ -132,8 +132,40 @@ We also have some buttons, if you need them.
 
 <button class="btn btn-primary" type="button">Button 1</button> &nbsp; <button class="btn btn-alternate" type="button">Button 2</button>
 
+<hr style="margin: 2.5rem 1rem">
+
+## Forms
+
+<form class="formspree" method="POST" action="https://formspree.io/YOUREMAILHERE">
+  <div class="form-group">
+    <label class="sr-only" for="inputName">Name</label>
+    <input class="form-control" type="text" name="name" id="inputName" placeholder="Your name">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="inputEmail">Email address</label>
+    <input class="form-control" type="email" name="_replyto" id="inputEmail" placeholder="Your email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="inputMessage">Message</label>
+    <textarea class="form-control" name="message" id="inputMessage" placeholder="Enter your message here..." rows="5"></textarea>
+  </div>
+
+  <input type="hidden" name="_subject" value="New submission!">
+  <input type="hidden" name="_format" value="plain">
+  <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
+  <button class="btn btn-primary" type="submit">Send</button>
+</form>
+
+
+<div class="clearfix">
+  <p>&nbsp;</p>
+</div>
+<hr style="margin: 2.5rem 1rem">
+
 <div class="float-right">
   <a href="#top" class="back-to-top-link" title="Back to top">
     <svg class="icon-up" viewBox="0 0 24 24" version="1.1" width="24" height="24" aria-label="Back to top" role="img"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
   </a>
 </div>
+
+
