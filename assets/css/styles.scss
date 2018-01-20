@@ -505,11 +505,16 @@ body {
 }
 
 .formspree {
-  max-width: 22rem;
-  margin: 0 auto;
+  max-width: 24rem;
+  margin: 3rem auto;
+
+  .btn {
+    float: right;
+  }
 }
 
 .form-control {
+  padding: .75rem;
   font-size: .875rem;
 }
 
