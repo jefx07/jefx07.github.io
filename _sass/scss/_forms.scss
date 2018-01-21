@@ -7,18 +7,16 @@
 .form-control {
   display: block;
   width: 100%;
-  padding: $input-padding-y $input-padding-x;
-  font-size: $font-size-base;
+  padding: $input-padding-x;
+  font-size: $font-size-sm;
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
-  // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214.
-  background-image: none;
   background-clip: padding-box;
   border: $input-btn-border-width solid $input-border-color;
   border-radius: $input-border-radius;
   @include box-shadow($input-box-shadow);
-  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+  @include transition($input-transition);
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
