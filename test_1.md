@@ -143,7 +143,7 @@ We also have some buttons, if you need them.
   </div>
   <div class="form-group">
     <label class="sr-only" for="inputEmail">Email address</label>
-    <input class="form-control" type="email" name="_replyto" id="inputEmail" placeholder="Your email">
+    <input class="form-control" type="email" name="_replyto" id="inputEmail" placeholder="Your email" required>
   </div>
   <div class="form-group">
     <label class="sr-only" for="inputMessage">Message</label>
@@ -156,7 +156,6 @@ We also have some buttons, if you need them.
   <button class="btn btn-primary" type="submit">Send</button>
 </form>
 
-
 <div class="clearfix">
   <p>&nbsp;</p>
 </div>
@@ -167,5 +166,3 @@ We also have some buttons, if you need them.
     <svg class="icon-up" viewBox="0 0 24 24" version="1.1" width="24" height="24" aria-label="Back to top" role="img"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
   </a>
 </div>
-
-
