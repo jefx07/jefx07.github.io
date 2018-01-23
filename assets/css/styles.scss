@@ -306,24 +306,24 @@ kbd {
 
 .octicon {
   display: inline-block;
-  vertical-align: text-top;
+  vertical-align: text-bottom;
   transform: translate(0, 0);
   fill: currentColor;
 }
 
 .octicon-calendar,
 .octicon-tag {
-  position: relative;
+//  position: relative;
   margin-right: 2px;
 }
 
-.octicon-calendar {
-  top: 1px;
-}
+//.octicon-calendar {
+//  top: 1px;
+//}
 
-.octicon-tag {
-  top: 2px;
-}
+//.octicon-tag {
+//  top: 2px;
+//}
 
 .octicon-rss {
   margin-top: 5px;
