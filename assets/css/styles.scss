@@ -236,7 +236,7 @@ kbd {
 .entry-footer {
   padding: 1.5rem;
   margin-bottom: 1.25rem;
-  font-size: .875rem;
+  font-size: .9375rem;
   color: $gray-medium;
   background-color: $gray-lightest;
 
@@ -320,7 +320,8 @@ kbd {
 
 .octicon-calendar,
 .octicon-tag {
-//  position: relative;
+  position: relative;
+  top: -1px;
   margin-right: 2px;
 }
 
