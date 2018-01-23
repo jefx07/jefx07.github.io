@@ -7,7 +7,7 @@
 .form-control {
   display: block;
   width: 100%;
-  padding: $input-padding-x;
+  padding: $input-padding-y $input-padding-x;
   font-size: $font-size-sm;
   line-height: $input-line-height;
   color: $input-color;
