@@ -242,7 +242,8 @@ kbd {
 
   @media (max-width: 575px) {
     padding: 1.5rem 1rem;
-    margin: 0 -15px;
+    margin-left: -15px;
+    margin-right: -15px;
     border-bottom: 1px solid $gray-01;
   }
 
@@ -538,9 +539,9 @@ a.back-to-top-link {
     top: 1rem;
   }
 
-  @media (min-width: 1200px) {
-    display: none;
-  }
+//  @media (min-width: 1200px) {
+//    display: none;
+//  }
 
   @include focus {
     background: rgba(51,181,229,.2);

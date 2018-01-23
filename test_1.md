@@ -159,7 +159,7 @@ We also have some buttons, if you need them.
 <div class="clearfix">
   <p>&nbsp;</p>
 </div>
-<hr style="margin: 2.5rem 1rem">
+<hr style="margin: 2.5rem 1rem 1rem">
 
 <div class="float-right">
   <a href="#top" class="back-to-top-link" title="Back to top">
