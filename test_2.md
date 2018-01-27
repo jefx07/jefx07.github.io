@@ -155,7 +155,7 @@ To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 
 This tag styles large blocks of code.
 
-```css
+``` css
 .post-title {
     margin: 0 0 5px;
     font-weight: bold;

@@ -1,4 +1,4 @@
-// scss-lint:disable QualifyingElement
+// scss-lint:disable QualifyingElement, SpaceAfterComma
 
 //
 // Base styles
@@ -20,7 +20,7 @@
   border-radius: $btn-border-radius;
   @include user-select();
   @include transition($btn-transition);
-
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   // Share hover and focus styles
   @include hover-focus {

@@ -124,34 +124,34 @@ abbr[title] {
   border-bottom: 1px dotted $gray;
 }
 
-blockquote {
-  margin: 1.25rem 0;
-}
+//blockquote {
+//  margin: 1.25rem 0;
+//}
 
-table {
-  margin: 1.25rem 0;
-}
+//table {
+//  margin: 1.25rem 0;
+//}
 
-label {
-  font-size: .875rem;
-}
+//label {
+//  font-size: .875rem;
+//}
 
-kbd {
-  padding: $kbd-padding-y $kbd-padding-x;
-  font-size: $font-size-base;
-  color: inherit;
-  background-color: inherit;
+//kbd {
+//  padding: $kbd-padding-y $kbd-padding-x;
+//  font-size: $font-size-base;
+//  color: inherit;
+//  background-color: inherit;
 //  border-radius: 0;
 //  box-shadow: none;
 
-  kbd {
-    padding: $kbd-padding-y $nested-kbd-padding-x;
-    font-size: 87.5%;
-    color: $kbd-color;
-    background-color: $kbd-bg;
+//  kbd {
+//    padding: $kbd-padding-y $nested-kbd-padding-x;
+//    font-size: 87.5%;
+//    color: $kbd-color;
+//    background-color: $kbd-bg;
 //    border-radius: 3px;
-  }
-}
+//  }
+//}
 
 .footnote {
   display: inline-block;
@@ -159,21 +159,9 @@ kbd {
   font-weight: bold;
 }
 
-.btn {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-pre {
-  padding: 1rem 0;
-}
-
 
 // 2. Navigation menu
 //
-
-.navbar-brand {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
 
 // custom override for small tablets
 @media (max-width: $grid-float-breakpoint-max) {

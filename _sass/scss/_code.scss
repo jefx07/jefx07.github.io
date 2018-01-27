@@ -24,16 +24,18 @@ code {
 // User input typically entered via keyboard
 kbd {
   padding: $kbd-padding-y $kbd-padding-x;
-  font-size: 90%;
-  color: $kbd-color;
-  background-color: $kbd-bg;
+  font-size: $font-size-base;
+  color: inherit;
+  background-color: inherit;
   @include border-radius($border-radius-sm);
 //  @include box-shadow($kbd-box-shadow);
 
   kbd {
-    padding: 0;
-    font-size: 100%;
+    padding: $kbd-padding-y $nested-kbd-padding-x;
+    font-size: 87.5%;
     font-weight: $nested-kbd-font-weight;
+    color: $kbd-color;
+    background-color: $kbd-bg;
 //    @include box-shadow(none);
   }
 }
