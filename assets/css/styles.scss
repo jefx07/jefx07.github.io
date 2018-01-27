@@ -1,6 +1,5 @@
 ---
 ---
-
 @charset 'utf-8';
 // scss-lint:disable SpaceAfterComma, QualifyingElement, VendorPrefix
 
@@ -122,7 +121,7 @@ h6 {
 
 abbr[title] {
   text-decoration: none;
-  border-bottom: 1px dotted #adadad;
+  border-bottom: 1px dotted $gray;
 }
 
 blockquote {
@@ -160,9 +159,21 @@ kbd {
   font-weight: bold;
 }
 
+.btn {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+pre {
+  padding: 1rem 0;
+}
+
 
 // 2. Navigation menu
 //
+
+.navbar-brand {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 // custom override for small tablets
 @media (max-width: $grid-float-breakpoint-max) {
@@ -522,6 +533,10 @@ body {
   .btn {
     float: right;
   }
+}
+
+.form-control {
+  border-radius: .25rem;
 }
 
 
