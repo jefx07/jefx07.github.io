@@ -161,19 +161,26 @@ $container-lg:              (1110px + $grid-gutter-width) !default;
 
 // Code
 
-$code-font-size:      90% !default;
-$code-padding-x:      .4rem !default;
-$code-padding-y:      .2rem !default;
-$code-color:          #bd4147 !default;
-$code-bg:             $gray-lightest !default;
+$code-font-size:    90% !default;
+$code-padding-x:    .4rem !default;
+$code-padding-y:    .2rem !default;
+$code-color:        #bd4147 !default;
+$code-bg:           $gray-lightest !default;
 
-$kbd-color:           #fff !default;
-$kbd-bg:              #333 !default;
-$kbd-box-shadow:      inset 0 -.1rem 0 rgba(0,0,0,.25) !default;
+$kbd-padding-y:     .2rem !default;
+$kbd-padding-x:     .3rem !default;
+$nested-kbd-padding-x:  .4rem !default;
 
-$pre-bg:              $gray-lightest !default;
-$pre-color:           $gray-dark !default;
-$pre-border-color:    #ccc !default;
+$kbd-font-size:     $code-font-size !default;
+$kbd-color:         #fff !default;
+$kbd-bg:            #212529 !default;
+
+$kbd-box-shadow:          inset 0 -.1rem 0 rgba(0,0,0,.25) !default;
+$nested-kbd-font-weight:  $font-weight-bold !default;
+
+$pre-bg:            $gray-lightest !default;
+$pre-color:         $gray-dark !default;
+$pre-border-color:  #ccc !default;
 
 
 // Components

@@ -138,24 +138,26 @@ label {
 }
 
 kbd {
-  padding: 0;
-  font-size: 1rem;
+  padding: $kbd-padding-y $kbd-padding-x;
+  font-size: $font-size-base;
   color: inherit;
   background-color: inherit;
-  border-radius: 0;
-  box-shadow: none;
+//  border-radius: 0;
+//  box-shadow: none;
 
   kbd {
-    display: inline;
-    padding: .2em .4em;
-    font: 14px/1 'Roboto', sans-serif;
-    color: #fff;
-    text-align: center;
-    background: #222;
-    border: 1px solid rgba(0,0,0,.05);
-    border-radius: 3px;
-    box-shadow: 0 2px 2px rgba(0,0,0,.7), 0 1px 0 #444, inset 0 1px 0 #505050;
+    padding: $kbd-padding-y $nested-kbd-padding-x;
+    font-size: 87.5%;
+    color: $kbd-color;
+    background-color: $kbd-bg;
+//    border-radius: 3px;
   }
+}
+
+.footnote {
+  display: inline-block;
+  margin-left: .1rem;
+  font-weight: bold;
 }
 
 
