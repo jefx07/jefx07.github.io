@@ -72,7 +72,11 @@ something: <em>our definition of what constitutes poetry.</em></dd>
 
 <hr style="margin: 2.5rem 1rem">
 
-## Table
+## Tables
+
+Using the most basic table markup, here’s how tables look.
+
+<p class="mb0">&nbsp;</p>
 
 | Header 1       | Header 2       | Header 3       |
 | -------------- | -------------- | -------------- |
