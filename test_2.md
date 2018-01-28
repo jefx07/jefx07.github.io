@@ -29,6 +29,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+<p class="mb0">&nbsp;</p>
+
 ## Blockquotes
 
 Single line blockquote:
@@ -42,6 +44,8 @@ Multi line blockquote with a cite reference:
 <footer><cite>Steve Jobs, Apple Worldwide Developers&rsquo; Conference, 1997</cite></footer>
 </blockquote>
 
+<p class="mb0">&nbsp;</p>
+
 ## Tables
 
 | Employee                            | Salary |                                                              |
@@ -51,6 +55,7 @@ Multi line blockquote with a cite reference:
 | [Fredd Bloggs](http://example.org/) | $100M  | Pictures are worth a thousand words, right? So Jane x 1,000. |
 | [Jane Bloggs](http://example.org/)  | $100B  | With hair like that?! Enough said...                         |
 
+<p class="mb0">&nbsp;</p>
 
 ## Definition Lists
 
@@ -100,6 +105,8 @@ href="https://www.youtube.com/watch?v=O_HyZ5aW76c">explain</a> this one.</dd>
 2. List item two
 3. List item three
 4. List item four
+
+<p class="mb0">&nbsp;</p>
 
 ## HTML Tags
 
@@ -155,7 +162,7 @@ To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 
 This tag styles large blocks of code.
 
-``` css
+{% highlight css %}
 .post-title {
     margin: 0 0 5px;
     font-weight: bold;
@@ -163,7 +170,7 @@ This tag styles large blocks of code.
     line-height: 1.2;
     and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
 }
-```
+{% endhighlight %}
 
 **Quote Tag**
 

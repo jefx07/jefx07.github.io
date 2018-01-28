@@ -100,13 +100,13 @@ Beware the Jubjub bird, and shun
 Code can be presented inline, like `<?php bloginfo('stylesheet_url'); ?>`, or
 within a `<pre>` block.
 
-```css
+{% highlight css %}
 #container {
   float: left;
   margin: 0 -240px 0 0;
   width: 100%;
 }
-```
+{% endhighlight %}
 
 <hr style="margin: 2.5rem 1rem">
 

@@ -1,16 +1,15 @@
-// scss-lint:disable PropertySortOrder, QualifyingElement
+// scss-lint:disable PropertySortOrder
 
-pre.highlight,
-.highlighter-rouge pre.highlight {
+.highlight pre {
   padding: 1rem;
-  margin: 1.5rem -15px;
+  margin: 0 -15px 1.5rem;
   background-color: $pre-bg;
 
   @media (min-width: 576px) {
-    padding: 1.5rem;
+    padding: 1.25rem;
     margin-right: 0;
     margin-left: 0;
-    @include border-radius($border-radius * 2);
+    @include border-radius($border-radius);
   }
 }
 
@@ -75,5 +74,19 @@ pre.highlight,
   .vg { color: #033; } // Name.Variable.Global
   .vi { color: #033; } // Name.Variable.Instance
   .il { color: #f60; } // Literal.Number.Integer.Long
-  .p { color: #333; } // punctuation e.g. phpinfo()
+  .p { color: #555; } // punctuation e.g. phpinfo()
+}
+
+// Use 'bash' scripting language for commands run as a regular user
+.language-bash::before {
+  color: #009;
+  content: '$ ';
+  @include user-select();
+}
+
+// Use 'sh' scripting language for commands run as root user
+.language-sh::before {
+  color: #900;
+  content: '# ';
+  @include user-select();
 }
