@@ -190,7 +190,8 @@ $border-radius:       .25rem !default;
 $border-radius-lg:    .3rem !default;
 $border-radius-sm:    .2rem !default;
 
-$btn-border-radius:   $border-radius !default;
+$btn-border-radius:   ($border-radius / 2) !default;
+
 
 
 // Navbar
@@ -210,7 +211,7 @@ $navbar-dark-active-color:      rgba(255,255,255,1) !default;
 $navbar-dark-disabled-color:    rgba(255,255,255,.25) !default;
 $navbar-dark-toggler-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
 $navbar-dark-toggler-bg-collapsed: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
-$navbar-dark-toggler-border:    rgba(255,255,255,.1) !default;
+$navbar-dark-toggler-border:    rgba(255,255,255,.15) !default;
 
 $navbar-light-color:            rgba(0,0,0,.5) !default;
 $navbar-light-hover-color:      rgba(0,0,0,.7) !default;
@@ -236,7 +237,7 @@ $btn-line-height:                1.25 !default;
 $btn-font-weight:                $font-weight-normal !default;
 
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
-$btn-focus-width:                .2rem !default;
+$btn-focus-width:                .125rem !default;
 
 $btn-focus-box-shadow:           0 0 0 $btn-focus-width rgba($brand-primary, .25) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;

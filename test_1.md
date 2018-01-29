@@ -143,7 +143,7 @@ We also have some buttons, if you need them.
 <form class="formspree" method="POST" action="https://formspree.io/YOUREMAILHERE">
   <div class="form-group">
     <label class="sr-only" for="inputName">Name</label>
-    <input class="form-control" type="text" name="name" id="inputName" placeholder="Your name">
+    <input class="form-control" type="text" name="name" id="inputName" placeholder="Your name" required>
   </div>
   <div class="form-group">
     <label class="sr-only" for="inputEmail">Email address</label>

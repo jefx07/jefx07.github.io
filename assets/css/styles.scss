@@ -124,35 +124,6 @@ abbr[title] {
   border-bottom: 1px dotted $gray;
 }
 
-//blockquote {
-//  margin: 1.25rem 0;
-//}
-
-//table {
-//  margin: 1.25rem 0;
-//}
-
-//label {
-//  font-size: .875rem;
-//}
-
-//kbd {
-//  padding: $kbd-padding-y $kbd-padding-x;
-//  font-size: $font-size-base;
-//  color: inherit;
-//  background-color: inherit;
-//  border-radius: 0;
-//  box-shadow: none;
-
-//  kbd {
-//    padding: $kbd-padding-y $nested-kbd-padding-x;
-//    font-size: 87.5%;
-//    color: $kbd-color;
-//    background-color: $kbd-bg;
-//    border-radius: 3px;
-//  }
-//}
-
 .footnote {
   display: inline-block;
   margin-left: .1rem;
@@ -243,8 +214,8 @@ abbr[title] {
 
   @media (max-width: 575px) {
     padding: 1.5rem 1rem;
-    margin-left: -15px;
     margin-right: -15px;
+    margin-left: -15px;
     border-bottom: 1px solid $gray-01;
   }
 
