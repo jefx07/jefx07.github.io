@@ -298,14 +298,6 @@ abbr[title] {
   margin-right: 2px;
 }
 
-//.octicon-calendar {
-//  top: 1px;
-//}
-
-//.octicon-tag {
-//  top: 2px;
-//}
-
 .octicon-rss {
   margin-top: 5px;
   margin-left: 2px;
@@ -441,34 +433,6 @@ body {
   }
 }
 
-
-// Under construction
-
-.welcome {
-  max-width: 560px;
-  margin: 3rem auto 1.5rem;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
-
-  h2 {
-    margin: 0 0 1.5rem;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 1.25;
-    letter-spacing: -1px;
-  }
-
-  p {
-    color: #444;
-  }
-
-  .octicon-tools {
-    margin: 3rem;
-    color: rgba(0,0,0,.5);
-  }
-}
-
-
 // miscellaneous
 //
 
@@ -498,10 +462,6 @@ a.back-to-top-link {
     top: 1rem;
   }
 
-//  @media (min-width: 1200px) {
-//    display: none;
-//  }
-
   @include focus {
     background: rgba(51,181,229,.2);
     transition: background .2s;
@@ -512,4 +472,32 @@ a.back-to-top-link {
   display: inline-block;
   vertical-align: bottom;
   fill: currentColor;
+}
+
+
+
+// Under construction
+
+.welcome {
+  max-width: 560px;
+  margin: 3rem auto 1.5rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: -1px;
+  }
+
+  p {
+    color: #444;
+  }
+
+  .octicon-tools {
+    margin: 3rem;
+    color: rgba(0,0,0,.5);
+  }
 }

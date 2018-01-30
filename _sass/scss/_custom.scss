@@ -7,11 +7,13 @@
 
 // Colors
 //
-$gray-dark:         #373a3c;
-$gray-medium:       #71767a;
-$gray-lightest:     #f7f7f9;
-$gray-01:           rgba(0,0,0,.1);
-$gray-02:           rgba(0,0,0,.2);
+$gray-dark:       #373a3c;
+$gray-medium:     #71767a;
+$gray-lightest:   #f7f7f9;
+$gray-01:         rgba(0,0,0,.1);
+$gray-02:         rgba(0,0,0,.2);
+
+$pink:            #e83e8c;
 
 
 // Links
@@ -39,7 +41,7 @@ $blockquote-border-width:   .3125rem;
 // Code
 //
 $code-font-size:   .9375rem;
-$code-color:       #e83e8c;
+$code-color:       $pink;
 $code-padding-x:   2px;
 $code-padding-y:   0;
 

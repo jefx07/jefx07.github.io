@@ -15,30 +15,31 @@
 // Grayscale and brand colors.
 
 // Start with assigning color names to specific hex values.
-$white:  #fff !default;
-$black:  #000 !default;
-$red:    #d9534f !default;
-$orange: #f0ad4e !default;
-$yellow: #ffd500 !default;
-$green:  #28a745 !default;
-//$blue:   #0275d8 !default;
 $blue:   #007bff !default;
-$teal:   #5bc0de !default;
-$pink:   #ff5b77 !default;
-$purple: #613d7c !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink:   #e83e8c !default;
+$red:    #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green:  #28a745 !default;
+$teal:   #20c997 !default;
+$cyan:   #17a2b8 !default;
 
 // Create grayscale
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
+$white:         #fff !default;
+$gray-lightest: #f7f7f9 !default;
+$gray-lighter:  #eceeef !default;
+$gray-light:    #818a91 !default;
+$gray:          #55595c !default;
+$gray-dark:     #373a3c !default;
+$black:         #000 !default;
 
 // Reassign color vars to semantic color scheme
 $brand-primary:             $blue !default;
 $brand-success:             $green !default;
-$brand-info:                $teal !default;
-$brand-warning:             $orange !default;
+$brand-info:                $cyan !default;
+$brand-warning:             $yellow !default;
 $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
