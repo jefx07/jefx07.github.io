@@ -21,7 +21,7 @@ the many embedded elements within paragraphs.
 
 ###### h6. Heading 6
 
-<hr style="margin: 2.5rem 1rem">
+<hr style="margin: 2.5rem 0">
 
 Lorem ipsum dolor sit amet, [test link](# "test link") adipiscing elit. **This
 is strong.** Nullam dignissim convallis est. Quisque aliquam. *This is
@@ -41,7 +41,7 @@ diam eget metus. To copy a file type <code>COPY <var>filename</var></code>.
 
 This <span style="text-decoration:line-through;">text</span> has been struck.
 
-<hr style="margin: 2.5rem 1rem">
+<hr style="margin: 2.5rem 0">
 
 ## Definition List
 
@@ -70,7 +70,7 @@ something: <em>our definition of what constitutes poetry.</em></dd>
     - Nested list item B
 - List Item 3
 
-<hr style="margin: 2.5rem 1rem">
+<hr style="margin: 2.5rem 0">
 
 ## Tables
 
@@ -112,7 +112,7 @@ within a `<pre>` block.
 }
 {% endhighlight %}
 
-<hr style="margin: 2.5rem 1rem">
+<hr style="margin: 2.5rem 0">
 
 ## Blockquotes
 
@@ -128,7 +128,7 @@ hear it I can sing it for you.</p>
 
 And here’s a bit of trailing text.
 
-<hr style="margin: 2.5rem 1rem">
+<hr style="margin: 2.5rem 0">
 
 ## Buttons
 
@@ -136,7 +136,7 @@ We also have some buttons, if you need them.
 
 <button class="btn btn-primary" type="button">Button 1</button> &nbsp; <button class="btn btn-alternate" type="button">Button 2</button>
 
-<hr style="margin: 2.5rem 1rem">
+<hr style="margin: 2.5rem 0">
 
 ## Forms
 
@@ -163,7 +163,7 @@ We also have some buttons, if you need them.
 <div class="clearfix">
   <p>&nbsp;</p>
 </div>
-<hr style="margin: 2.5rem 1rem 1rem">
+<hr style="margin: 2.5rem 0 1rem">
 
 <div class="float-right">
   <a href="#top" class="back-to-top-link" title="Back to top">
