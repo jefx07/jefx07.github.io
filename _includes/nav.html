@@ -7,7 +7,7 @@
             {{ site.title | escape }}
           </a>
         </div>
-        <nav id="main-nav" class="collapse navbar-toggleable">
+        <nav class="collapse navbar-toggleable" id="main-nav">
           <ul class="nav navbar-nav float-md-right">
             {% if page.title == 'Home' %}<li class="nav-item active"><a class="nav-link" href="{{ '/' | relative_url }}">Home <span class="sr-only">(current)</span></a></li>
             {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url}} ">Home</a></li>

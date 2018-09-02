@@ -1,10 +1,8 @@
 // for mobile menu
 
 .collapse {
-  display: none;
-
-  &.active {
-    display: block;
+  &:not(.show) {
+    display: none;
   }
 }
 
