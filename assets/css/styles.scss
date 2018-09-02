@@ -162,7 +162,7 @@ abbr[title] {
 .skip-navigation:active,
 .skip-navigation:focus {
   position: absolute;
-  top: 71px;
+  top: 62px;
   left: 6px;
   z-index: 1050;
   padding: 12px 16px;
@@ -170,7 +170,7 @@ abbr[title] {
   color: $link-color;
   text-decoration: none;
   background-color: $gray-lighter;
-  border-radius: $border-radius;
+  border-radius: $border-radius-sm;
   outline: 0;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 }
