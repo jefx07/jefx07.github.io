@@ -5,7 +5,6 @@
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
     {% if page.title == "Home" and site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
-    <meta name="robots" content="noodp">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     {% if page.title == "Home" %}<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/jefx07.github.io\/","name":"Jeff\u2019s Blog","potentialAction":{"@type":"SearchAction","target":"https:\/\/jefx07.github.io\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
     <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/jefx07.github.io\/","sameAs":[],"@id":"#person","name":"Jeff Weston"}</script>{% endif %}
