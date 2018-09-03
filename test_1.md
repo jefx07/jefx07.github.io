@@ -1,7 +1,7 @@
 ---
 title: "Html Elements"
 layout: page
-permalink: "test_1/index.html"
+permalink: /test_1/
 sitemap: false
 ---
 

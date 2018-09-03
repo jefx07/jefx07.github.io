@@ -1,7 +1,7 @@
 ---
 title: "Typography"
 layout: page
-permalink: "test_2/index.html"
+permalink: /test_2/
 sitemap: false
 ---
 
