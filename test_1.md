@@ -1,6 +1,8 @@
 ---
-title: "Html Elements"
 layout: page
+title: "Html Elements"
+description: "Below is just about every HTML element you might want to use in
+your blog posts."
 permalink: /test_1/
 sitemap: false
 ---

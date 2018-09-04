@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article>
-  <h1 class="entry-title">{{ page.title | escape }}</h1>
+  <h1 class="entry-title">{{ page.title | smartify }}</h1>
   <div class="post-content">
     {{ content }}
   </div>
@@ -24,7 +24,7 @@ layout: default
       <a href="{{ page.previous.url | relative_url }}" rel="prev">
         <span class="meta-nav" aria-hidden="true">Previous</span>
         <span class="sr-only">Previous post:</span>
-        <span class="post-title">{{ page.previous.title | escape }}</span>
+        <span class="post-title">{{ page.previous.title | smartify }}</span>
       </a>
     </div>
     {% endif %}
@@ -33,7 +33,7 @@ layout: default
       <a href="{{ page.next.url | relative_url }}" rel="next">
         <span class="meta-nav" aria-hidden="true">Next</span>
         <span class="sr-only">Next post:</span>
-        <span class="post-title">{{ page.next.title | escape }}</span>
+        <span class="post-title">{{ page.next.title | smartify }}</span>
       </a>
     </div>
     {% endif %}

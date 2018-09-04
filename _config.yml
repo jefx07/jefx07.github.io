@@ -1,9 +1,7 @@
 # General configuration settings
-title: Jeff’s Blog
-tagline: An experiment in the blogisphere
-description: > # this means to ignore newlines until "baseurl:"
-  Just a blog about things I've discovered, mostly it serves as a reminder
-  for my own future reference.
+title: Jeff's Blog
+tagline: The place to be
+description: "Just a blog about things, and everything you need to know."
 baseurl: ""
 url: https://jefx07.github.io
 
@@ -21,7 +19,7 @@ plugins:
   - jekyll-sitemap
 
 # Permalinks
-permalink: /:year/:title/
+permalink: /blog/:year/:month/:title/
 
 # Exclude from site build
 exclude:

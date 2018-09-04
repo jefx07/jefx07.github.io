@@ -1,6 +1,7 @@
 ---
-title: "Typography"
 layout: page
+title: "Typography"
+description: "This page is filled with sample content of html formatting"
 permalink: /test_2/
 sitemap: false
 ---
