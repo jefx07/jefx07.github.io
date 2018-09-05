@@ -1,5 +1,3 @@
-// scss-lint:disable SpaceAfterComma
-
 // Variables
 //
 // Copy settings from this file into the provided `_custom.scss` to override
@@ -149,6 +147,19 @@ $link-hover-decoration:   underline !default;
 $paragraph-margin-bottom:   1rem !default;
 
 
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
 //Layout
 //
 // Grid columns
@@ -198,6 +209,9 @@ $btn-border-radius:   $border-radius !default;
 
 $component-active-color:  $white !default;
 $component-active-bg:     theme-color("primary") !default;
+
+$transition-base:         all .2s ease-in-out !default;
+
 
 // Fonts
 //

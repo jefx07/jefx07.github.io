@@ -1,30 +1,24 @@
-// scss-lint:disable VendorPrefix
-
-@mixin box-shadow($shadow...) {
-  box-shadow: $shadow;
-}
-
-@mixin transition($transition...) {
-  -webkit-transition: $transition;
-  transition: $transition;
-}
-
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
 
 // Utilities
-@import 'mixins/hover';
-@import 'mixins/image';
-@import 'mixins/screen-reader';
-@import 'mixins/tab-focus';
-@import 'mixins/user-select';
+@import "mixins/breakpoints";
+@import "mixins/hover";
+@import "mixins/image";
+@import "mixins/screen-reader";
+@import "mixins/user-select";
 
 // // Components
-@import 'mixins/buttons';
-@import 'mixins/forms';
+@import "mixins/buttons";
+@import "mixins/forms";
 
 // // Skins
-@import 'mixins/border-radius';
+@import "mixins/border-radius";
+@import "mixins/box-shadow";
+@import "mixins/transition";
 
 // // Layout
-@import 'mixins/clearfix';
-@import 'mixins/grid';
-@import 'mixins/float';
+@import "mixins/clearfix";
+@import "mixins/grid";
+@import "mixins/float";

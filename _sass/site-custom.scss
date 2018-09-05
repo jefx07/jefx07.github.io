@@ -151,6 +151,11 @@ abbr[title] {
 // 3. Skip link
 //
 
+.skip-navigation {
+  @include sr-only;
+  @include sr-only-focusable;
+}
+
 .skip-navigation:active,
 .skip-navigation:focus {
   position: absolute;

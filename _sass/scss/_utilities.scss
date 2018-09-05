@@ -1,40 +1,13 @@
-//
-// Clear floats
-//
-
-.clearfix {
-  @include clearfix;
-}
-
-
-//
-// Floats
-//
-
-.float-left  { @include float-left; }
-.float-right { @include float-right; }
-.float-none  { @include float-none; }
-
-
-@media (min-width: 768px) {
-  .float-md-left {
-    float: left !important;
-  }
-
-  .float-md-right {
-    float: right !important;
-  }
-
-  .float-md-none {
-    float: none !important;
-  }
-}
+@import "utilities/clearfix";
+@import "utilities/float";
+@import "utilities/screenreaders";
 
 
 //
 // Responsive visibility utilities
 //
 
+// stylelint-disable declaration-no-important
 @media (min-width: 576px) {
   .hidden-sm-up {
     display: none !important;
@@ -46,41 +19,10 @@
     display: none !important;
   }
 }
-
-
-//
-// Layout
-//
-
-// Centers content horizontally. Can be used inside or outside the grid.
-//.centered {
-//  display: block;
-//  float: none;
-//  margin-right: auto;
-//  margin-left: auto;
-//}
-
+// stylelint-enable declaration-no-important
 
 //
-// Screenreaders
-//
-
-.sr-only {
-  @include sr-only();
-}
-
-.sr-only-focusable {
-  @include sr-only-focusable();
-}
-
-// Usage as a mixin
-.skip-navigation {
-  @include sr-only;
-  @include sr-only-focusable;
-}
-
-
-// Some special margin utils
+// Spacing
 ///
 .mb0 {
   margin-bottom: 0;
@@ -132,10 +74,4 @@
 .img-center {
   display: block;
   margin: 5px auto;
-}
-
-
-// Misc
-.hidden {
-  display: none;
 }
