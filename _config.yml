@@ -25,6 +25,8 @@ permalink: /blog/:year/:month/:title/
 exclude:
   - README.md
   - CNAME
+  - package.json
+  - package-lock.json
 
 # Processor options
 kramdown:
