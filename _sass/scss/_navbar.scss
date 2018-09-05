@@ -145,7 +145,7 @@
 
   .navbar-toggler {
     background-image: $navbar-light-toggler-bg;
-    border-color: $navbar-light-toggler-border;
+    border-color: $navbar-light-toggler-border-color;
 
     &.collapsed {
       background-image: $navbar-light-toggler-bg-collapsed;
@@ -188,7 +188,7 @@
 
   .navbar-toggler {
     background-image: $navbar-dark-toggler-bg;
-    border-color: $navbar-dark-toggler-border;
+    border-color: $navbar-dark-toggler-border-color;
 
     &.collapsed {
       background-image: $navbar-dark-toggler-bg-collapsed;

@@ -1,33 +1,35 @@
 /*!
- * Bootstrap v4.1.3 (https://getbootstrap.com/)
+ * Bootstrap Reboot v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
 // Core variables and mixins
-@import 'custom';
-@import 'variables';
-@import 'mixins';
+@import "custom";
+@import "functions";
+@import "variables";
+@import "mixins";
 
 // Core CSS
-@import 'reboot';
-@import 'type';
-@import 'images';
-@import 'layout';
-@import 'code';
-@import 'tables';
-@import 'forms';
-@import 'buttons';
+@import "reboot";
+@import "type";
+@import "images";
+@import "layout";
+@import "code";
+@import "tables";
+@import "forms";
+@import "buttons";
 
 // Components
-@import 'transitions';
-@import 'nav';
-@import 'navbar';
-@import 'syntax';
+@import "transitions";
+@import "nav";
+@import "navbar";
+@import "syntax";
 
 // Utility classes
-@import 'utilities';
+@import "utilities";
 
 //Print styles
-@import 'print';
+@import "print";

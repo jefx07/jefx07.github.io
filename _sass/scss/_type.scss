@@ -11,12 +11,12 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-h1 { font-size: $font-size-h1; }
-h2 { font-size: $font-size-h1; }
-h3 { font-size: $font-size-h1; }
-h4 { font-size: $font-size-h1; }
-h5 { font-size: $font-size-h1; }
-h6 { font-size: $font-size-h1; }
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
 
 .lead {
   font-size: $lead-font-size;
@@ -29,8 +29,8 @@ h6 { font-size: $font-size-h1; }
 //
 
 hr {
-  margin-top: $spacer-y;
-  margin-bottom: $spacer-y;
+  margin-top: $hr-margin-y;
+  margin-bottom: $hr-margin-y;
   border: 0;
   border-top: $hr-border-width solid $hr-border-color;
 }

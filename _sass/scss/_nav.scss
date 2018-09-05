@@ -16,14 +16,8 @@
     text-decoration: none;
   }
 
-  // Disabled state lightens text and removes hover/tab effects
+  // Disabled state lightens text
   &.disabled {
-    color: $nav-disabled-link-color;
-
-    @include plain-hover-focus {
-      color: $nav-disabled-link-hover-color;
-      cursor: $cursor-disabled;
-      background-color: $nav-disabled-link-hover-bg;
-    }
+    color: $nav-link-disabled-color;
   }
 }
