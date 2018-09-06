@@ -1,4 +1,4 @@
-// scss-lint:disable VendorPrefix
+// stylelint-disable selector-no-qualifying-type
 
 //
 // Textual form controls
@@ -7,15 +7,17 @@
 .form-control {
   display: block;
   width: 100%;
-  padding: $input-padding-x;
-  font-size: $font-size-sm;
+  height: $input-height;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $font-size-base;
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
   background-clip: padding-box;
-  border: $input-btn-border-width solid $input-border-color;
+  border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
-//  @include box-shadow($input-box-shadow);
+
+  @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
   // Unstyle the caret on `<select>`s in IE10+.
@@ -28,23 +30,8 @@
   @include form-control-focus();
 
   // Placeholder
-  &::-webkit-input-placeholder {
-    color: $input-color-placeholder;
-    opacity: 1;
-  }
-
-  &::-moz-placeholder {
-    color: $input-color-placeholder;
-    opacity: 1;
-  }
-
-  &:-ms-input-placeholder {
-    color: $input-color-placeholder;
-    opacity: 1;
-  }
-
   &::placeholder {
-    color: $input-color-placeholder;
+    color: $input-placeholder-color;
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
     opacity: 1;
   }
@@ -56,11 +43,12 @@
   // don't honor that edge case; we style them as disabled anyway.
   &:disabled,
   &[readonly] {
-    background-color: $input-bg-disabled;
+    background-color: $input-disabled-bg;
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
   }
 }
+
 
 // Form groups
 //
@@ -73,5 +61,5 @@
 
 .form-text {
   display: block;
-  margin-top: ($spacer * .25);
+  margin-top: $form-text-margin-top;
 }

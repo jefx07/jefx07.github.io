@@ -16,6 +16,12 @@
 //  1. Typography (responsive headings, etc)
 //
 
+// stylelint-disable selector-list-comma-newline-after
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility; // ????
+}
+// stylelint-enable selector-list-comma-newline-after
+
 .entry-title,
 .page-title {
   margin-bottom: 1.5rem;
@@ -121,6 +127,56 @@ abbr[title] {
   display: inline-block;
   margin-left: .1rem;
   font-weight: $font-weight-bold;
+}
+
+// Blockquotes
+blockquote {
+  padding: ($spacer / 2) $spacer;
+  font-size: $blockquote-font-size;
+  border-left: $blockquote-border-width solid $blockquote-border-color;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.blockquote-footer {
+  font-size: $blockquote-footer-font-size;
+}
+
+code {
+  padding: $code-padding-y $code-padding-x;
+  background-color: $code-bg;
+  @include border-radius($border-radius);
+}
+
+kbd {
+  color: inherit;
+  box-shadow: none;
+
+  kbd {
+    padding: ($kbd-padding-y / 2);
+    color: $white;
+    background-color: $gray-900;
+  }
+}
+
+
+.btn {
+  -webkit-tap-highlight-color: rgba($black, 0);
+  @include user-select();
+}
+
+//
+// Make all images responsive
+//
+
+img {
+  @include img-fluid();
 }
 
 

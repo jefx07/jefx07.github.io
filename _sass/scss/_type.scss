@@ -1,3 +1,5 @@
+// stylelint-disable declaration-no-important, selector-list-comma-newline-after
+
 //
 // Headings
 //
@@ -42,8 +44,8 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
-  font-weight: normal;
+  font-size: $small-font-size;
+  font-weight: $font-weight-normal;
 }
 
 mark {
@@ -51,29 +53,18 @@ mark {
   background-color: $mark-bg;
 }
 
-
 // Blockquotes
-blockquote {
-  padding: ($spacer / 2) $spacer;
+.blockquote {
   margin-bottom: $spacer;
   font-size: $blockquote-font-size;
-  border-left: $blockquote-border-width solid $blockquote-border-color;
+}
 
-  p,
-  ul,
-  ol {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+.blockquote-footer {
+  display: block;
+  font-size: 80%; // back to default font-size
+  color: $blockquote-small-color;
 
-  footer {
-    display: block;
-    font-size: $blockquote-footer-font-size; // back to default font-size
-    color: $blockquote-small-color;
-
-    &::before {
-      content: '\2014 \00A0'; // em dash, nbsp
-    }
+  &::before {
+    content: "\2014 \00A0"; // em dash, nbsp
   }
 }

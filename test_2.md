@@ -42,19 +42,48 @@ Multi line blockquote with a cite reference:
 
 <blockquote>
 <p class="mb1"> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.</p>
-<footer><cite>Steve Jobs, Apple Worldwide Developers&rsquo; Conference, 1997</cite></footer>
+<footer class="blockquote-footer"><cite>Steve Jobs, Apple Worldwide Developers&rsquo; Conference, 1997</cite></footer>
 </blockquote>
 
 <p class="mb0">&nbsp;</p>
 
 ## Tables
 
-| Employee                            | Salary |                                                              |
-| ----------------------------------  | ------ | ------------------------------------------------------------ |
-| [John Doe](http://example.org/)     | $1     | Because that's all Steve Jobs needed for a salary.           |
-| [Jane Doe](http://example.org/)     | $100K  | For all the blogging she does.                               |
-| [Fredd Bloggs](http://example.org/) | $100M  | Pictures are worth a thousand words, right? So Jane x 1,000. |
-| [Jane Bloggs](http://example.org/)  | $100B  | With hair like that?! Enough said...                         |
+Here we have a table with borders on all sides.
+
+<p class="mb0">&nbsp;</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Employee</th>
+<th>Salary</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><a href="http://example.org/">John Doe</a></th>
+<td>$1</td>
+<td>Because that&#8217;s all Steve Jobs needed for a salary.</td>
+</tr>
+<tr>
+<th><a href="http://example.org/">Jane Doe</a></th>
+<td>$100K</td>
+<td>For all the blogging she does.</td>
+</tr>
+<tr>
+<th><a href="http://example.org/">Fred Bloggs</a></th>
+<td>$100M</td>
+<td>Pictures are worth a thousand words, right? So Jane x 1,000.</td>
+</tr>
+<tr>
+<th><a href="http://example.org/">Jane Bloggs</a></th>
+<td>$100B</td>
+<td>With hair like that?! Enough said&#8230;</td>
+</tr>
+</tbody>
+</table>
 
 <p class="mb0">&nbsp;</p>
 

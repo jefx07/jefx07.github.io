@@ -2,28 +2,59 @@
 // Basic Bootstrap table
 //
 
-table {
+.table {
   width: 100%;
-  max-width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: $spacer;
+  background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
   th,
   td {
-    padding: .75rem;
+    padding: $table-cell-padding;
     vertical-align: top;
-    border-top: 1px solid $gray-lighter;
+    border-top: $table-border-width solid $table-border-color;
   }
 
   thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid $gray-lighter;
+    border-bottom: (2 * $table-border-width) solid $table-border-color;
   }
 
   tbody + tbody {
-    border-top: 2px solid $gray-lighter;
+    border-top: (2 * $table-border-width) solid $table-border-color;
   }
 
-  table {
+  .table {
     background-color: $body-bg;
+  }
+}
+
+
+// Border versions
+//
+// Add or remove borders all around the table and between all the columns.
+
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: (2 * $table-border-width);
+    }
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(#{$table-striped-order}) {
+    background-color: $table-accent-bg;
   }
 }

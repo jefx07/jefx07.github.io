@@ -80,11 +80,28 @@ Using the most basic table markup, here’s how tables look.
 
 <p class="mb0">&nbsp;</p>
 
-| Header 1       | Header 2       | Header 3       |
-| -------------- | -------------- | -------------- |
-| Division 1     | Division 2     | Division 3     |
-| Division 1     | Division 2     | Division 3     |
-| Division 1     | Division 2     | Division 3     |
+<table class="table">
+<tr>
+<th>Table Header 1</th>
+<th>Table Header 2</th>
+<th>Table Header 3</th>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+</tr>
+<tr class="even">
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+</tr>
+</table>
 
 <p>&nbsp;</p>
 
@@ -125,7 +142,7 @@ Let's keep it simple.
 operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992.
 My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
 hear it I can sing it for you.</p>
-<footer><cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></footer>
+<footer class="blockquote-footer"><cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></footer>
 </blockquote>
 
 And here’s a bit of trailing text.
@@ -136,7 +153,7 @@ And here’s a bit of trailing text.
 
 We also have some buttons, if you need them.
 
-<button class="btn btn-primary" type="button">Button 1</button> &nbsp; <button class="btn btn-alternate" type="button">Button 2</button>
+<button class="btn btn-primary" type="button">Button 1</button> &nbsp; <button class="btn btn-success" type="button">Button 2</button>
 
 <hr style="margin: 2.5rem 0">
 

@@ -1,4 +1,4 @@
-// scss-lint:disable QualifyingElement, SpaceAfterComma
+// stylelint-disable selector-no-qualifying-type
 
 //
 // Base styles
@@ -6,21 +6,14 @@
 
 .btn {
   display: inline-block;
-  min-width: 72px;
-  padding: $btn-padding-y $btn-padding-x;
-  margin: 0 0 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: $font-size-base;
   font-weight: $btn-font-weight;
-  line-height: $btn-line-height;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  border: $input-btn-border-width solid transparent;
-  border-radius: $btn-border-radius;
-  @include user-select();
+  user-select: none;
+  border: $btn-border-width solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   // Share hover and focus styles
   @include hover-focus {
@@ -36,7 +29,7 @@
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    opacity: .65;
+    opacity: $btn-disabled-opacity;
     @include box-shadow(none);
   }
 
@@ -47,7 +40,6 @@
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
-    background-image: none;
     @include box-shadow($btn-active-box-shadow);
 
     &:focus {
@@ -56,21 +48,19 @@
   }
 }
 
+
 // Future-proof disabling of clicks on `<a>` elements
 a.btn.disabled,
-fieldset[disabled] a.btn {
+fieldset:disabled a.btn {
   pointer-events: none;
 }
-
 
 //
 // Alternate buttons
 //
 
-.btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
-}
-
-.btn-alternate {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
 }

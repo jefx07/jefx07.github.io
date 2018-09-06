@@ -8,9 +8,11 @@
 // Colors
 //
 $black:           #000;
+$gray-200:        #e9ecef;
+$gray-100:        #f8f9fa;
 $gray-dark:       #373a3c;
 $gray-medium:     #71767a;
-$gray-lighter:  #eceeef !default;
+$gray-lighter:    #eceeef;
 $gray-lightest:   #f7f7f9;
 $gray-01:         rgba($black, .1);
 $gray-02:         rgba($black, .2);
@@ -42,23 +44,19 @@ $mark-bg:                   #ffff80;
 $blockquote-font-size:      ($font-size-base * 1.125);
 $blockquote-footer-font-size: .9375rem;
 $blockquote-border-width:   .3125rem;
-$blockquote-border-color: $gray-lighter !default;
+$blockquote-border-color: $gray-200 !default;
 
 
 // Code
 //
 $code-font-size:   .9375rem;
-$code-color:       $pink;
+$code-padding-y:   1px;
 $code-padding-x:   2px;
-$code-padding-y:   0;
-$code-bg:           $gray-lightest !default;
+$code-bg:          $gray-100;
 
-$nested-kbd-padding-x:  .4rem !default;
+$kbd-bg:            inherit;
 
-$pre-bg:           $gray-lightest;
-$pre-color:        $gray-dark !default;
-$pre-border-color: darken($pre-bg, 7%);
-$pre-font-size:    .9375em;
+$pre-bg:           $gray-100;
 
 
 // Navbar
