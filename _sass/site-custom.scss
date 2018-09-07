@@ -171,8 +171,13 @@ kbd {
   @include user-select();
 }
 
+// ol,
+// ul {
+//   padding-left: 2rem; // Opinionated
+// }
+
 //
-// Make all images responsive
+// Make ALL images responsive
 //
 
 img {
@@ -183,23 +188,47 @@ img {
 // 2. Navigation menu
 //
 
-// custom override for small tablets
-@media (max-width: $grid-float-breakpoint-max) {
-  .navbar > .container {
-    width: 100%;
+.navbar {
+  font-family: $roboto;
+  box-shadow: $navbar-box-shadow;
+  //-webkit-tap-highlight-color: rgba($black, 0);
+  .navbar-brand,
+  .nav-link {
+    -webkit-tap-highlight-color: rgba($black, 0);
   }
 }
 
-// the next two go together...
-@media (max-width: $grid-float-breakpoint-max) {
-  .navbar-brand {
-    margin-left: .25rem;
+.bg-custom {
+  background-color: $navbar-bg-color;
+}
+
+.navbar-toggler {
+  margin-right: -.25rem;
+  line-height: 18px;
+
+  &:focus {
+    outline: 0;
   }
 }
 
-@media (max-width: $grid-float-breakpoint-max) {
-  .navbar-nav .nav-link {
-    padding: .5rem;
+.navbar-toggler-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.navbar-light {
+  .collapsed {
+    .navbar-toggler-icon {
+      background-image: $navbar-light-toggler-icon-bg-collapsed;
+    }
+  }
+}
+
+.navbar-dark {
+  .collapsed {
+    .navbar-toggler-icon {
+      background-image: $navbar-dark-toggler-icon-bg-collapsed;
+    }
   }
 }
 
@@ -516,7 +545,7 @@ a.back-to-top-link {
     top: 1rem;
   }
 
-  @include focus {
+  &:focus {
     background: rgba($navbar-bg-color, .2);
     transition: background .2s;
   }

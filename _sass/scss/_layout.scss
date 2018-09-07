@@ -1,43 +1,27 @@
 // Container widths
 //
-// Set the container width.
+// Set the container width, and override it for fixed navbars in media queries.
+
 .container {
   @include make-container();
-
-  @media (min-width: $screen-xs-min) {
-    width: $container-xs;
-    max-width: 100%;
-  }
-
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-    max-width: 100%;
-  }
-
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-    max-width: 100%;
-  }
-
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-    max-width: 100%;
-  }
+  @include make-container-max-widths();
 }
-
 
 // Row
 //
 // Rows contain and clear the floats of your columns.
+
 .row {
   @include make-row();
 }
+
 
 // Grid system
 
 // Base class for every column (requires a column width from below)
 .column {
   position: relative;
+  width: 100%;
   min-height: 1px;  // Prevent collapsing
   padding-right: ($grid-gutter-width / 2);
   padding-left: ($grid-gutter-width / 2);
@@ -46,44 +30,37 @@
 // Column widths
 @media (min-width: 768px) {
   .one-third {
-    float: left;
+    flex: 0 0 33.333333%;
     width: 33.333333%;
   }
 
   .two-thirds {
-    float: left;
+    flex: 0 0 66.666667%;
     width: 66.666667%;
   }
 
   .one-fourth {
-    float: left;
+    flex: 0 0 25%;
     width: 25%;
   }
 
   .one-half {
-    float: left;
+    flex: 0 0 50%;
     width: 50%;
   }
 
   .three-fourths {
-    float: left;
+    flex: 0 0 75%;
     width: 75%;
   }
 
   .one-fifth {
-    float: left;
+    flex: 0 0 20%;
     width: 20%;
   }
 
   .four-fifths {
-    float: left;
+    flex: 0 0 80%;
     width: 80%;
   }
-}
-
-
-// Single column hack
-.single-column {
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
 }

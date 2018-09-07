@@ -1,25 +1,8 @@
+// @import "utilities/background";
 @import "utilities/clearfix";
 @import "utilities/float";
 @import "utilities/screenreaders";
 
-
-//
-// Responsive visibility utilities
-//
-
-// stylelint-disable declaration-no-important
-@media (min-width: 576px) {
-  .hidden-sm-up {
-    display: none !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .hidden-md-up {
-    display: none !important;
-  }
-}
-// stylelint-enable declaration-no-important
 
 //
 // Spacing
@@ -34,6 +17,14 @@
 
 .mb2 {
   margin-bottom: 1.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 

@@ -1,14 +1,14 @@
-<header class="navbar navbar-full navbar-dark" id="top" role="banner">
+<header class="navbar navbar-expand-md navbar-dark bg-custom" id="top" role="banner">
       <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggler float-right hidden-md-up collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-          </button>
-          <a class="navbar-brand" href="{{ '/' | relative_url }}">
-            {{ site.title | smartify }}
-          </a>
-        </div>
-        <nav class="collapse navbar-toggleable" id="main-nav">
-          <ul class="nav navbar-nav float-md-right">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+          {{ site.title | smartify }}
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
             {% if page.title == 'Home' %}<li class="nav-item active"><a class="nav-link" href="{{ '/' | relative_url }}">Home <span class="sr-only">(current)</span></a></li>
             {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url}} ">Home</a></li>
             {% endif %}

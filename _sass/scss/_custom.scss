@@ -17,9 +17,6 @@ $gray-lightest:   #f7f7f9;
 $gray-01:         rgba($black, .1);
 $gray-02:         rgba($black, .2);
 
-$pink:            #e83e8c;
-
-
 // Links
 //
 $link-color:        #448aff;
@@ -29,11 +26,13 @@ $link-hover-color:  #448aff;
 // Typography
 //
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Open Sans", sans-serif;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif;
-$font-family-monospace:  "Source Code Pro", monospace;
-$font-size-base:            1rem;
+$font-family-sans-serif:  "Open Sans", sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   "Source Code Pro", monospace;
+$roboto:                  Roboto, sans-serif;
 // stylelint-enable value-keyword-case
+
+$font-size-base:          1rem;
 
 $font-size-xs:   .75rem;
 
@@ -41,10 +40,10 @@ $headings-margin-bottom:    .75rem;
 
 $mark-bg:                   #ffff80;
 
-$blockquote-font-size:      ($font-size-base * 1.125);
+$blockquote-font-size:        ($font-size-base * 1.125);
 $blockquote-footer-font-size: .9375rem;
-$blockquote-border-width:   .3125rem;
-$blockquote-border-color: $gray-200 !default;
+$blockquote-border-width:     .3125rem;
+$blockquote-border-color:     $gray-200 !default;
 
 
 // Code
@@ -54,25 +53,25 @@ $code-padding-y:   1px;
 $code-padding-x:   2px;
 $code-bg:          $gray-100;
 
-$kbd-bg:            inherit;
+$kbd-bg:           inherit;
 
 $pre-bg:           $gray-100;
 
 
 // Navbar
 //
-$navbar-padding-y:          .5rem;
-$navbar-padding-x:          0;
-$navbar-brand-padding-y:    .3125rem;
-$navbar-toggler-padding-y:  0;
 
-$navbar-font-family:        "Roboto", sans-serif;
+$navbar-font-family:        $roboto;
 $navbar-bg-color:           #28aadc;
+$navbar-box-shadow:         1px 1px 1px rgba($black, .16);
 
-$navbar-dark-toggler-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
-$navbar-dark-toggler-bg-collapsed: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
-$navbar-light-toggler-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
-$navbar-light-toggler-bg-collapsed: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+$navbar-toggler-padding-y:  .4375rem;
+$navbar-toggler-padding-x:  .6875rem;
+
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+$navbar-dark-toggler-icon-bg-collapsed: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+$navbar-light-toggler-icon-bg-collapsed: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
 
 
 // Buttons
