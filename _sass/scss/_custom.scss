@@ -16,6 +16,7 @@ $gray-lighter:    #eceeef;
 $gray-lightest:   #f7f7f9;
 $gray-01:         rgba($black, .1);
 $gray-02:         rgba($black, .2);
+$white:           #fff;
 
 // Links
 //
@@ -29,7 +30,7 @@ $link-hover-color:  #448aff;
 $font-family-sans-serif:  "Open Sans", sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   "Source Code Pro", monospace;
-$roboto:                  Roboto, sans-serif;
+$font-family-roboto:      Roboto, sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:          1rem;
@@ -61,7 +62,7 @@ $pre-bg:           $gray-100;
 // Navbar
 //
 
-$navbar-font-family:        $roboto;
+$navbar-font-family:        $font-family-roboto;
 $navbar-bg-color:           #28aadc;
 $navbar-box-shadow:         1px 1px 1px rgba($black, .16);
 
@@ -73,8 +74,5 @@ $navbar-dark-toggler-icon-bg-collapsed: url("data:image/svg+xml,%3Csvg xmlns='ht
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
 $navbar-light-toggler-icon-bg-collapsed: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
 
-
-// Buttons
-//
-$btn-line-height: 18px;
-$btn-padding-y: .625rem;
+$navbar-toggler-dark-outline-color:    rgba($white, .2);
+$navbar-toggler-light-outline-color:   rgba($black, .25);

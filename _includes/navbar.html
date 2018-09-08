@@ -1,5 +1,5 @@
 <header class="navbar navbar-expand-md navbar-dark bg-custom" id="top" role="banner">
-      <div class="container">
+      <!-- <div class="container"> -->
         <a class="navbar-brand" href="{{ '/' | relative_url }}">
           {{ site.title | smartify }}
         </a>
@@ -9,15 +9,18 @@
 
         <nav class="collapse navbar-collapse" id="main-nav">
           <ul class="navbar-nav ml-auto">
-            {% if page.title == 'Home' %}<li class="nav-item active"><a class="nav-link" href="{{ '/' | relative_url }}">Home <span class="sr-only">(current)</span></a></li>
-            {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url}} ">Home</a></li>
+            {% if page.title == 'Home' %}
+            <li class="nav-item active"><a class="nav-link" href="{{ '/' | relative_url }}">Home <span class="sr-only">(current)</span></a></li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url}} ">Home</a></li>
+            {% endif %}
+            {% if page.title == 'About' %}<li class="nav-item active"><a class="nav-link" href="{{ '/about/' | relative_url }}">About <span class="sr-only">(current)</span></a></li>
+            {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About</a></li>
             {% endif %}
             {% if page.title == 'Archives' %}<li class="nav-item active"><a class="nav-link" href="{{ '/blog/archive/' | relative_url }}">Archives <span class="sr-only">(current)</span></a></li>
             {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/blog/archive/' | relative_url }}">Archives</a></li>
             {% endif %}
-            {% if page.title == 'About' %}<li class="nav-item active"><a class="nav-link" href="{{ '/about/' | relative_url }}">About <span class="sr-only">(current)</span></a></li>
-            {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About</a></li>{% endif %}
           </ul>
         </nav>
-      </div>
+      <!-- </div> -->
     </header>

@@ -16,12 +16,6 @@
 //  1. Typography (responsive headings, etc)
 //
 
-// stylelint-disable selector-list-comma-newline-after
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility; // ????
-}
-// stylelint-enable selector-list-comma-newline-after
-
 .entry-title,
 .page-title {
   margin-bottom: 1.5rem;
@@ -63,7 +57,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;       // 24px
-  font-weight: 600;
   line-height: 1.25;
   letter-spacing: -.5px;
 
@@ -82,7 +75,6 @@ h2 {
 
 h3 {
   font-size: 1.375rem;     //22px
-  font-weight: 600;
   line-height: 1.25;
   letter-spacing: -.4px;
 
@@ -167,14 +159,11 @@ kbd {
 
 
 .btn {
-  -webkit-tap-highlight-color: rgba($black, 0);
+  //font-family: $font-family-sans-serif;
   @include user-select();
+  -webkit-tap-highlight-color: rgba($black, 0);
 }
 
-// ol,
-// ul {
-//   padding-left: 2rem; // Opinionated
-// }
 
 //
 // Make ALL images responsive
@@ -189,13 +178,9 @@ img {
 //
 
 .navbar {
-  font-family: $roboto;
+  font-family: $font-family-roboto;
   box-shadow: $navbar-box-shadow;
-  //-webkit-tap-highlight-color: rgba($black, 0);
-  .navbar-brand,
-  .nav-link {
-    -webkit-tap-highlight-color: rgba($black, 0);
-  }
+  // -webkit-tap-highlight-color: rgba($black, 0);
 }
 
 .bg-custom {
@@ -205,18 +190,29 @@ img {
 .navbar-toggler {
   margin-right: -.25rem;
   line-height: 18px;
+}
 
-  &:focus {
-    outline: 0;
+.navbar-dark {
+  .navbar-toggler {
+    &:focus {
+      outline: solid 1px $navbar-toggler-dark-outline-color;
+    }
+  }
+
+  .collapsed {
+    .navbar-toggler-icon {
+      background-image: $navbar-dark-toggler-icon-bg-collapsed;
+    }
   }
 }
 
-.navbar-toggler-icon {
-  width: 1.2em;
-  height: 1.2em;
-}
-
 .navbar-light {
+  .navbar-toggler {
+    &:focus {
+      outline: solid 1px $navbar-toggler-light-outline-color;
+    }
+  }
+
   .collapsed {
     .navbar-toggler-icon {
       background-image: $navbar-light-toggler-icon-bg-collapsed;
@@ -224,12 +220,9 @@ img {
   }
 }
 
-.navbar-dark {
-  .collapsed {
-    .navbar-toggler-icon {
-      background-image: $navbar-dark-toggler-icon-bg-collapsed;
-    }
-  }
+.navbar-toggler-icon {
+  width: 1.2em;
+  height: 1.2em;
 }
 
 
@@ -546,7 +539,8 @@ a.back-to-top-link {
   }
 
   &:focus {
-    background: rgba($navbar-bg-color, .2);
+    background: rgba($navbar-bg-color, .25);
+    outline: auto;
     transition: background .2s;
   }
 }
