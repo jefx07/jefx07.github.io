@@ -222,8 +222,4 @@ Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should 
 
 This allows you to denote <var>variables</var>.
 
-<div class="float-right">
-  <a href="#top" class="back-to-top-link" title="Back to top">
-    <svg class="icon-up" viewBox="0 0 24 24" version="1.1" width="24" height="24" aria-label="Back to top" role="img"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
-  </a>
-</div>
+{% include scroll-top.html %}

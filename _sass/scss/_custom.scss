@@ -8,38 +8,37 @@
 // Colors
 //
 $black:           #000;
+$black-01:        rgba($black, .1);
+$black-02:        rgba($black, .2);
 $gray-200:        #e9ecef;
 $gray-100:        #f8f9fa;
-$gray-dark:       #373a3c;
-$gray-medium:     #71767a;
-$gray-lighter:    #eceeef;
-$gray-lightest:   #f7f7f9;
-$gray-01:         rgba($black, .1);
-$gray-02:         rgba($black, .2);
 $white:           #fff;
+$blue:            #007bff;
 
 // Links
 //
 $link-color:        #448aff;
-$link-hover-color:  #448aff;
+$link-hover-color:  $link-color;
 
 
 // Typography
 //
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:  "Open Sans", sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   "Source Code Pro", monospace;
+
+$font-family-opensans:    "Open Sans", sans-serif;
 $font-family-roboto:      Roboto, sans-serif;
+$font-family-base:        $font-family-opensans;
 // stylelint-enable value-keyword-case
 
-$font-size-base:          1rem;
+$font-size-base:              1rem;
 
-$font-size-xs:   .75rem;
+$font-size-xs:                .75rem;
 
-$headings-margin-bottom:    .75rem;
+$headings-margin-bottom:      .75rem;
 
-$mark-bg:                   #ffff80;
+$mark-bg:                     #ffff80;
 
 $blockquote-font-size:        ($font-size-base * 1.125);
 $blockquote-footer-font-size: .9375rem;

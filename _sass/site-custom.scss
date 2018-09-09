@@ -89,7 +89,6 @@ h3 {
 
 h4 {
   font-size: 1.25rem;      // 20px
-  font-weight: 600;
 
   @media (min-width: 992px) {
     font-size: 1.5rem;     // 24px
@@ -112,7 +111,7 @@ h6 {
 
 abbr[title] {
   text-decoration: none;
-  border-bottom: 1px dotted $gray;
+  border-bottom: 1px dotted $gray-600;
 }
 
 .footnote {
@@ -159,11 +158,13 @@ kbd {
 
 
 .btn {
-  //font-family: $font-family-sans-serif;
   @include user-select();
   -webkit-tap-highlight-color: rgba($black, 0);
 }
 
+.form-control {
+  font-family: $font-family-sans-serif;
+}
 
 //
 // Make ALL images responsive
@@ -244,7 +245,7 @@ img {
   font-size: 14px;
   color: $link-color;
   text-decoration: none;
-  background-color: $gray-lighter;
+  background-color: $gray-200;
   border-radius: $border-radius-sm;
   outline: 0;
   box-shadow: 0 2px 5px 0 rgba($black, .26);
@@ -264,7 +265,7 @@ img {
   margin-bottom: .5rem;
   font-size: 13px;
   line-height: 21px;
-  color: $gray-light;
+  color: $gray-600;
 }
 
 .post-tags ul,
@@ -285,18 +286,18 @@ img {
   padding: 1.5rem;
   margin-bottom: 1.25rem;
   font-size: .9375rem;
-  color: $gray-medium;
-  background-color: $gray-lightest;
+  color: $gray-600;
+  background-color: $gray-100;
 
   @media (max-width: 575px) {
     padding: 1.5rem 1rem;
     margin-right: -15px;
     margin-left: -15px;
-    border-bottom: 1px solid $gray-01;
+    border-bottom: 1px solid $black-01;
   }
 
   a {
-    color: $gray-medium;
+    color: $gray-600;
 
     @include hover-focus {
       color: $body-color;
@@ -336,7 +337,7 @@ img {
 @media (max-width: 575px) {
   .nav-previous,
   .nav-next {
-    border-bottom: 1px solid $gray-01;
+    border-bottom: 1px solid $black-01;
   }
 }
 
@@ -352,7 +353,7 @@ img {
 
 .meta-nav {
   font-size: .8125rem;
-  color: $gray-medium;
+  color: $gray-600;
   text-transform: uppercase;
 }
 
@@ -422,7 +423,7 @@ img {
   padding: 1.5rem 0;
   font-size: .8125rem;
   text-align: center;
-  background-color: $gray-lightest;
+  background-color: $gray-100;
 
   p {
     margin-bottom: 0;
@@ -438,7 +439,7 @@ img {
   }
 
   a {
-    color: $gray;
+    color: $gray-700;
 
     @include hover-focus {
       color: $body-color;
@@ -459,6 +460,7 @@ body {
   margin-bottom: 109px;
 }
 
+// stylelint-disable no-duplicate-selectors
 .site-footer {
   position: absolute;
   bottom: 0;
@@ -466,6 +468,7 @@ body {
   // Set the fixed height of the footer here
   height: 109px;
 }
+//stylelint-enable no-duplicate-selectors
 
 
 // 9. Index page & miscellaneous
@@ -492,7 +495,7 @@ body {
 .entry-header {
   margin-bottom: 1rem;
   font-size: .875rem;
-  color: $gray-light;
+  color: $gray-600;
 }
 
 .more-link {
@@ -503,9 +506,9 @@ body {
 .post-content {
   padding-bottom: 2rem;
 
-  img {
+  img:not(.img-thumbnail) {
     border-radius: 3px;
-    box-shadow: 0 1px 4px $gray-02;
+    box-shadow: 0 1px 4px $black-02;
   }
 }
 
@@ -529,25 +532,34 @@ a.back-to-top-link {
 
 .back-to-top-link {
   position: relative;
-  top: 1.5rem;
+  //top: 1.5rem;
   display: inline-block;
+  width: 36px;
+  height: 36px;
   color: $navbar-bg-color;
+  text-align: center;
   border-radius: 50%;
 
   @media (min-width: 576px) {
-    top: 1rem;
+    //top: 1rem;
+  }
+
+  &:hover {
+    background-color: rgba($navbar-bg-color, .25);
+    transition: background .2s;
   }
 
   &:focus {
-    background: rgba($navbar-bg-color, .25);
-    outline: auto;
-    transition: background .2s;
+    outline: thin dotted;
   }
 }
 
 .icon-up {
+  position: relative;
+  top: 5px;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: text-bottom;
+  transform: translate(0, 0);
   fill: currentColor;
 }
 
