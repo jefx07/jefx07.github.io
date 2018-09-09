@@ -19,6 +19,7 @@
 .entry-title,
 .page-title {
   margin-bottom: 1.5rem;
+  font-family: $font-family-base;
   font-size: 2.25rem;    // 36px
   font-weight: 300;
   letter-spacing: -1px;
@@ -162,6 +163,7 @@ kbd {
 
 .form-control {
   font-family: $font-family-sans-serif;
+  font-size: .9375rem;
 }
 
 //
@@ -221,6 +223,7 @@ img {
 .navbar-toggler-icon {
   width: 1.2em;
   height: 1.2em;
+  transition: $transition-base;
 }
 
 
@@ -513,10 +516,6 @@ body {
 .formspree {
   max-width: 24rem;
   margin: 2rem auto 3rem;
-
-  .btn {
-    float: right;
-  }
 }
 
 
@@ -536,7 +535,6 @@ a.back-to-top-link {
 
   &:hover {
     background-color: rgba($navbar-bg-color, .25);
-    transition: background .2s;
   }
 
   &:focus {

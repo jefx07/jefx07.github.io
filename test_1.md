@@ -179,9 +179,6 @@ We also have some buttons, if you need them.
   <button class="btn btn-primary" type="submit">Send</button>
 </form>
 
-<div class="clearfix">
-  <p>&nbsp;</p>
-</div>
-<hr style="margin: 2.5rem 0 1rem">
+<hr style="margin: 2.5rem 0">
 
 {% include scroll-top.html %}
