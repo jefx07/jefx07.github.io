@@ -80,7 +80,7 @@ Using the most basic table markup, here’s how tables look.
 
 <p class="mb0">&nbsp;</p>
 
-<table class="table">
+<table class="table table-bordered">
 <tr>
 <th>Table Header 1</th>
 <th>Table Header 2</th>
