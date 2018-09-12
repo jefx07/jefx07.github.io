@@ -18,13 +18,13 @@ $blue:            #007bff;
 // Links
 //
 $link-color:        #448aff;
-$link-hover-color:  $link-color;
+$link-hover-color:  darken($link-color, 10%);
 
 
 // Typography
 //
 // stylelint-disable value-keyword-case
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//$font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   "Source Code Pro", monospace;
 
 $font-family-opensans:    "Open Sans", sans-serif;
@@ -36,9 +36,10 @@ $font-size-base:              1rem;
 
 $font-size-xs:                .75rem;
 
-$headings-margin-bottom:      .75rem;
+//$headings-margin-bottom:      .75rem;
 $headings-font-family:        $font-family-roboto;
 
+$mark-padding:                0 .2em;
 $mark-bg:                     #ffeea8;
 
 $blockquote-font-size:        ($font-size-base * 1.125);

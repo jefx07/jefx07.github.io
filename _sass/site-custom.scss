@@ -18,7 +18,7 @@
 
 .entry-title,
 .page-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   font-family: $font-family-base;
   font-size: 2.25rem;    // 36px
   font-weight: 300;
@@ -45,7 +45,7 @@
 h1 {
   font-size: 2rem;         //32px
   line-height: 1.25;
-  letter-spacing: -.4px;
+  //letter-spacing: -.4px;
 
   @media (min-width: 768px) {
     font-size: 2.25rem;    //36px
@@ -59,7 +59,7 @@ h1 {
 h2 {
   font-size: 1.5rem;       // 24px
   line-height: 1.25;
-  letter-spacing: -.5px;
+  //letter-spacing: -.5px;
 
   @media (min-width: 768px) {
     font-size: 1.75rem;    //28px
@@ -77,7 +77,7 @@ h2 {
 h3 {
   font-size: 1.375rem;     //22px
   line-height: 1.25;
-  letter-spacing: -.4px;
+  //letter-spacing: -.4px;
 
   @media (min-width: 768px) {
     font-size: 1.5625rem;  // 25px
@@ -104,10 +104,6 @@ h5 {
   }
 }
 
-h6 {
-  //font-size: 1rem;         // 16px
-  //font-weight: 600;
-}
 
 abbr[title] {
   text-decoration: none;
@@ -522,9 +518,6 @@ body {
 
 
 // Back to Top
-a.back-to-top {
-  border-bottom: 0;
-}
 
 .back-to-top {
   position: relative;
@@ -534,13 +527,16 @@ a.back-to-top {
   color: $navbar-bg-color;
   text-align: center;
   border-radius: 50%;
+  //-webkit-tap-highlight-color: rgba(51, 181, 229, .4);
 
   &:hover {
+    color: darken($navbar-bg-color, 10%);
     background-color: rgba($navbar-bg-color, .25);
   }
 
   &:focus {
-    outline: thin dotted;
+    background-color: rgba($navbar-bg-color, .25);
+    outline: 0;
   }
 }
 
