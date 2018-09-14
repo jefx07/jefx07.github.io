@@ -372,31 +372,18 @@ img {
 
 .octicon-rss {
   position: relative;
-  top: 5px;
+  top: 6px;
   left: 1px;
-  fill: #fff;
 }
 
 .octicon-note {
   position: relative;
-  top: 6px;
-  fill: #fff;
+  top: 7px;
 }
 
-.rss {
-  background-color: #ffb74d;
-
-  @include hover-focus {
-    background-color: #ffa726;
-  }
-}
-
-.mail {
-  background-color: $gray-500;
-
-  @include hover-focus {
-    background-color: #42a5f5;
-  }
+.octicon-mark-github {
+  position: relative;
+  top: 7px;
 }
 
 
@@ -405,10 +392,9 @@ img {
 
 .site-footer {
   padding: 1.5rem;
-  font-size: .8125rem;
-  line-height: 18px;
-  background-color: $gray-100;
-  border-top: 1px solid rgba($black, .09);
+  font-size: .75rem;
+  color: $gray-600;
+  background-color: $footer-bg-color;
 
   @media (min-width: 768px) {
     display: flex;
@@ -417,10 +403,10 @@ img {
   }
 
   a {
-    color: $gray-700;
+    color: $gray-600;
 
-    @include hover-focus {
-      color: $gray-900;
+    @include hover {
+      color: #0366d6;
     }
   }
 }
@@ -447,9 +433,11 @@ img {
 
   a {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
+    color: $gray-700;
     text-align: center;
+    border: 1px solid $black-02;
     border-radius: 50%;
   }
 }
@@ -476,7 +464,7 @@ html {
 
 body {
   // Margin bottom by footer height
-  margin-bottom: 119px;
+  margin-bottom: 121px;
 
   @media (min-width: 768px) {
     margin-bottom: 83px;
@@ -489,7 +477,7 @@ body {
   bottom: 0;
   width: 100%;
   // Set the fixed height of the footer here
-  height: 119px;
+  height: 121px;
 
   @media (min-width: 768px) {
     height: 83px;
