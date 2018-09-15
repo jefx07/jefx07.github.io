@@ -359,9 +359,13 @@ img {
 .octicon {
   display: inline-block;
   vertical-align: text-bottom;
-  transform: translate(0, 0);
+  //transform: translate(0, 0);
   fill: currentColor;
 }
+
+//svg {
+//  transform: translateZ(0);
+//}
 
 .octicon-calendar,
 .octicon-tag {
@@ -370,20 +374,27 @@ img {
   margin-right: 2px;
 }
 
-.octicon-rss {
+//.octicon-rss {
+//  position: relative;
+//  top: 6px;
+//  left: 1px;
+//}
+
+//.octicon-note {
+//  position: relative;
+//  top: 7px;
+//}
+
+//.octicon-mark-github {
+//  position: relative;
+//  top: 7px;
+//}
+
+.ql-icon {
   position: relative;
   top: 6px;
-  left: 1px;
-}
-
-.octicon-note {
-  position: relative;
-  top: 7px;
-}
-
-.octicon-mark-github {
-  position: relative;
-  top: 7px;
+  display: inline-block;
+  vertical-align: text-bottom;
 }
 
 
@@ -437,7 +448,7 @@ img {
     height: 35px;
     color: $gray-700;
     text-align: center;
-    border: 1px solid $black-02;
+    border: 1px solid $black-01;
     border-radius: 50%;
   }
 }
@@ -565,7 +576,7 @@ body {
   top: 5px;
   display: inline-block;
   vertical-align: text-bottom;
-  transform: translate(0, 0);
+  //transform: translate(0, 0);
   fill: currentColor;
 }
 

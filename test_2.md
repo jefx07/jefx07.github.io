@@ -30,7 +30,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<p class="mb0">&nbsp;</p>
+<p class="mb-0">&nbsp;</p>
 
 ## Blockquotes
 
@@ -41,7 +41,7 @@ Single line blockquote:
 Multi line blockquote with a cite reference:
 
 <blockquote>
-<p class="mb1"> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.</p>
+<p class="mb-2"> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.</p>
 <footer class="blockquote-footer"><cite>Steve Jobs, Apple Worldwide Developers&rsquo; Conference, 1997</cite></footer>
 </blockquote>
 
@@ -51,7 +51,7 @@ Multi line blockquote with a cite reference:
 
 Here we have a table with borders on all sides.
 
-<p class="mb0">&nbsp;</p>
+<p class="mb-0">&nbsp;</p>
 
 <table class="table table-bordered">
 <thead>
@@ -85,7 +85,7 @@ Here we have a table with borders on all sides.
 </tbody>
 </table>
 
-<p class="mb0">&nbsp;</p>
+<p class="mb-0">&nbsp;</p>
 
 ## Definition Lists
 
@@ -136,7 +136,7 @@ href="https://www.youtube.com/watch?v=O_HyZ5aW76c">explain</a> this one.</dd>
 3. List item three
 4. List item four
 
-<p class="mb0">&nbsp;</p>
+<p class="mb-0">&nbsp;</p>
 
 ## HTML Tags
 

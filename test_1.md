@@ -78,7 +78,7 @@ something: <em>our definition of what constitutes poetry.</em></dd>
 
 Using the most basic table markup, here’s how tables look.
 
-<p class="mb0">&nbsp;</p>
+<p class="mb-0">&nbsp;</p>
 
 <table class="table table-bordered">
 <tr>
@@ -116,7 +116,7 @@ that may not have anything to do with code. For example:
 Beware the Jubjub bird, and shun
     The frumious Bandersnatch!”
 </pre>
-<p class="mb0">&nbsp;</p>
+<p class="mb-0">&nbsp;</p>
 
 ### Code
 
@@ -138,7 +138,7 @@ within a `<pre>` block.
 Let's keep it simple.
 
 <blockquote>
-<p class="mb1">Good afternoon, gentlemen. I am a HAL 9000 computer. I became
+<p class="mb-2">Good afternoon, gentlemen. I am a HAL 9000 computer. I became
 operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992.
 My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
 hear it I can sing it for you.</p>
