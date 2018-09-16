@@ -363,16 +363,16 @@ img {
   fill: currentColor;
 }
 
-//svg {
-//  transform: translateZ(0);
-//}
-
 .octicon-calendar,
 .octicon-tag {
   position: relative;
   top: -1px;
   margin-right: 2px;
 }
+
+//svg {
+//  transform: translateZ(0);
+//}
 
 //.octicon-rss {
 //  position: relative;
@@ -390,80 +390,67 @@ img {
 //  top: 7px;
 //}
 
-.ql-icon {
-  position: relative;
-  top: 6px;
-  display: inline-block;
-  vertical-align: text-bottom;
-}
+//.ql-icon {
+//  position: relative;
+//  top: 6px;
+//  display: inline-block;
+//  vertical-align: text-bottom;
+//}
 
 
 // 8. Site footer
 //
 
 .site-footer {
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   font-size: .75rem;
-  color: $gray-600;
   background-color: $footer-bg-color;
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
+}
+
+.footer-nav {
+  padding-left: 0;
+  list-style: none;
+
+  a {
+    color: $footer-svg-color;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+.site-info {
+  font-family: $font-family-sans-serif;
+  color: $footer-text-color;
 
   a {
     color: $gray-600;
 
     @include hover {
-      color: #0366d6;
+      color: $link-hover-color;
     }
   }
 }
 
-.social-menu {
-  margin-bottom: 1.25rem;
+//.nav-social {
+//  margin-right: 1rem;
 
-  @media (min-width: 768px) {
-    order: 2;
-    margin-bottom: 0;
-  }
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav-social {
-  margin-right: 1rem;
-
-  a {
-    display: block;
-    width: 35px;
-    height: 35px;
-    color: $gray-700;
-    text-align: center;
-    border: 1px solid $black-01;
-    border-radius: 50%;
-  }
-}
-
-.site-info {
-  @media (min-width: 768px) {
-    order: 1;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-}
+//  a {
+//    display: block;
+//    width: 35px;
+//    height: 35px;
+//    color: $gray-700;
+//    text-align: center;
+//    border: 1px solid $black-01;
+//    border-radius: 50%;
+//  }
+//}
 
 
 // Make the footer sticky
@@ -475,10 +462,10 @@ html {
 
 body {
   // Margin bottom by footer height
-  margin-bottom: 121px;
+  margin-bottom: 102px;
 
   @media (min-width: 768px) {
-    margin-bottom: 83px;
+    margin-bottom: 68px;
   }
 }
 
@@ -488,10 +475,10 @@ body {
   bottom: 0;
   width: 100%;
   // Set the fixed height of the footer here
-  height: 121px;
+  height: 102px;
 
   @media (min-width: 768px) {
-    height: 83px;
+    height: 68px;
   }
 }
 //stylelint-enable no-duplicate-selectors

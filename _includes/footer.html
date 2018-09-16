@@ -1,30 +1,26 @@
-<footer class="site-footer text-muted" id="colophon" role="contentinfo">
-      <div class="social-menu ml-auto">
-        <ul class="footer-links">
-          <li class="nav-social">
-            <a href="{{ '/feed.xml' | relative_url }}" title="Subscribe to my RSS feed for updates">
-              {% comment %}<!-- <svg  class="octicon octicon-rss" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z"/></svg> -->{% endcomment %}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="ql-icon" height="16">
-                <g fill="currentColor">
-                  <path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li class="nav-social">
-            <a href="{{ '/about/#contact' | relative_url }}" title="Contact me">
-              {% comment %}<!-- <svg class="octicon octicon-note" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M3 10h4V9H3v1zm0-2h6V7H3v1zm0-2h8V5H3v1zm10 6H1V3h12v9zM1 2c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1H1z"/></svg> -->{% endcomment %}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ql-icon" height="16">
-                <g fill="currentColor">
-                  <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
-                </g>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="site-info">
-        <p>&copy; {{ site.time | date:'%Y' }} · {{ site.title | smartify }} / Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>.</p>
+<footer class="site-footer d-md-flex flex-row-reverse justify-content-between align-items-center" id="colophon" role="contentinfo">
+      <ul class="footer-nav d-flex align-items-center mb-3 mb-md-0">
+        <li class="mr-3">
+          <a href="{{ '/feed.xml' | relative_url }}" title="Subscribe to my RSS feed for updates" aria-label="RSS feed">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="d-block" height="18">
+              <g fill="currentColor">
+                <path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/about/#contact' | relative_url }}" title="Contact me" aria-label="Contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="d-block" height="18">
+              <g fill="currentColor">
+                <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="site-info d-flex">
+        <p class="mb-0">&copy; {{ site.time | date:'%Y' }} · {{ site.title | smartify }} .. Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>.</p>
       </div>
     </footer>
 
