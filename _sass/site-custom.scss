@@ -547,18 +547,15 @@ body {
   height: 36px;
   color: #2196f3;
   text-align: center;
-  //border: 1px solid $black-02;
   border-radius: 50%;
 
   &:hover {
     color: #1e88e5;
     background-color: rgba($navbar-bg-color, .2);
-    //border-color: rgba($navbar-bg-color, .2);
   }
 
   &:focus {
     background-color: rgba($navbar-bg-color, .2);
-    //border-color: rgba($navbar-bg-color, .2)
     outline: 0;
   }
 }
