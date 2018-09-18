@@ -15,4 +15,5 @@ _site
 
 # Folders (and files) to ignore
 node_modules
-*.json
+package.json
+package-lock.json
