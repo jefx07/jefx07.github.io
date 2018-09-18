@@ -542,24 +542,23 @@ body {
 // Back to Top
 
 .back-to-top {
-  // position: relative;
   display: block; // inline-block;
   width: 36px;
   height: 36px;
-  color: #039be5;
+  color: #2196f3;
   text-align: center;
   //border: 1px solid $black-02;
   border-radius: 50%;
 
   &:hover {
-    color: #0288d1;
+    color: #1e88e5;
     background-color: rgba($navbar-bg-color, .2);
     //border-color: rgba($navbar-bg-color, .2);
   }
 
   &:focus {
     background-color: rgba($navbar-bg-color, .2);
-    //border-color: rgba($navbar-bg-color, .2);
+    //border-color: rgba($navbar-bg-color, .2)
     outline: 0;
   }
 }

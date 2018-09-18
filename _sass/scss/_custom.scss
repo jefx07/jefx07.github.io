@@ -20,9 +20,6 @@ $blue:              #007bff;
 $link-color:        #448aff;
 $link-hover-color:  darken($link-color, 10%);
 
-// Paragraphs
-//
-//$paragraph-margin-bottom:   1.25rem;
 
 // Typography
 //
@@ -67,7 +64,7 @@ $pre-bg:           $gray-100;
 //
 
 $navbar-font-family:        $font-family-roboto;
-$navbar-bg-color:           #03a9f4;  // #28aadc;
+$navbar-bg-color:           #28aadc;
 $navbar-box-shadow:         1px 1px 1px rgba($black, .16);
 
 $navbar-toggler-padding-y:  .4375rem;
