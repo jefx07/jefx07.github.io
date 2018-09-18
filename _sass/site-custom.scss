@@ -542,17 +542,11 @@ body {
 // Back to Top
 
 .toplink {
-  color: $green-200;
-  // border-radius: 50%;
+  color: $gray-500;
 
   &:hover {
-    color: $green-500;   //#4c6ef5;
+    color: #82c91e; //$green-500; // fa-green #82c91e
   }
-
-  //&:focus {
-  //  outline: 0;
-  //  box-shadow: 0 0 0 .15rem rgba($green-2, .5);
-  //}
 
   @media print {
     display: none;
