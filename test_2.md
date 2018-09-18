@@ -222,5 +222,6 @@ Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should 
 
 This allows you to denote <var>variables</var>.
 
+<hr style="margin: 2.5rem 0">
 
 {% include scrolltop.html %}
