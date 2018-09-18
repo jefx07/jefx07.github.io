@@ -423,7 +423,7 @@ img {
     color: $footer-svg-color;
 
     &:hover {
-      color: #ff7043; //$link-color;
+      color: #ff8a65; //$link-color;
     }
   }
 }
@@ -543,25 +543,28 @@ body {
 
 .back-to-top {
   // position: relative;
-  display: inline-block;
+  display: block; // inline-block;
   width: 36px;
   height: 36px;
-  color: $navbar-bg-color;
+  color: #039be5;
   text-align: center;
+  //border: 1px solid $black-02;
   border-radius: 50%;
 
   &:hover {
-    color: darken($navbar-bg-color, 10%);
-    background-color: rgba($navbar-bg-color, .25);
+    color: #0288d1;
+    background-color: rgba($navbar-bg-color, .2);
+    //border-color: rgba($navbar-bg-color, .2);
   }
 
   &:focus {
-    background-color: rgba($navbar-bg-color, .25);
+    background-color: rgba($navbar-bg-color, .2);
+    //border-color: rgba($navbar-bg-color, .2);
     outline: 0;
   }
 }
 
-.icon-arrow-up {
+.arrow-up-svg {
   position: relative;
   top: 5px;
   display: inline-block;
