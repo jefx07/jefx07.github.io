@@ -407,7 +407,7 @@ img {
 .site-footer {
   padding: 1.5rem 1rem;
   font-size: .75rem;
-  background-color: $footer-bg-color;
+  background-color: $gray-100;
 
   @media (min-width: 768px) {
     padding-right: 2.5rem;
@@ -420,7 +420,7 @@ img {
   list-style: none;
 
   a {
-    color: $footer-svg-color;
+    color: darken($gray-500, 5%);   // $footer-svg-color;
 
     &:hover {
       color: #ff8a65; //$link-color;
@@ -542,10 +542,11 @@ body {
 // Back to Top
 
 .toplink {
-  color: $gray-500;
+  color: $fa-green;
+  -webkit-tap-highlight-color: rgba($black, .1);  //rgba(51, 181, 229, .4);
 
   &:hover {
-    color: #82c91e; //$green-500; // fa-green #82c91e
+    color: $fa-green-dark;
   }
 
   @media print {
