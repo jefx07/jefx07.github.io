@@ -377,29 +377,6 @@ img {
 //  transform: translateZ(0);
 //}
 
-//.octicon-rss {
-//  position: relative;
-//  top: 6px;
-//  left: 1px;
-//}
-
-//.octicon-note {
-//  position: relative;
-//  top: 7px;
-//}
-
-//.octicon-mark-github {
-//  position: relative;
-//  top: 7px;
-//}
-
-//.ql-icon {
-//  position: relative;
-//  top: 6px;
-//  display: inline-block;
-//  vertical-align: text-bottom;
-//}
-
 
 // 8. Site footer
 //
@@ -423,7 +400,7 @@ img {
     color: darken($gray-500, 5%);   // $footer-svg-color;
 
     &:hover {
-      color: #ff8a65; //$link-color;
+      color: $orange-hover;   //#ff8a65; //$link-color;
     }
   }
 }
@@ -542,11 +519,10 @@ body {
 // Back to Top
 
 .toplink {
-  color: $fa-green;
-  -webkit-tap-highlight-color: rgba($black, .1);  //rgba(51, 181, 229, .4);
+  color: $green-hover;
 
   &:hover {
-    color: $fa-green-dark;
+    color: rgba($green-hover, .75);
   }
 
   @media print {
