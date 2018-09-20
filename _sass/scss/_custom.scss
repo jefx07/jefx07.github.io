@@ -41,11 +41,10 @@ $link-hover-color:  darken($link-color, 10%);
 // Typography
 //
 // stylelint-disable value-keyword-case
-//$font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   "Source Code Pro", monospace;
-
 $font-family-opensans:    "Open Sans", sans-serif;
 $font-family-roboto:      Roboto, sans-serif;
+
 $font-family-base:        $font-family-opensans;
 // stylelint-enable value-keyword-case
 
@@ -81,7 +80,7 @@ $pre-bg:           $gray-100;
 //
 
 $navbar-font-family:        $font-family-roboto;
-$navbar-bg-color:           #28aadc;
+$navbar-bg-color:           #289bdc;    // #28aadc;
 $navbar-box-shadow:         1px 1px 1px rgba($black, .16);
 
 $navbar-toggler-padding-y:  .4375rem;

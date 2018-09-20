@@ -397,10 +397,6 @@ img {
 
   a {
     color: darken($gray-500, 5%);
-
-    //&:hover {
-    //  color: #ff8a65;
-    //}
   }
 }
 
@@ -426,6 +422,12 @@ img {
 .hover-cyan {
   &:hover {
     color: $cyan-hover;
+  }
+}
+
+.hover-grape {
+  &:hover {
+    color: $grape-hover;
   }
 }
 
@@ -528,40 +530,6 @@ body {
     display: none;
   }
 }
-
-
-//.back-to-top {
-//  display: block; // inline-block;
-//  width: 36px;
-//  height: 36px;
-//  color: #2196f3;
-//  text-align: center;
-//  border-radius: 50%;
-
-//  &:hover {
-//    color: #1e88e5;   // indigo - #4c6ef5
-//    background-color: rgba($navbar-bg-color, .2);
-//  }
-
-//  &:focus {
-//    background-color: rgba($navbar-bg-color, .2);
-//    outline: 0;
-//  }
-
-//  @media print {
-//    display: none;
-//  }
-//}
-
-
-//.arrow-up-svg {
-//  position: relative;
-//  top: 5px;
-//  display: inline-block;
-//  vertical-align: text-bottom;
-//  //transform: translate(0, 0);
-//  fill: currentColor;
-//}
 
 
 // Under construction
