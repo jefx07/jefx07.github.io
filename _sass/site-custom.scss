@@ -291,7 +291,7 @@ img {
     padding: 1.5rem 1rem;
     margin-right: -15px;
     margin-left: -15px;
-    border-bottom: 1px solid $black-01;
+    border-bottom: 1px solid rgba($black, .1);
   }
 
   a {
@@ -335,7 +335,7 @@ img {
 @media (max-width: 575px) {
   .nav-previous,
   .nav-next {
-    border-bottom: 1px solid $black-01;
+    border-bottom: 1px solid rgba($black, .1);
   }
 }
 
@@ -402,7 +402,7 @@ img {
 
 .site-info {
   font-family: $font-family-sans-serif;
-  color: $footer-text-color;
+  color: lighten($gray-700, 5%);
 
   a {
     color: $gray-600;
@@ -502,7 +502,7 @@ body {
 
   img:not(.img-thumbnail) {
     border-radius: 3px;
-    box-shadow: 0 1px 4px $black-02;
+    box-shadow: 0 1px 4px rgba($black, .2);
   }
 }
 

@@ -8,18 +8,10 @@
 // Colors
 //
 $black:             #000;
-$black-01:          rgba($black, .1);
-$black-02:          rgba($black, .2);
 $gray-200:          #e9ecef;
 $gray-100:          #f8f9fa;
 $white:             #fff;
 $blue:              #007bff;
-
-$blue-500:          #2196f3;
-
-$green-200:         #a5d6a7;
-$green-300:         #81c784;
-$green-500:         #4caf50;
 
 $blue-link-hover:   #4dabf7;
 
@@ -29,7 +21,7 @@ $grape-hover:       #be4bdb;
 $pink-hover:        #f783ac;
 $orange-hover:      #fd7e14;
 $green-hover:       #82c91e;
-$cyan-hover:        #15aabf;    // nice colour (=dark text)
+$cyan-hover:        #15aabf;
 
 
 // Links
@@ -95,10 +87,3 @@ $navbar-toggler-dark-outline-color:    rgba($white, .2);
 $navbar-toggler-light-outline-color:   rgba($black, .25);
 
 $navbar-toggler-transition:   background-image .2s ease-in-out;
-
-
-// Footer
-//
-$footer-bg-color:   #fafbfc;
-$footer-svg-color:  #959da5;
-$footer-text-color: #586069;
