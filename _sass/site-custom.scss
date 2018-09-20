@@ -380,7 +380,6 @@ img {
 
 // 8. Site footer
 //
-
 .site-footer {
   padding: 1.5rem 1rem;
   font-size: .75rem;
@@ -397,11 +396,11 @@ img {
   list-style: none;
 
   a {
-    color: darken($gray-500, 5%);   // $footer-svg-color;
+    color: darken($gray-500, 5%);
 
-    &:hover {
-      color: #ff8a65; //$link-color;
-    }
+    //&:hover {
+    //  color: #ff8a65;
+    //}
   }
 }
 
@@ -418,19 +417,17 @@ img {
   }
 }
 
-//.nav-social {
-//  margin-right: 1rem;
+.hover-orange {
+  &:hover {
+    color: $orange-hover;
+  }
+}
 
-//  a {
-//    display: block;
-//    width: 35px;
-//    height: 35px;
-//    color: $gray-700;
-//    text-align: center;
-//    border: 1px solid $black-01;
-//    border-radius: 50%;
-//  }
-//}
+.hover-cyan {
+  &:hover {
+    color: $cyan-hover;
+  }
+}
 
 
 // Make the footer sticky
@@ -519,10 +516,12 @@ body {
 // Back to Top
 
 .toplink {
-  color: $green-hover;
+  font-size: .875rem;
+  color: darken($gray-500, 5%);
 
   &:hover {
-    color: rgba($green-hover, .75);
+    color: $green-hover;
+    text-decoration: none;
   }
 
   @media print {
