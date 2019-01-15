@@ -142,7 +142,9 @@ Let's keep it simple.
 operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992.
 My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
 hear it I can sing it for you.</p>
-<footer class="blockquote-footer"><cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></footer>
+<footer class="blockquote-footer">
+  <cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite>
+</footer>
 </blockquote>
 
 And here’s a bit of trailing text.
