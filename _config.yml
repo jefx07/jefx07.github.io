@@ -1,7 +1,7 @@
 # General configuration settings
 title: Jeff's Blog
-tagline: The place to be
-description: "Just a blog about things, and everything you need to know."
+tagline: Just another Jekyll blog
+description: "Just another blog about things tech related, and the world around us."
 baseurl: ""
 url: https://jefx07.github.io
 
@@ -11,8 +11,8 @@ author:
   email: # (optional)
 
 # Enter your Google Analytics tracking ID (e.g. UA-000000-01) to activate the tracking code
-google_analytics_id: UA-87931263-1
-google_verify: HXOLJ6CE_xR58FLhhX2Jwkh8dRdxVXV3Yqui4WCmLs0
+google_analytics_id:
+google_verify:
 
 # Use the following plug-ins
 plugins:
