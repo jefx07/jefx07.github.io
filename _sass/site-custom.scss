@@ -143,11 +143,13 @@ code {
 }
 
 kbd {
+  font-size: 100%;
   color: inherit;
   box-shadow: none;
 
   kbd {
     padding: $code-padding-y $code-padding-x;
+    font-size: $kbd-font-size;
     color: $white;
     background-color: $gray-900;
   }

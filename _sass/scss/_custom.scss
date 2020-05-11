@@ -40,9 +40,10 @@ $font-family-roboto:      Roboto, sans-serif;
 $font-family-base:        $font-family-opensans;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem;
+$font-size-base:      1rem;
+$font-size-xs:        .75rem;
 
-$font-size-xs:                .75rem;
+$font-weight-normal:  400;
 
 //$headings-margin-bottom:      .75rem;
 $headings-font-family:        $font-family-roboto;
@@ -58,14 +59,15 @@ $blockquote-border-color:     $gray-200 !default;
 
 // Code
 //
-$code-font-size:   .9375rem;
-$code-padding-y:   1px;
-$code-padding-x:   2px;
-$code-bg:          $gray-100;
+$code-font-size:  .9375rem;
+$code-padding-y:  1px;
+$code-padding-x:  2px;
+$code-bg:         $gray-100;
 
-$kbd-bg:           inherit;
+$kbd-bg:                  inherit;
+$nested-kbd-font-weight:  $font-weight-normal;
 
-$pre-bg:           $gray-100;
+$pre-bg:          $gray-100;
 
 
 // Navbar
