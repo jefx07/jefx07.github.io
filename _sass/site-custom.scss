@@ -177,7 +177,7 @@ img {
 //
 
 .navbar {
-  font-family: $font-family-roboto;
+  font-family: $navbar-font-family;
   box-shadow: $navbar-box-shadow;
 }
 
@@ -339,12 +339,15 @@ img {
 }
 
 .post-title {
+  font-family: $headings-font-family;
   font-size: 1.5rem;
   line-height: 1.25;
-  color: $body-color;
+  //color: $body-color;
+  color: $link-color;
 
   @include hover-focus {
-    opacity: .54;
+    //opacity: .54;
+    color: darken($gray-500, 5%);
   }
 }
 
