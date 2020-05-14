@@ -17,7 +17,7 @@
   border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
 
-  @include box-shadow($input-box-shadow);
+  // @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
   // Unstyle the caret on `<select>`s in IE10+.
@@ -26,11 +26,18 @@
     border: 0;
   }
 
+  // Remove select outline from select box in FF
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $input-color;
+  }
+
   // Customize the `:focus` state to imitate native WebKit styles.
   @include form-control-focus();
 
   // Placeholder
   &::placeholder {
+    font-size: $font-size-sm;
     color: $input-placeholder-color;
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
     opacity: 1;
@@ -49,6 +56,19 @@
   }
 }
 
+// Form control sizing
+//
+
+select.form-control {
+  &[size],
+  &[multiple] {
+    height: auto;
+  }
+}
+
+textarea.form-control {
+  height: auto;
+}
 
 // Form groups
 //

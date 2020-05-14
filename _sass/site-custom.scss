@@ -159,11 +159,6 @@ kbd {
   @include user-select();
 }
 
-.form-control {
-  font-family: $font-family-sans-serif;
-  font-size: .9375rem;
-}
-
 //
 // Make ALL images responsive
 //
