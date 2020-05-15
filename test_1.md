@@ -172,7 +172,7 @@ We also have some buttons, if you need them.
   </div>
   <div class="form-group">
     <label class="sr-only" for="inputMessage">Message</label>
-    <textarea class="form-control" name="message" id="inputMessage" placeholder="Enter your message here..." rows="5"></textarea>
+    <textarea rows="5" class="form-control" name="message" id="inputMessage" placeholder="Enter your message here" required></textarea>
   </div>
   <input type="hidden" name="_subject" value="New submission!">
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
