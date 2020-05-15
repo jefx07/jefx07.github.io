@@ -161,7 +161,7 @@ We also have some buttons, if you need them.
 
 ## Forms
 
-<form class="formspree" method="POST" action="https://formspree.io/YOUREMAILHERE">
+<form id="formspree" method="POST" action="https://formspree.io/YOUREMAILHERE">
   <div class="form-group">
     <label class="sr-only" for="inputName">Name</label>
     <input class="form-control" type="text" name="name" id="inputName" placeholder="Your name" required>
@@ -174,9 +174,7 @@ We also have some buttons, if you need them.
     <label class="sr-only" for="inputMessage">Message</label>
     <textarea class="form-control" name="message" id="inputMessage" placeholder="Enter your message here..." rows="5"></textarea>
   </div>
-
   <input type="hidden" name="_subject" value="New submission!">
-  <input type="hidden" name="_format" value="plain">
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
   <button class="btn btn-primary" type="submit">Send</button>
 </form>

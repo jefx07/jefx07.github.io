@@ -510,11 +510,21 @@ body {
 // miscellaneous
 //
 
-.formspree {
-  max-width: 24rem;
+// stylelint-disable selector-max-id
+#formspree {
+  max-width: 26rem;
+  padding: 1.5rem;
   margin: 2rem auto 3rem;
-}
+  border: 1px solid $gray-400;
+  border-radius: .25rem;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, .1);
 
+  & ::placeholder {
+    font-size: $font-size-sm;
+    //font-size: .825rem;
+  }
+}
+// stylelint-enable selector-max-id
 
 // Back to Top
 
