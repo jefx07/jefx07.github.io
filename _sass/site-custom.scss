@@ -522,10 +522,13 @@ body {
   & ::placeholder {
     //font-size: $font-size-sm;
     font-size: .825rem;
-    color: #7952b3;
   }
 }
 // stylelint-enable selector-max-id
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
 
 // Back to Top
 
