@@ -520,8 +520,9 @@ body {
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, .1);
 
   & ::placeholder {
-    font-size: $font-size-sm;
-    //font-size: .825rem;
+    //font-size: $font-size-sm;
+    font-size: .825rem;
+    color: #7952b3;
   }
 }
 // stylelint-enable selector-max-id

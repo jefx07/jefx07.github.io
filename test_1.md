@@ -161,20 +161,20 @@ We also have some buttons, if you need them.
 
 ## Forms
 
-<form id="formspree" method="POST" action="https://formspree.io/YOUREMAILHERE">
+<form id="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/YOUREMAILHERE">
   <div class="form-group">
     <label class="sr-only" for="inputName">Name</label>
-    <input class="form-control" type="text" name="name" id="inputName" placeholder="Your name" required>
+    <input id="inputName" class="form-control" type="text" name="name" placeholder="Your name" required="">
   </div>
   <div class="form-group">
     <label class="sr-only" for="inputEmail">Email address</label>
-    <input class="form-control" type="email" name="_replyto" id="inputEmail" placeholder="Your email" required>
+    <input id="inputEmail" class="form-control" type="email" name="_replyto" placeholder="Your email" required="">
   </div>
   <div class="form-group">
     <label class="sr-only" for="inputMessage">Message</label>
-    <textarea rows="5" class="form-control" name="message" id="inputMessage" placeholder="Enter your message here" required></textarea>
+    <textarea id="inputMessage" class="form-control" rows="5" name="message" placeholder="Enter your message here" required=""></textarea>
   </div>
-  <input type="hidden" name="_subject" value="New submission!">
+  <input type="hidden" name="_subject" value="Contact Form Submission!">
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
   <button class="btn btn-primary" type="submit">Send</button>
 </form>
