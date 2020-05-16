@@ -539,7 +539,7 @@ body {
   font-size: $font-size-sm;
 
   &:focus {
-    box-shadow: 0 0 0 .1rem rgba(0, 123, 255, .25);
+    box-shadow: 0 0 0 .1rem $input-btn-focus-color;
   }
 }
 
