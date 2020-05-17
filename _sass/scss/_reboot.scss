@@ -63,10 +63,11 @@ body {
 //
 // See https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible
 // and https://developer.paciellogroup.com/blog/2018/03/focus-visible-and-backwards-compatibility/
+// stylelint-disable selector-pseudo-class-no-unknown
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
-
+// stylelint-enable selector-pseudo-class-no-unknown
 
 // Content grouping
 //
@@ -109,12 +110,14 @@ p {
 // 1. Remove the bottom border in Firefox 39-.
 // 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
 // 3. Add explicit cursor to indicate changed behavior.
+// 4. Prevent the text-decoration to be skipped.
 
 abbr[title] {
   text-decoration: underline; // 2
   text-decoration: underline dotted; // 2
   cursor: help; // 3
   border-bottom: 0; // 1
+  text-decoration-skip-ink: none; // 4
 }
 
 address {
@@ -296,6 +299,14 @@ label {
   margin-bottom: $label-margin-bottom;
 }
 
+// Remove the default `border-radius` that macOS Chrome adds.
+//
+// Details at https://github.com/twbs/bootstrap/issues/24093
+button {
+  // stylelint-disable-next-line property-blacklist
+  border-radius: 0;
+}
+
 // Work around a Firefox/IE bug where the transparent `button` background
 // results in a loss of the default `button` focus styles.
 //
@@ -326,11 +337,25 @@ select {
   text-transform: none; // Remove the inheritance of text transform in Firefox
 }
 
+// Set the cursor for non-`<button>` buttons
+//
+// Details at https://github.com/twbs/bootstrap/pull/30562
+[role="button"] {
+  cursor: pointer;
+}
+
+// Remove the inheritance of word-wrap in Safari.
+//
+// Details at https://github.com/twbs/bootstrap/issues/24990
+select {
+  word-wrap: normal;
+}
+
 // 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
 //    controls in Android 4.
 // 2. Correct the inability to style clickable types in iOS and Safari.
 button,
-html [type="button"], // 1
+[type="button"], // 1
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; // 2
@@ -349,18 +374,6 @@ input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box; // 1. Add the correct box sizing in IE 10-
   padding: 0; // 2. Remove the padding in IE 10-
-}
-
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  // Remove the default appearance of temporal inputs to avoid a Mobile Safari
-  // bug where setting a custom line-height prevents text from being vertically
-  // centered within the input.
-  // See https://bugs.webkit.org/show_bug.cgi?id=139848
-  // and https://github.com/twbs/bootstrap/issues/11266
-  -webkit-appearance: listbox;
 }
 
 textarea {
