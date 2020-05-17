@@ -13,6 +13,7 @@
   }
 }
 
+// stylelint-disable selector-class-pattern
 .highlight {
   .c { color: #999; } // Comment
   .err { color: #a00; background-color: #faa; } // Error
@@ -76,6 +77,7 @@
   .il { color: #f60; } // Literal.Number.Integer.Long
   .p { color: #555; } // punctuation e.g. phpinfo()
 }
+// stylelint-enable selector-class-pattern
 
 // Use 'bash' scripting language for commands run as a regular user
 .language-bash::before {

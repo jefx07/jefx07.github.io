@@ -9,7 +9,7 @@
   border-color: $border;
   //@include box-shadow($btn-box-shadow);
 
-  @include hover {
+  &:hover {
     color: color-yiq($hover-background);
     @include gradient-bg($hover-background);
     border-color: $hover-border;
@@ -50,5 +50,5 @@
   font-size: $font-size;
   line-height: $line-height;
   // Manually declare to provide an override to the browser default
-  border-radius: $border-radius;
+  @include border-radius($border-radius);
 }

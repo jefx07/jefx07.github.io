@@ -16,7 +16,8 @@
   @include transition($btn-transition);
 
   // Share hover and focus styles
-  @include hover-focus {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 

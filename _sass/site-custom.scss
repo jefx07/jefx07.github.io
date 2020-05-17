@@ -36,7 +36,8 @@
 .entry-title a {
   color: $body-color;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     text-decoration: none;
     opacity: .54;
   }
@@ -216,7 +217,7 @@ img {
 .navbar-toggler-icon {
   width: 1.2em;
   height: 1.2em;
-  transition: $navbar-toggler-transition;
+  @include transition ($navbar-toggler-transition);
 }
 
 
@@ -224,8 +225,8 @@ img {
 //
 
 .skip-navigation {
-  @include sr-only;
-  @include sr-only-focusable;
+  @include sr-only();
+  @include sr-only-focusable();
 }
 
 .skip-navigation:active,
@@ -239,7 +240,7 @@ img {
   color: $link-color;
   text-decoration: none;
   background-color: $gray-200;
-  border-radius: $border-radius-sm;
+  @include border-radius($border-radius-sm);
   outline: 0;
   box-shadow: 0 2px 5px 0 rgba($black, .26);
 }
@@ -291,7 +292,8 @@ img {
   a {
     color: $gray-600;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       color: $body-color;
     }
   }
@@ -314,7 +316,8 @@ img {
   display: block;
   padding: 1.5rem 1rem;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 }
@@ -340,7 +343,8 @@ img {
   //color: $body-color;
   color: $link-color;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     //opacity: .54;
     color: darken($gray-500, 5%);
   }
@@ -404,7 +408,7 @@ img {
   a {
     color: $gray-600;
 
-    @include hover {
+    &:hover {
       color: $link-hover-color;
     }
   }
@@ -502,7 +506,7 @@ body {
   padding-bottom: 2rem;
 
   img:not(.img-thumbnail) {
-    border-radius: 3px;
+    @include border-radius(3px);
     box-shadow: 0 1px 4px rgba($black, .2);
   }
 }
@@ -516,7 +520,7 @@ body {
   padding: 1.5rem;
   margin: 2rem auto 3rem;
   border: 1px solid $gray-400;
-  border-radius: .25rem;
+  @include border-radius(.25rem);
   //box-shadow: 0 0 16px 0 rgba(0, 0, 0, .1);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
 
