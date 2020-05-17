@@ -511,7 +511,7 @@ body {
 //
 
 // stylelint-disable selector-max-id
-#formspree {
+.formspree {
   max-width: 26rem;
   padding: 1.5rem;
   margin: 2rem auto 3rem;
@@ -519,10 +519,6 @@ body {
   border-radius: .25rem;
   //box-shadow: 0 0 16px 0 rgba(0, 0, 0, .1);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
-
-  & ::placeholder {
-    //font-size: $font-size-sm;
-  }
 
   .btn {
     padding-right: 1.5rem;
@@ -533,14 +529,21 @@ body {
 
 .form-group {
   margin-bottom: 1.5rem;
+  font-size: $font-size-sm;
 }
 
 .form-control {
-  font-size: $font-size-sm;
+  //font-size: $font-size-sm;
 
   &:focus {
     box-shadow: 0 0 0 .1rem $input-btn-focus-color;
   }
+}
+
+.required {
+  display: inline-block;
+  padding-left: 5px;
+  color: #e13557;
 }
 
 // Back to Top

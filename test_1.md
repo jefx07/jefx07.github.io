@@ -161,18 +161,18 @@ We also have some buttons, if you need them.
 
 ## Forms
 
-<form id="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/YOUREMAILHERE">
+<form class="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/YOUREMAILHERE">
   <div class="form-group">
-    <label class="sr-only" for="inputName">Name</label>
-    <input id="inputName" class="form-control" type="text" name="name" placeholder="Name" required>
+    <label for="inputName">Name<span class="required">*</span></label>
+    <input id="inputName" class="form-control" type="text" name="name" required>
   </div>
   <div class="form-group">
-    <label class="sr-only" for="inputEmail">Email address</label>
-    <input id="inputEmail" class="form-control" type="email" name="_replyto" placeholder="Email address" required>
+    <label for="inputEmail">Email address<span class="required">*</span></label>
+    <input id="inputEmail" class="form-control" type="email" name="_replyto" required>
   </div>
   <div class="form-group">
-    <label class="sr-only" for="inputMessage">Message</label>
-    <textarea id="inputMessage" class="form-control" rows="5" name="message" placeholder="Message" required></textarea>
+    <label for="inputMessage">Message<span class="required">*</span></label>
+    <textarea id="inputMessage" class="form-control" rows="3" name="message" required></textarea>
   </div>
   <input type="hidden" name="_subject" value="Contact Form Submission!">
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
