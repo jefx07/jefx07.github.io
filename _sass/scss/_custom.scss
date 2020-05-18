@@ -36,7 +36,8 @@ $link-hover-color:  darken($link-color, 10%);
 $font-family-sans-serif:  "Open Sans", sans-serif;
 $font-family-monospace:   "Source Code Pro", monospace;
 
-$headings-font-family:    Roboto, sans-serif;
+//$headings-font-family:    Roboto, sans-serif;
+$headings-font-family:    Inter, sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:      1rem;
@@ -69,7 +70,7 @@ $pre-bg:          $gray-100;
 // Navbar
 //
 // stylelint-disable value-keyword-case
-$navbar-font-family:        Roboto, sans-serif;
+$navbar-font-family:        $headings-font-family;
 // stylelint-enable value-keyword-case
 $navbar-bg-color:           #289bdc;    // #28aadc;
 $navbar-box-shadow:         1px 1px 1px rgba($black, .16);

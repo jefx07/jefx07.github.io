@@ -13,8 +13,11 @@
     {% if jekyll.environment == 'production' and page.title == "Home" and site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">
     {% endif %}
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto:400,500%7CSource+Code+Pro">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    {% comment %}<!-- <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto:400,500%7CSource+Code+Pro">
+    -->
+    {% endcomment %}
     <!-- core CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
