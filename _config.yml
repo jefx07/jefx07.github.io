@@ -1,7 +1,7 @@
 # General configuration settings
 title: Jeff's Blog
 tagline: Just another Jekyll blog
-description: "Just another blog about things tech related, and the world around us."
+description: "Just a little blog about things I've learned and life in general."
 baseurl: ""
 url: https://jefx07.github.io
 
