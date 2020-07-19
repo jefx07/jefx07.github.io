@@ -171,7 +171,7 @@ We also have some buttons, if you need them.
     <input id="inputEmail" class="form-control" type="email" name="_replyto" required>
   </div>
   <div class="form-group">
-    <label for="inputMessage">Message<span class="required">*</span></label>
+    <label for="inputMessage">Message</label>
     <textarea id="inputMessage" class="form-control" rows="3" name="message" required></textarea>
   </div>
   <input type="hidden" name="_subject" value="Contact Form Submission!">
