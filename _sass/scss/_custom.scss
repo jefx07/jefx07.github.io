@@ -36,7 +36,6 @@ $link-hover-color:  darken($link-color, 10%);
 $font-family-sans-serif:  "Open Sans", sans-serif;
 //$font-family-monospace:   "Source Code Pro", monospace;
 
-//$headings-font-family:    Roboto, sans-serif;
 $headings-font-family:    Inter, sans-serif;
 // stylelint-enable value-keyword-case
 
@@ -48,8 +47,8 @@ $font-weight-normal:  400;
 $mark-padding:                0 .2em;
 $mark-bg:                     #ffeea8;
 
-$blockquote-font-size:        ($font-size-base * 1.125);
-$blockquote-footer-font-size: .9375rem;
+//$blockquote-font-size:        ($font-size-base * 1.125);
+//$blockquote-footer-font-size: .9375rem;
 $blockquote-border-width:     .3125rem;
 $blockquote-border-color:     $gray-200 !default;
 

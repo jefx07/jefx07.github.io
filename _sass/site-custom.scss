@@ -24,10 +24,11 @@
   //font-size: 2.25rem;    // 36px
   font-weight: 300;
   letter-spacing: -1px;
+  //
   //@media (min-width: 768px) {
   //  font-size: 2.5rem;   // 40px
   //}
-
+  //
   //@media (min-width: 992px) {
   //  font-size: 2.75rem;  // 44px
   //}
@@ -121,7 +122,7 @@ abbr[title] {
 // Blockquotes
 blockquote {
   padding: ($spacer / 2) $spacer;
-  font-size: $blockquote-font-size;
+  @include font-size($blockquote-font-size);
   border-left: $blockquote-border-width solid $blockquote-border-color;
 
   p,
@@ -133,9 +134,9 @@ blockquote {
   }
 }
 
-.blockquote-footer {
-  font-size: $blockquote-footer-font-size;
-}
+//.blockquote-footer {
+//  font-size: $blockquote-footer-font-size;
+//}
 
 code {
   padding: $code-padding-y $code-padding-x;
@@ -473,8 +474,8 @@ body {
 
   > .container {
 
-      @media (min-width: 768px) {
-        max-width: 40em;
+    @media (min-width: 768px) {
+      max-width: 40em;
     }
   }
 }
@@ -488,7 +489,7 @@ body {
   }
 
   > .entry-title {
-      margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 
