@@ -120,24 +120,27 @@ abbr[title] {
 }
 
 // Blockquotes
-blockquote {
-  padding: ($spacer / 2) $spacer;
-  @include font-size($blockquote-font-size);
-  border-left: $blockquote-border-width solid $blockquote-border-color;
-
-  p,
-  ul,
-  ol {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-//.blockquote-footer {
-//  font-size: $blockquote-footer-font-size;
+//blockquote {
+//  padding: ($spacer / 2) $spacer;
+//  @include font-size($blockquote-font-size);
+//  border-left: $blockquote-border-width solid $blockquote-border-color;
+//
+//  p,
+//  ul,
+//  ol {
+//    &:last-child {
+//      margin-bottom: 0;
+//    }
+//  }
 //}
 
+//blockquote {
+//padding: $spacer / 2;
+//border-left: $blockquote-border-width solid $blockquote-border-color;
+//}
+
+
+// Code
 code {
   padding: $code-padding-y $code-padding-x;
   background-color: $code-bg;
