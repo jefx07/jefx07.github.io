@@ -120,24 +120,27 @@ abbr[title] {
 }
 
 // Blockquotes
-//blockquote {
-//  padding: ($spacer / 2) $spacer;
-//  @include font-size($blockquote-font-size);
-//  border-left: $blockquote-border-width solid $blockquote-border-color;
-//
-//  p,
-//  ul,
-//  ol {
-//    &:last-child {
-//      margin-bottom: 0;
-//    }
-//  }
-//}
+blockquote {
+  padding: ($spacer / 2) $spacer;
+  @include font-size($blockquote-font-size);
+  border-left: $blockquote-border-width solid $blockquote-border-color;
 
-//blockquote {
-//padding: $spacer / 2;
-//border-left: $blockquote-border-width solid $blockquote-border-color;
-//}
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p::before {
+    content: "\201C";
+  }
+
+  p::after {
+    content: "\201D";
+  }
+}
 
 
 // Code

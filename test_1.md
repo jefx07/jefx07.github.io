@@ -137,26 +137,13 @@ within a `<pre>` block.
 
 Let's keep it simple.
 
-<!-- <blockquote>
+<blockquote cite="http://en.wikipedia.org/wiki/HAL_9000">
 <p class="mb-2">Good afternoon, gentlemen. I am a HAL 9000 computer. I became
 operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992.
 My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
 hear it I can sing it for you.</p>
-<footer class="blockquote-footer">
-  <cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite>
-</footer>
-</blockquote> -->
-<figure>
-<blockquote class="blockquote">
-<p>Good afternoon, gentlemen. I am a HAL 9000 computer. I became
-operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992.
-My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to
-hear it I can sing it for you.</p>
+<footer class="blockquote-footer">HAL 9000</footer>
 </blockquote>
-<figcaption class="blockquote-footer">
-  <cite><a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite>
-</figcaption>
-</figure>
 
 And here’s a bit of trailing text.
 

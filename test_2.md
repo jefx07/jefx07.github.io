@@ -36,26 +36,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Single line blockquote:
 
-<!-- > Stay hungry. Stay foolish. -->
-<blockquote class="blockquote">
-<p>Stay hungry. Stay foolish.</p>
-</blockquote>
+> Stay hungry. Stay foolish.
 
 Multi line blockquote with a cite reference:
 
-<!--<blockquote>
-<p class="mb-2"> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.</p>
-<footer class="blockquote-footer"><cite>Steve Jobs, Apple Worldwide Developers&rsquo; Conference, 1997</cite></footer>
-</blockquote> -->
-
-<figure>
-<blockquote class="blockquote">
-<p> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.</p>
+<blockquote>
+<p class="mb-2">People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.</p>
+<footer class="blockquote-footer">Steve Jobs, <cite>Apple Worldwide Developers&rsquo; Conference, 1997</cite></footer>
 </blockquote>
-<figcaption class="blockquote-footer">
-Steve Jobs, <cite>Apple Worldwide Developers&rsquo; Conference, 1997</cite>
-</figcaption>
-</figure>
 
 <p class="mb0">&nbsp;</p>
 
