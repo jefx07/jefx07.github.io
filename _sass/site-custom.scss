@@ -440,42 +440,42 @@ img {
 }
 
 
-// Make the footer sticky
-// -------------------------
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  // Margin bottom by footer height
-  margin-bottom: 102px;
-
-  @media (min-width: 768px) {
-    margin-bottom: 68px;
-  }
-}
-
-// stylelint-disable no-duplicate-selectors
-.site-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  // Set the fixed height of the footer here
-  height: 102px;
-
-  @media (min-width: 768px) {
-    height: 68px;
-  }
-}
-//stylelint-enable no-duplicate-selectors
+//// Make the footer sticky
+//// -------------------------
+//html {
+//  position: relative;
+//  min-height: 100%;
+//}
+//
+//body {
+//  // Margin bottom by footer height
+//  margin-bottom: 102px;
+//
+//  @media (min-width: 768px) {
+//    margin-bottom: 68px;
+//  }
+//}
+//
+//// stylelint-disable no-duplicate-selectors
+//.site-footer {
+//  position: absolute;
+//  bottom: 0;
+//  width: 100%;
+//  // Set the fixed height of the footer here
+//  height: 102px;
+//
+//  @media (min-width: 768px) {
+//    height: 68px;
+//  }
+//}
+////stylelint-enable no-duplicate-selectors
 
 
 // 9. Index page & miscellaneous
 //
 
 .site-content {
-  padding-top: 60px;
+  padding-top: 48px;
   padding-bottom: 48px;
 
   > .container {

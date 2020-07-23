@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html class="h-100" lang="en">
   {% include header.html %}
-  <body>
+  <body class="d-flex flex-column h-100">
     <a class="skip-navigation" href="#content">Skip to main content</a>
 
     {% include navbar.html %}
 
-    <main class="site-content" id="content" role="main">
+    <main class="site-content flex-shrink-0" id="content" role="main">
       <div class="container">
         {{ content }}
       </div>
