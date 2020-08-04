@@ -12,6 +12,7 @@ $gray-200:          #e9ecef;
 $gray-100:          #f8f9fa;
 $white:             #fff;
 $blue:              #007bff;
+$orange-200:        #ffcc80;
 
 $blue-link-hover:   #4dabf7;
 
@@ -50,7 +51,7 @@ $mark-bg:                     #ffeea8;
 $blockquote-font-size:        ($font-size-base * 1.125);
 $blockquote-footer-font-size: .9375rem;
 $blockquote-border-width:     .25rem;
-$blockquote-border-color:     #f4ce21;  // #f0ad4e; ?
+$blockquote-border-color:     $orange-200;  // #f0ad4e; ?
 
 
 // Code
@@ -60,7 +61,7 @@ $code-padding-y:  1px;
 $code-padding-x:  2px;
 $code-bg:         $gray-100;
 
-$kbd-bg:                  inherit;
+$kbd-bg:          inherit;
 $nested-kbd-font-weight:  $font-weight-normal;
 
 $pre-bg:          $gray-100;
