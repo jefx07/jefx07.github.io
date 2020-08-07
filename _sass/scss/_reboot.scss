@@ -273,10 +273,12 @@ table {
   border-collapse: collapse; // Prevent double borders
 }
 
+// 1. Matches default `<td>` alignment by inheriting `text-align`.
+// 2. Fix alignment for Safari
+
 th {
-  // Matches default `<td>` alignment by inheriting from the `<body>`, or the
-  // closest parent with a set `text-align`.
-  text-align: inherit;
+  text-align: inherit; // 1
+  text-align: -webkit-match-parent; // 2
 }
 
 
@@ -345,11 +347,16 @@ select {
 // 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
 //    controls in Android 4.
 // 2. Correct the inability to style clickable types in iOS and Safari.
+// 3. Opinionated: add "hand" cursor to non-disabled button elements.
 button,
 [type="button"], // 1
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; // 2
+
+  &:not(:disabled) {
+    cursor: pointer; // 3
+  }
 }
 
 // Remove inner border and padding from Firefox, but don't restore the outline like Normalize.
