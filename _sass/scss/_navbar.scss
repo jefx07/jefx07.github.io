@@ -21,14 +21,17 @@
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
   justify-content: space-between; // space out brand from logo
-  padding: $navbar-padding-y $navbar-padding-x;
+  padding-top: $navbar-padding-y;
+  padding-right: $navbar-padding-x; // default: null
+  padding-bottom: $navbar-padding-y;
+  padding-left: $navbar-padding-x; // default: null
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
   > .container,
   > .container-fluid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
   }
@@ -40,7 +43,6 @@
 // Used for brand, project, or site names.
 
 .navbar-brand {
-  display: inline-block;
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
@@ -73,7 +75,6 @@
 
   .dropdown-menu {
     position: static;
-    float: none;
   }
 }
 
@@ -98,11 +99,10 @@
 // the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
 // on the `.navbar` parent.
 .navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
   // For always expanded or extra full navbars, ensure content aligns itself
   // properly vertically. Can be easily overridden with flex utilities.
   align-items: center;
+  width: 100%;
 }
 
 // Button for toggling the navbar when in its collapsed state
@@ -117,11 +117,6 @@
   &:hover,
   &:focus {
     text-decoration: none;
-  }
-
-  // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
-  &:not(:disabled):not(.disabled) {
-    cursor: pointer;
   }
 }
 
@@ -145,16 +140,8 @@
     $infix: breakpoint-infix($next, $grid-breakpoints);
 
     &#{$infix} {
-      @include media-breakpoint-down($breakpoint) {
-        > .container,
-        > .container-fluid {
-          padding-right: 0;
-          padding-left: 0;
-        }
-      }
-
       @include media-breakpoint-up($next) {
-        flex-flow: row nowrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
 
         .navbar-nav {
@@ -170,17 +157,8 @@
           }
         }
 
-        // For nesting containers, have to redeclare for alignment purposes
-        > .container,
-        > .container-fluid {
-          flex-wrap: nowrap;
-        }
-
         .navbar-collapse {
           display: flex !important;  // stylelint-disable-line declaration-no-important
-
-          // Changes flex-bases to auto because of an IE10 bug
-          flex-basis: auto;
         }
 
         .navbar-toggler {

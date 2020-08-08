@@ -2,10 +2,14 @@
 //
 // Set the container width, and override it for fixed navbars in media queries.
 
-.container {
+.container,
+.container-fluid {
   @include make-container();
+}
+.container {
   @include make-container-max-widths();
 }
+
 
 // Row
 //

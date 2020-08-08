@@ -163,9 +163,6 @@ kbd {
   }
 }
 
-//.btn {
-//  @include user-select();
-//}
 
 //
 // Make ALL images responsive
@@ -381,10 +378,6 @@ img {
   margin-right: 2px;
 }
 
-//svg {
-//  transform: translateZ(0);
-//}
-
 
 // 8. Site footer
 //
@@ -541,13 +534,12 @@ img {
   font-size: $font-size-sm;
 }
 
-.form-control {
-  //font-size: $font-size-sm;
-
-  &:focus {
-    box-shadow: 0 0 0 .1rem $input-btn-focus-color;
-  }
-}
+//.form-control {
+//
+//  &:focus {
+//    box-shadow: 0 0 0 .1rem $input-btn-focus-color;
+//  }
+//}
 
 .required {
   display: inline-block;

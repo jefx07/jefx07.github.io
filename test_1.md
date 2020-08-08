@@ -162,19 +162,19 @@ We also have some buttons, if you need them.
 <form class="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/YOUREMAILHERE">
   <div class="form-group">
     <label for="inputName">Name<span class="required">*</span></label>
-    <input id="inputName" class="form-control" type="text" name="name" required>
+    <input type="text" class="form-control" id="inputName" name="name" required>
   </div>
   <div class="form-group">
     <label for="inputEmail">Email address<span class="required">*</span></label>
-    <input id="inputEmail" class="form-control" type="email" name="_replyto" required>
+    <input type="email" class="form-control" id="inputEmail" name="_replyto" required>
   </div>
   <div class="form-group">
     <label for="inputMessage">Message</label>
-    <textarea id="inputMessage" class="form-control" rows="3" name="message" required></textarea>
+    <textarea class="form-control" id="inputMessage" rows="3" name="message" required></textarea>
   </div>
   <input type="hidden" name="_subject" value="Contact Form Submission!">
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
-  <button class="btn btn-primary" type="submit">Send</button>
+  <button type="submit" class="btn btn-primary">Send</button>
 </form>
 
 <hr style="margin: 2.5rem 0">
