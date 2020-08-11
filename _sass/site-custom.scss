@@ -468,10 +468,11 @@ img {
 //
 
 .site-content {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  flex: 1 0 auto;
 
   > .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
 
     @media (min-width: 768px) {
       max-width: 40em;
