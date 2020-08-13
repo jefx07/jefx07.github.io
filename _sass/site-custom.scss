@@ -44,69 +44,6 @@
   }
 }
 
-//h1 {
-//  font-size: 2.074rem;
-//
-//  @media (min-width: 768px) {
-//    font-size: 2.252rem;
-//  }
-//
-//  @media (min-width: 992px) {
-//    font-size: 2.441rem;
-//  }
-//}
-
-//h2 {
-//  font-size: 1.792rem;
-//
-//  @media (min-width: 768px) {
-//    font-size: 1.914rem;
-//  }
-//
-//  @media (min-width: 992px) {
-//    font-size: 2.042rem;
-//  }
-
-//  .entry-title {
-//    margin-bottom: 1.25rem;
-//  }
-//}
-
-//h3 {
-//  font-size: 1.549rem;
-//
-//  @media (min-width: 768px) {
-//    font-size: 1.628rem;
-//  }
-//
-//  @media (min-width: 992px) {
-//    font-size: 1.708rem;
-//  }
-//}
-
-//h4 {
-//  font-size: 1.339rem;
-//
-//  @media (min-width: 768px) {
-//    font-size: 1.384rem;
-//  }
-//
-//  @media (min-width: 992px) {
-//    font-size: 1.429rem;
-//  }
-//}
-
-//h5 {
-//  font-size: 1.157rem;
-//
-//  @media (min-width: 768px) {
-//    font-size: 1.176rem;
-//  }
-//
-//  @media (min-width: 992px) {
-//    font-size: 1.195rem;
-//  }
-//}
 
 abbr[title] {
   text-decoration: none;
@@ -534,13 +471,6 @@ img {
   margin-bottom: 1.5rem;
   font-size: $font-size-sm;
 }
-
-//.form-control {
-//
-//  &:focus {
-//    box-shadow: 0 0 0 .1rem $input-btn-focus-color;
-//  }
-//}
 
 .required {
   display: inline-block;

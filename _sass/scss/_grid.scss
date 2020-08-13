@@ -2,10 +2,14 @@
 //
 // Set the container width, and override it for fixed navbars in media queries.
 
+// Single container class with breakpoint max-widths
 .container,
+// 100% wide container at all breakpoints
 .container-fluid {
   @include make-container();
 }
+
+// Responsive containers that are 100% wide until a breakpoint
 .container {
   @include make-container-max-widths();
 }
