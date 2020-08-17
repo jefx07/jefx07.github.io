@@ -7,7 +7,7 @@
 .form-control {
   display: block;
   width: 100%;
-  height: $input-height;
+  min-height: $input-height;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
   @include font-size($input-font-size);
@@ -18,21 +18,9 @@
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
   @include border-radius($input-border-radius);
-  //@include appearance(); // Fix appearance for date inputs in Safari
+  @include appearance(); // Fix appearance for date inputs in Safari
 
   @include transition($input-transition);
-
-  // Unstyle the caret on `<select>`s in IE10+.
-  &::-ms-expand {
-    background-color: transparent;
-    border: 0;
-  }
-
-  // Remove select outline from select box in FF
-  &:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 $input-color;
-  }
 
   // Customize the `:focus` state to imitate native WebKit styles.
   @include form-control-focus();
@@ -70,6 +58,19 @@ select.form-control {
 textarea.form-control {
   height: auto;
 }
+
+//
+// Labels
+//
+
+.form-label {
+  margin-bottom: $form-label-margin-bottom;
+  @include font-size($form-label-font-size);
+  font-style: $form-label-font-style;
+  font-weight: $form-label-font-weight;
+  color: $form-label-color;
+}
+
 
 // Form groups
 //

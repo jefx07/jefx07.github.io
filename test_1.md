@@ -161,15 +161,15 @@ We also have some buttons, if you need them.
 
 <form class="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/YOUREMAILHERE">
   <div class="form-group">
-    <label for="inputName">Name<span class="required">*</span></label>
+    <label for="inputName" class="form-label">Name<span class="required">*</span></label>
     <input type="text" class="form-control" id="inputName" name="name" required>
   </div>
   <div class="form-group">
-    <label for="inputEmail">Email address<span class="required">*</span></label>
+    <label for="inputEmail" class="form-label">Email address<span class="required">*</span></label>
     <input type="email" class="form-control" id="inputEmail" name="_replyto" required>
   </div>
   <div class="form-group">
-    <label for="inputMessage">Message</label>
+    <label for="inputMessage" class="form-label">Message</label>
     <textarea class="form-control" id="inputMessage" rows="3" name="message" required></textarea>
   </div>
   <input type="hidden" name="_subject" value="Contact Form Submission!">

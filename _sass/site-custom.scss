@@ -88,14 +88,13 @@ code {
 }
 
 kbd {
-  font-size: 100%;
+  font-size: 1rem;
   color: inherit;
-  box-shadow: none;
 
   kbd {
-    padding: $code-padding-y $code-padding-x;
+    padding: $kbd-padding-y $kbd-padding-x;
     font-size: $kbd-font-size;
-    color: $white;
+    color: $kbd-color;
     background-color: $gray-900;
   }
 }
