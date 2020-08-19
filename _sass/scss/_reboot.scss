@@ -63,13 +63,21 @@ body {
 
 // Content grouping
 //
-// 1. Add the correct box sizing in Firefox.
-// 2. Show the overflow in Edge and IE.
+// 1. Reset Firefox's gray color
+// 2. Set correct height and prevent the `size` attribute to make the `hr` look like an input field
+//    See https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_hr_size
+
 
 hr {
-  box-sizing: content-box; // 1
-  height: 0; // 1
-  overflow: visible; // 2
+  margin: $hr-margin-y 0;
+  color: $hr-color; // 1
+  background-color: currentColor;
+  border: 0;
+  opacity: $hr-opacity;
+}
+
+hr:not([size]) {
+  height: $hr-height; // 2
 }
 
 
@@ -206,6 +214,14 @@ strong {
 
 small {
   @include font-size($small-font-size);
+}
+
+
+// Mark
+
+mark {
+  padding: $mark-padding;
+  background-color: $mark-bg;
 }
 
 

@@ -1,19 +1,10 @@
+//
+// Headings
+//
 
 .lead {
   @include font-size($lead-font-size);
   font-weight: $lead-font-weight;
-}
-
-
-//
-// Horizontal rules
-//
-
-hr {
-  margin-top: $hr-margin-y;
-  margin-bottom: $hr-margin-y;
-  border: 0;
-  border-top: $hr-border-width solid $hr-border-color;
 }
 
 
@@ -25,10 +16,10 @@ hr {
   @extend small;
 }
 
-mark {
-  padding: $mark-padding;
-  background-color: $mark-bg;
+.mark {
+  @extend mark;
 }
+
 
 // Blockquotes
 .blockquote {

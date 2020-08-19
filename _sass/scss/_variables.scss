@@ -244,8 +244,11 @@ $blockquote-footer-font-size: $small-font-size !default;
 $blockquote-border-width:     .3125rem !default;
 $blockquote-border-color:     $gray-200 !default;
 
-$hr-border-color:         rgba($black, .1) !default;
-$hr-border-width:         $border-width !default;
+$hr-margin-y:                 $spacer !default;
+$hr-color:                    inherit !default;
+$hr-height:                   $border-width !default;
+$hr-opacity:                  .25 !default;
+
 
 $legend-margin-bottom:        .5rem !default;
 $legend-font-size:            1.5rem !default;
@@ -258,8 +261,6 @@ $dt-font-weight:          $font-weight-bold !default;
 $nested-kbd-font-weight:  $font-weight-bold !default;
 
 $mark-bg:                 #fcf8e3 !default;
-
-$hr-margin-y:             $spacer !default;
 
 
 // Tables
