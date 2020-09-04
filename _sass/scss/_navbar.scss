@@ -4,7 +4,6 @@
 // Navbar brand
 // Navbar nav
 // Navbar text
-// Navbar divider
 // Responsive navbar
 // Navbar position
 // Navbar themes
@@ -47,7 +46,7 @@
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
   @include font-size($navbar-brand-font-size);
-  line-height: inherit;
+  //line-height: inherit;
   white-space: nowrap;
 
   &:hover,
@@ -84,7 +83,6 @@
 //
 
 .navbar-text {
-  display: inline-block;
   padding-top: $nav-link-padding-y;
   padding-bottom: $nav-link-padding-y;
 }

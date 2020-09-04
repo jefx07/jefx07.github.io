@@ -6,7 +6,7 @@ sitemap: false
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,17 +26,20 @@ sitemap: false
       }
     </script>
   </head>
-  <body onload="javascript:loadPath();">
+  <body onload="javascript:loadPath();" class="d-flex flex-column h-100">
     {% include navbar.html %}
-    <div class="container">
-      <div class="fnf">
-        <h1>404</h1>
-        <p style="color:rgba(0,0,0,.5);"><strong>File not found</strong></p>
-        <p>Sorry, the requested URL <code><span id="display-path"></span></code>
-        was not found on this server. Perhaps head back <a href="{{ site.baseurl
-        }}/">home</a> and try finding it again.</p>
+
+    <main class="site-content" id="content">
+      <div class="container">
+        <div class="fnf">
+          <h1>404</h1>
+          <p style="color:rgba(0,0,0,.5);"><strong>File not found</strong></p>
+          <p>Sorry, the requested URL <code><span id="display-path"></span>
+            </code> was not found on this server. Perhaps head back
+            <a href="{{ site.baseurl }}/">home</a> and try finding it again.</p>
+        </div>
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
   </body>
