@@ -147,7 +147,7 @@ img {
   @include transition ($navbar-toggler-transition);
 }
 
-.navbar>.container-fluid {
+.navbar > .container-fluid {
   max-width: 1140px;
 }
 
