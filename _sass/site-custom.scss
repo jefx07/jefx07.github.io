@@ -35,7 +35,6 @@
   }
 }
 
-
 abbr[title] {
   text-decoration: none;
   border-bottom: 1px dotted $gray-600;
@@ -148,6 +147,9 @@ img {
   @include transition ($navbar-toggler-transition);
 }
 
+.navbar>.container-fluid {
+  max-width: 1140px;
+}
 
 // 3. Skip link
 //
