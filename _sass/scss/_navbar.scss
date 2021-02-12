@@ -44,9 +44,8 @@
 .navbar-brand {
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
-  margin-right: $navbar-padding-x;
+  margin-right: $navbar-brand-margin-end;
   @include font-size($navbar-brand-font-size);
-  //line-height: inherit;
   white-space: nowrap;
 
   &:hover,
@@ -198,8 +197,6 @@
     }
 
     .show > .nav-link,
-    .active > .nav-link,
-    .nav-link.show,
     .nav-link.active {
       color: $navbar-light-active-color;
     }
@@ -253,8 +250,6 @@
     }
 
     .show > .nav-link,
-    .active > .nav-link,
-    .nav-link.show,
     .nav-link.active {
       color: $navbar-dark-active-color;
     }
