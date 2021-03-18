@@ -151,6 +151,13 @@ img {
   max-width: 1140px;
 }
 
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 // 3. Skip link
 //
 
@@ -410,6 +417,10 @@ img {
 
 // miscellaneous
 //
+
+.btn {
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .1);
+}
 
 .formspree {
   max-width: 26rem;
