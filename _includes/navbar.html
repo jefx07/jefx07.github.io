@@ -20,6 +20,17 @@
             {% if page.title == 'About' %}<li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ '/about/' | relative_url }}">About</a></li>
             {% else %}<li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About</a></li>
             {% endif %}
+            {% comment %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sample Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{{ '/test_1/' | relative_url }}">Html Elements</a></li>
+                <li><a class="dropdown-item" href="{{ '/test_2/' | relative_url }}">Typography</a></li>
+              </ul>
+            </li>
+            {% endcomment %}
           </ul>
         </nav>
       </div>

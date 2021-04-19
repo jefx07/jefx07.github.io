@@ -159,7 +159,7 @@ We also have some buttons, if you need them.
 
 ## Forms
 
-<form class="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/YOUREMAILHERE">
+<form class="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/f/{form_id}">
   <div class="form-group">
     <label for="inputName" class="form-label">Name<span class="required">*</span></label>
     <input type="text" class="form-control" id="inputName" name="name" required>
@@ -170,7 +170,7 @@ We also have some buttons, if you need them.
   </div>
   <div class="form-group">
     <label for="inputMessage" class="form-label">Message</label>
-    <textarea class="form-control" id="inputMessage" rows="3" name="message" required></textarea>
+    <textarea class="form-control" id="inputMessage" rows="5" name="message" required></textarea>
   </div>
   <input type="hidden" name="_subject" value="Contact Form Submission!">
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">

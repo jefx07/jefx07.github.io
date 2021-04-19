@@ -9,39 +9,38 @@ description: "This is the About page for my blog."
 in one place and will show up in your site navigation.</p>
 
 <p>Most people start with an About page that introduces them to potential site
-visitors. As a new user, you should delete this page and create new pages for your
-content. Have fun!</p>
+visitors.</p>
 
 <p>&nbsp;</p>
 
-<h3 id="contact">Contact</h3>
-<p>&nbsp;</p>
+<h3 id="contact" class="mb-3">Contact</h3>
+
 <p class="text-muted">[ contact form to go here...]</p>
 <div style="width:auto; height:180px"></div>
 
 {% comment %}
-<p>If you wish to contact me about something on this site you can send me an
-email by using the contact form below.</p>
+<p>If you wish to contact me about something on this site you can use the
+  contact form below to send me a message.</p>
 
-<p>I'll do my best to reply to all enquiries, so if you don't receive a response
-straight away please be patient. Thanks!</p>
+<p>I'll do my best to reply to all enquiries, so if you don't receive
+  a response straight away please be patient.  Thanks!</p>
 
-<form class="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/jefx.blog@gmail.com">
+<form class="formspree" accept-charset="utf-8" action="https://formspree.io/f/jefx.blog@gmail.com" method="POST">
   <div class="form-group">
     <label for="inputName" class="form-label">Name<span class="required">*</span></label>
     <input type="text" class="form-control" id="inputName" name="name" required>
   </div>
   <div class="form-group">
     <label for="inputEmail" class="form-label">Email address<span class="required">*</span></label>
-    <input type="email" class="form-control" id="inputEmail" name="_replyto" placeholder="Email address" required>
+    <input type="email" class="form-control" id="inputEmail" name="_replyto" required>
   </div>
   <div class="form-group">
-    <label for="inputMessage" class="form-label">Message<span class="required">*</span></label>
-    <textarea class="form-control" id="inputMessage" name="message" rows="3"></textarea>
+    <label for="inputMessage" class="form-label">Message</label>
+    <textarea class="form-control" id="inputMessage" rows="5" name="message" required></textarea>
   </div>
   <input type="hidden" name="_subject" value="Contact Form Submission!">
   <input type="text" name="_gotcha" aria-hidden="true" style="display:none">
-  <!-- <input type="hidden" name="_next" value="{{ '/thanks/' | absolute_url }}"> -->
   <button type="submit" class="btn btn-primary">Send</button>
 </form>
 {% endcomment %}
+
