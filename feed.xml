@@ -17,7 +17,7 @@ layout: null
   </author>
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
 
-  {% for post in site.posts limit:15 %} {% unless post.draft %}
+  {% for post in site.posts limit:15 %}{% unless post.draft %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
     <link rel="alternate" type="text/html" title="{{ post.title }}" href="{{ post.url | absolute_url }}"/>
@@ -27,5 +27,5 @@ layout: null
     {% comment %}<content type="html">{{ post.content | strip | xml_escape }}</content>{% endcomment %}
     <summary type="html">{{ post.content | strip_html | normalize_whitespace | xml_escape | truncatewords: 60 }} &lt;p&gt;&lt;a href="{{ post.url | absolute_url  }}"&gt;Read more... &lt;/a&gt;&lt;/p&gt;</summary>
   </entry>
-  {% endunless %} {% endfor %}
+  {% endunless %}{% endfor %}
 </feed>
