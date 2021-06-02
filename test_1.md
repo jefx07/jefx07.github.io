@@ -159,7 +159,7 @@ We also have some buttons, if you need them.
 
 ## Forms
 
-<form class="formspree" accept-charset="utf-8" method="POST" action="https://formspree.io/f/{form_id}">
+<form class="formspree" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="POST">
   <div class="form-group">
     <label for="inputName" class="form-label">Name<span class="required">*</span></label>
     <input type="text" class="form-control" id="inputName" name="name" required>
