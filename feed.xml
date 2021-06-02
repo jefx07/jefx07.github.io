@@ -20,12 +20,12 @@ layout: null
   {% for post in site.posts limit:15 %} {% unless post.draft %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
-    <link rel="alternate" type="text/html" title="{{ post_title }}" href="{{ post.url | absolute_url }}"/>
+    <link rel="alternate" type="text/html" title="{{ post.title }}" href="{{ post.url | absolute_url }}"/>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
     <id>{{ post.id | absolute_url | xml_escape }}</id>
-    <content type="html">{{ post.content | strip | xml_escape }}</content>
-    <summary>{{ post.content | strip_html | xml_escape | normalize_whitespace | truncatewords: 40 }}</summary>
+    {% comment %}<content type="html">{{ post.content | strip | xml_escape }}</content>{% endcomment %}
+    <summary type="html">{{ post.content | strip_html | normalize_whitespace | xml_escape | truncatewords: 60 }} &lt;p&gt;&lt;a href="{{ post.url | absolute_url  }}"&gt;Read more... &lt;/a&gt;&lt;/p&gt;</summary>
   </entry>
   {% endunless %} {% endfor %}
 </feed>
