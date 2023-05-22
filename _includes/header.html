@@ -23,7 +23,4 @@
     {% include favicons.html %}
     <!-- RSS feed -->
     <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="{{ '/feed.xml' | relative_url }}">
-    {% if jekyll.environment == 'production' and site.google_analytics_id %}
-    {% include analytics.html %}
-    {% endif %}
   </head>
