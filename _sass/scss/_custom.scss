@@ -53,7 +53,7 @@ $blockquote-footer-font-size: .9375rem;
 $blockquote-border-width:     .25rem;
 $blockquote-border-color:     $orange-200;  // #f0ad4e; ?
 
-$hr-opacity:      .12;
+//$hr-opacity:      .12;
 
 
 // Code
@@ -78,8 +78,9 @@ $btn-font-family: $headings-font-family;
 // stylelint-disable value-keyword-case
 $navbar-font-family:        $headings-font-family;
 // stylelint-enable value-keyword-case
-$navbar-bg-color:           #289bdc;    // #28aadc;
-$navbar-box-shadow:         1px 1px 1px rgba($black, .16);
+//$navbar-bg-color:           #289bdc;    // #28aadc;
+$navbar-bg-color: linear-gradient(to bottom, rgba(40, 155, 220, 1), rgba(40, 155, 220, .95));
+$navbar-box-shadow:         1px 3px 6px rgba($black, .15);
 
 $navbar-toggler-padding-y:  .4375rem;
 $navbar-toggler-padding-x:  .6875rem;

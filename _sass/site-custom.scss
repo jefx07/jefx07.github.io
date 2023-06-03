@@ -105,7 +105,12 @@ img {
 }
 
 .bg-custom {
-  background-color: $navbar-bg-color;
+  background-color: transparent;
+  background-image: $navbar-bg-color;
+}
+
+.text-white-50 {
+  color: rgba(255,255,255,0.5) !important;
 }
 
 .navbar-toggler {
